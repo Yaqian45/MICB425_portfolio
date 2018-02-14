@@ -1,0 +1,31 @@
+# Exercise 1 
+library(ggplot2)
+ggplot(metadata, aes(x=PO4_uM,y=Depth_m))+
+  geom_point(shape=17, color="purple")
+
+# Exercise 2
+library(dplyr)
+library(ggplot2)
+metadata%>%
+  mutate(Temperature_F=Temperature_C*1.8+32) %>%
+  ggplot(aes(x=Temperature_F,y=Depth_m)) +
+    geom_point()
+
+# Exercise 3
+library(phyloseq)
+library(ggplot2)
+plot_bar(physeq_percent,fill="Phylum")+
+  geom_bar(aes(fill=Phylum),stat="identity")+
+  labs(x="Sample depth", y="Percent relative abundance", title="Phyla from 10 to 200 m in Saanich Inlet")
+
+# Exercise 4
+library(tidyverse)
+library(dplyr)
+nutrient=metadata %>% select(Depth_m,O2_uM,PO4_uM,SiO2_uM,NO3_uM,NH4_uM,NO2_uM) %>% gather(nutrient,uM,O2_uM,PO4_uM,SiO2_uM,NO3_uM,NH4_uM,NO2_uM)
+library(ggplot2)
+ggplot(nutrient,aes(x=Depth_m,y=uM))+
+  geom_line()+
+  geom_point()+
+  facet_wrap(~nutrient,scales="free_y")
+  
+  

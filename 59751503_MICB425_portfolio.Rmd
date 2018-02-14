@@ -2,7 +2,7 @@
 title: "Pretty_html"
 author: "Yaqian Luo (59751503)"
 date: "version `r format(Sys.time(), '%B %d, %Y')`"
-output: 
+output:
   html_document:
     toc: yes
 ---
