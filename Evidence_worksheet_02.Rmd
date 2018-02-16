@@ -1,6 +1,6 @@
 ---
 title: "Evidence_worksheet_02"
-author: "Student Name (Student ID)"
+author: "Yaqian Luo (59751503)"
 date: "version `r format(Sys.time(), '%B %d, %Y')`"
 output: html_document
 ---
@@ -12,39 +12,83 @@ Comment on the emergence of microbial life and the evolution of Earth systems
 * Indicate the key events in the evolution of Earth systems at each approximate moment in the time series. If times need to be adjusted or added to the timeline to fully account for the development of Earth systems, please do so. 
 
     + 4.6 billion years ago  
+Earth was born. 
+
+    + 4.5 billion years ago  
+Moon was formed which influenced the spin and tilt of Earth;  
+A rock vapor atmosphere was formed immediately after the birth of Moon. 
+
+    + 4.4 billion years ago  
+The oldest minerals known on Earth are zircons formed 4.4-Gyr;  
+Ocean and early atmosphere were formed.
     
-    + 4.2 billion years ago  
+    + 4.1 billion years ago  
+Life might occur.
     
+    + 4.0 billion years ago  
+The oldest rock, Acasta gneiss, was formed 4.0 billion years ago. 
+
     + 3.8 billion years ago  
-    
-    + 3.75 billion years ago  
-    
-    + 3.5 billion years ago  
+Massive meteorite impacts halted;  
+Life was sustained by anoxygenic photosynthesis;    
+Methanogens might evolve. 
+
+    + 3.5 billion years ago    
+Life must be presented on Earth;  
+Oxygenic photosynthesis and the evolution of cyanobateria occurred;  
+Biochemical carbon cycle started to perform.
+
+    + 3.2 billion years ago  
+Filamentous appeared on Earth.
     
     + 3.0 billion years ago  
-    
+Microbial life was widespread in the mid-Archaean.
+
     + 2.7 billion years ago  
+Biological lipids were shown in 2.7-Gyr rocks;  
+ancestral eukaryotes appeared.
     
     + 2.2 billion years ago  
-    
-    + 2.1 billion years ago
-    
-    + 1.3 billion years ago
-    
-    + 550,000 years ago
-    
-    + 200,000 years ago
+Rocks were redbeds;  
+Complex wukaryotes might show up;    
+The cellular cybernetic switched between mitochondria and chloroplasts;  
+Earth became a snowball at first time.
 
+    + 2.1 billion years ago   
+Multicellular life appeared.
+
+    + 1.3 billion years ago  
+The ancestor of animals started to evolve. 
+    
+    + 550,000 years ago  
+Human started to evolve.
+
+    + 200,000 years ago
+First homo sapiens appeared;  
+The second most recent glacial period began. 
 
 * Describe the dominant physical and chemical characteristics of Earth systems at the following waypoints:  
 
-    + Hadean  
+    + **Hadean**  
+    1. Earth was rich in water vapor and carbon dioxide, and tempertature was above 500℃ when it was born.  
+    2. Earth radiated heat to space.  
+    3. Surface temperature lingered near 100℃ with a steam greenhouse until 4 billion years ago.  
+    4. Earth was glacial with intervals of inferno after the meteorite impacts. 
     
-    + Archean  
+    + **Archean**  
+    1. The oceans was heated over 110℃, and seawater chemistry was always changing during meteorite impacts.
+    2.In the early Archaean, there was a relatively oxidized atmosphere-ocean system and a reduced fuilds in contact with mantle-derived magmas.
+    3. Greenhouse gases (methane and carbon dioxide) were predominant.
+    4. The atmosphere was rich in sulphur gases and carbon dioxide with partial pressure over 2 bars.  
+    5. Sulphate was presented in 3.5-Gyr rocks.  
+    6. Minerals were contained in many Archaean rocks like detrital pyrite, siderite and uraninite.  
     
-    + Precambrian  
+    + **Proterozoic**  
+    1. The oxygen level increased sharply about 2.2 billion years ago.  
+    2. The atmosphere became oxic.
     
-    + Proterozoic  
-    
-    + Phanerozoic  
-    
+    + **Phanerozoic**
+    1. oxygenation of atmosphere increased.  
+    2. The top of troposphere is cold and water falls back to Earth's surface.  
+    3. Stratosphere is dry with little hydrogen at the top. 
+    4. Greenhouse gases like water vapor and carbon dioxide warms up the surface of Earth. 
