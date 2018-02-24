@@ -1,0 +1,78 @@
+---
+title: "Evolutionary Development of Earth"
+author: "Yaqian Luo (59751503)"
+date: "version `r format(Sys.time(), '%B %d, %Y')`"
+runtime: shiny
+output:
+  html_document: 
+    toc: yes
+    toc_float: 
+      collapsed: false
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, eval=FALSE, warning=FALSE, message=FALSE}
+install.packages("plotly")
+install.packages("shiny")
+```
+  
+  
+### Interactive timeline for the development of the Earth  
+
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+tics <-rep(0,18)
+
+Million.years.ago<-c(4600,4500,4400,4200,4100,4000,3800,3750,3500,3200,3000,2700,2200,2100,1300,0.550,0.200,0)
+
+events<-c("Solar system formed","formation of moon giving Earth spin and tilt, day/night cycles & seasons, a rock vapor atmospher formed","formation of oceans and early atmosphere, the oldest mineral formed","Darwinian threshold","Life might occur","The oldest rock formed","prokaryotic cells, Rubisco, stable sea chemistry, halted meteorite bombardment, methanogens might evolve","photosynthesis","Oxygenic photosynthesis appeared, cyanobacteria evolved, biochemical carbon cycle stated to perform","Filamentous appeared","Microbial life was widespread","Eukaryotic cells and biological lipids appeared",
+          "great oxidation event, red Beds, first snowball earth","appearance of multicellular life", "Animals","humans appeared","The second recent glacial period began","today")
+
+epoch<-c(rep("Hadean",6),rep("Archaen",6),rep("Proterozoic",3),rep("Phanerozoic",3))
+
+ddd<-data.frame(tics,Million.years.ago,events,epoch)
+
+library(plotly)
+library(shiny)
+
+ay <- list(
+  title = "",
+  zeroline = FALSE,
+  showline = FALSE,
+  showticklabels = FALSE,
+  showgrid = FALSE
+)
+
+ax <- list(
+  title = "Million years ago"
+)
+
+plot_ly(ddd, x = ~Million.years.ago, y = ddd$tics, type = "scatter",
+
+  text = ~paste(events),
+  color = ~epoch
+) %>%
+  layout(title="Evolutionary Development of Earth", xaxis = ax, yaxis = ay)
+```
+  
+#### Physical and chemical characterization of Earth epochs  
+
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+
+e2<-c("Hadean","Archaen","Proterozoic","Phanerozoic")
+
+chr<-c("Earth was rich in water vapor and carbon dioxide, and tempertature was above 500 degree C when it was born; earth radiated heat to space; surface temperature lingered near 100 degree C with a steam greenhouse until 4 billion years ago; earth was glacial with intervals of inferno after the meteorite impacts; carbon dioxide tied up in carbonate materials such as limestone.","The oceans was heated over 110 degree C and seawater chemistry was always changing during meteorite impacts; in the early Archaean, there was a relatively oxidized atmosphere-ocean system and a reduced fuilds in contact with mantle-derived magmas; greenhouse gases (methane and carbon dioxide) were predominant; the atmosphere was rich in sulphur gases and carbon dioxide with partial pressure over 2 bars; sulphate was presented in 3.5-Gyr rocks; minerals were contained in many Archaean rocks like detrital pyrite, siderite and uraninite.","The oxygen level increased sharply about 2.2 billion years ago; the atmosphere became oxic.", " Oxygenation of atmosphere increased; the top of troposphere is cold and water falls back to Earth's surface; stratosphere is dry with little hydrogen at the top; greenhouse gases like water vapor and carbon dioxide warms up the surface of Earth.")
+
+ab<-as.data.frame(cbind(e2,chr),stringsAsFactors = FALSE)
+
+selectInput("Epoch","Epoch:",choices=e2)
+
+renderPrint({
+  ab$chr[ab$e2==input$Epoch]
+})
+
+```
+  
+ 
