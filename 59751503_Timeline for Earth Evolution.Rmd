@@ -12,7 +12,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-```{r, eval=FALSE, warning=FALSE, message=FALSE}
+```{r eval=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
 install.packages("plotly")
 install.packages("shiny")
 ```
