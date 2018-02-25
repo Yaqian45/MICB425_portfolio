@@ -27,7 +27,7 @@ Both abiotic and biotic processes are responsible for the biogeochemical cycle o
 
 ***Why is Earth’s redox state considered an emergent property?***
 
-Abiotic and biotic processes are formed during the evolution of biogeochemical cycle. They work together and change the redox condition of Earth’s surface. As a result, the average redox state of Earth is created by feedbacks between geophysical and biological processes. 
+Abiotic and biotic processes are formed during the evolution of biogeochemical cycle. They work together and change the redox condition of Earth's surface. As a result, the average redox state of Earth is created by feedbacks between geophysical and biological processes. 
   
 
 ***How do reversible electron transfer reactions give rise to element and nutrient cycles at different ecological scales? What strategies do microbes use to overcome thermodynamic barriers to reversible electron flow?***
@@ -76,4 +76,4 @@ Because microbial diversity is dependent on genome diversity and the number of n
 
 ***On what basis do the authors consider microbes the guardians of metabolism?***
 
-Microbes are considered as the guardians of metabolism based on the fact of their ability to catalyze reactions in biogeochemical cycle and the central gene set for the ability distributed spatially and temporally. Microorganisms form Earth’s environment like atmosphere through catalyzing redox reactions with enzymes translated from their genes. They using the same way control the biogeochemical cycles of nutrients and elements significant to life, such as nitrogen cycle and sulfate cycle. Although environmental selection may extinct a certain type of microbe, it is highly possible that the core gene responsible for a specific metabolic pathway in the microbial species survive in other cases. Eventually, the metabolic pathway is maintained over the long evolutionary time on Earth.   
+Microbes are considered as the guardians of metabolism based on the fact of their ability to catalyze reactions in biogeochemical cycle and the central gene set for the ability distributed spatially and temporally. Microorganisms form Earth's environment like atmosphere through catalyzing redox reactions with enzymes translated from their genes. They using the same way control the biogeochemical cycles of nutrients and elements significant to life, such as nitrogen cycle and sulfate cycle. Although environmental selection may extinct a certain type of microbe, it is highly possible that the core gene responsible for a specific metabolic pathway in the microbial species survive in other cases. Eventually, the metabolic pathway is maintained over the long evolutionary time on Earth.   
