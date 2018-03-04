@@ -120,13 +120,14 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">Assignment_Plotting_data_in_R</h1>
 <h4 class="author"><em>Yaqian Luo (59751503)</em></h4>
-<h4 class="date"><em>version February 16, 2018</em></h4>
+<h4 class="date"><em>version March 04, 2018</em></h4>
 
 </div>
 
 
 <div id="exercise-1" class="section level2">
 <h2>Exercise 1</h2>
+<p>Plot another nutrient of your choice against depth. Change the points to be purple triangles.</p>
 <pre class="r"><code>library(ggplot2)
 metadata=read.table(file=&quot;Saanich.metadata.txt&quot;, header=TRUE, row.names=1, sep=&quot;\t&quot;, na.strings=&quot;NAN&quot;)
 ggplot(metadata, aes(x=PO4_uM,y=Depth_m))+
@@ -135,6 +136,7 @@ ggplot(metadata, aes(x=PO4_uM,y=Depth_m))+
 </div>
 <div id="exercise-2" class="section level2">
 <h2>Exercise 2</h2>
+<p>Using dplyr, convert the temperature variable from Celsius to Fahrenheit. Then create a dot plot of temperature in Fahrenheit against depth.</p>
 <pre class="r"><code>library(dplyr)</code></pre>
 <pre><code>## 
 ## Attaching package: 'dplyr'</code></pre>
@@ -153,6 +155,7 @@ metadata%&gt;%
 </div>
 <div id="exercise-3" class="section level2">
 <h2>Exercise 3</h2>
+<p>Create a bar plot at a different taxonomic level with more descriptive x- and y-axis labels as well as a title. Use the ggplot cheatsheet to learn the guides needed to change these labels.</p>
 <pre class="r"><code>library(phyloseq)
 library(ggplot2)
 load(&quot;phyloseq_object.RData&quot;)
@@ -164,12 +167,14 @@ plot_bar(physeq_percent,fill=&quot;Phylum&quot;)+
 </div>
 <div id="exercise-4" class="section level2">
 <h2>Exercise 4</h2>
+<p>Using ggplot, create a faceted figure showing nutrient concentrations in uM for O2, PO4, SiO2, NO3, NH4, and NO2 by depth. For this, you can use either the metadata table or the phyloseq object.</p>
+<p>Hint: Explore the dplyr function gather to manipulate the metadata so that your nutrients of interest are all in one variable (column).</p>
 <pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## -- Attaching packages ------------------------------------ tidyverse 1.2.1 --</code></pre>
+<pre><code>## -- Attaching packages -------------------------- tidyverse 1.2.1 --</code></pre>
 <pre><code>## v tibble  1.4.2     v purrr   0.2.4
 ## v tidyr   0.8.0     v stringr 1.2.0
 ## v readr   1.1.1     v forcats 0.2.0</code></pre>
-<pre><code>## -- Conflicts --------------------------------------- tidyverse_conflicts() --
+<pre><code>## -- Conflicts ----------------------------- tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()</code></pre>
 <pre class="r"><code>library(dplyr)

@@ -7,6 +7,8 @@ output: html_document
 
 ## Exercise 1
 
+Plot another nutrient of your choice against depth. Change the points to be purple triangles.
+
 ```{r}
 library(ggplot2)
 metadata=read.table(file="Saanich.metadata.txt", header=TRUE, row.names=1, sep="\t", na.strings="NAN")
@@ -15,6 +17,8 @@ ggplot(metadata, aes(x=PO4_uM,y=Depth_m))+
 ```
 
 ## Exercise 2
+
+Using dplyr, convert the temperature variable from Celsius to Fahrenheit. Then create a dot plot of temperature in Fahrenheit against depth.
 
 ```{r}
 library(dplyr)
@@ -26,6 +30,9 @@ metadata%>%
 ```
 
 ## Exercise 3
+
+Create a bar plot at a different taxonomic level with more descriptive x- and y-axis labels as well as a title. Use the ggplot cheatsheet to learn the guides needed to change these labels.
+
 ```{r}
 library(phyloseq)
 library(ggplot2)
@@ -37,6 +44,11 @@ plot_bar(physeq_percent,fill="Phylum")+
 ```
 
 ## Exercise 4
+
+Using ggplot, create a faceted figure showing nutrient concentrations in uM for O2, PO4, SiO2, NO3, NH4, and NO2 by depth. For this, you can use either the metadata table or the phyloseq object.
+
+Hint: Explore the dplyr function gather to manipulate the metadata so that your nutrients of interest are all in one variable (column).
+
 ```{r}
 library(tidyverse)
 library(dplyr)
