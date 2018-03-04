@@ -1,0 +1,33 @@
+number	name	characteristics	occurences
+1	mmgreen	m&m green	4
+2	mmred	m&m red	5
+3	mmblue	m&m blue	12
+4	mmyellow	m&m yellow	8
+5	mmbrown	m&m brown	2
+6	mmorange	m&m orange	2
+7	sktbrown	skittle brown	8
+8	sktred	skittle red	5
+9	sktgreen	skittle green	3
+10	sktorange	skittle orange	5
+11	sktyellow	skittle yellow	8
+12	gmbrred	gummi bear red	4
+13	gmbrpink	gummi bear pink	4
+14	gmbrgreen	gummi bear green	4
+15	gmbrorange	gummi bear orange	2
+16	gmbryellow	gummi bear yellow	6
+17	gmbrwhite	gummi bear white	3
+18	mipink	m&i pink	8
+19	migreen	m & i green	9
+20	miyellow	m&i yellow	4
+21	miorange	m&i orange	6
+22	mired	m&ired	3
+23	wmred	worms red	1
+24	blyellow	balls yellow	2
+25	blgreen	balls green	1
+26	blpurple	balls purple	0
+27	blorange	balls orange	0
+28	blred	balls red	2
+29	chcltkiss	chocolate kiss	4
+30	lgpink	lego pink	0
+31	lgyellow	lego yellow	0
+32	lgblue	lego blue	2
