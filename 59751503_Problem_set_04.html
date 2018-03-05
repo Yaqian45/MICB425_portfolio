@@ -120,13 +120,13 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">Problem Set_04</h1>
 <h4 class="author"><em>Yaqian Luo (59751503)</em></h4>
-<h4 class="date"><em>version March 03, 2018</em></h4>
+<h4 class="date"><em>version March 05, 2018</em></h4>
 
 </div>
 
 
-<div id="problem-set_04-fine-scale-phylogenetic-architecture" class="section level3">
-<h3>Problem set_04 “Fine-scale phylogenetic architecture”</h3>
+<div id="problem-set_04-afine-scale-phylogenetic-architecturea" class="section level3">
+<h3>Problem set_04 âFine-scale phylogenetic architectureâ</h3>
 <div id="learning-objectives" class="section level4">
 <h4>Learning objectives:</h4>
 <ul>
@@ -890,12 +890,14 @@ diversity(Community_diversity, index=&quot;invsimpson&quot;)</code></pre>
 </ul>
 <p><strong>Sample</strong></p>
 <pre class="r"><code># Calculate chao1 estimates for sample
-specpool(Sample_diversity)[1,1]</code></pre>
-<pre><code>## [1] 28</code></pre>
+specpool(Sample_diversity)</code></pre>
+<pre><code>##     Species chao chao.se jack1 jack1.se jack2 boot boot.se n
+## All      28   28       0    28        0    28   28       0 1</code></pre>
 <p><strong>Community</strong></p>
 <pre class="r"><code># Calculate chao1 estimates for community
-specpool(Community_diversity)[1,1]</code></pre>
-<pre><code>## [1] 32</code></pre>
+specpool(Community_diversity)</code></pre>
+<pre><code>##     Species chao chao.se jack1 jack1.se jack2 boot boot.se n
+## All      32   32       0    32        0    32   32       0 1</code></pre>
 <ul>
 <li>Verify that these values match your previous calculations.</li>
 </ul>

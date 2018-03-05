@@ -276,13 +276,13 @@ diversity(Community_diversity, index="invsimpson")
 **Sample**
 ```{r}
 # Calculate chao1 estimates for sample
-specpool(Sample_diversity)[1,1]
+specpool(Sample_diversity)
 ```
 
 **Community**
 ```{r}
 # Calculate chao1 estimates for community
-specpool(Community_diversity)[1,1]
+specpool(Community_diversity)
 ```
 
    + Verify that these values match your previous calculations.
