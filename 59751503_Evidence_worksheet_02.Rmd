@@ -1,11 +1,15 @@
 ---
-title: "Evidence_worksheet_02"
+title: "Module_01_Evidence_worksheet_02"
 author: "Yaqian Luo (59751503)"
 date: "version `r format(Sys.time(), '%B %d, %Y')`"
 output: html_document
 ---
 ### Evidence Worksheet_02 “Life and the Evolution of Earth’s Atmosphere”
-#### Learning objectives: 
+
+#### Reading:  
+J. F. Kasting and J. L. Siefert, "Life and the Evolution of Earth's Atmosphere," *Science*, vol. 296, pp. 1066-1068, May 2002. (http://science.sciencemag.org/content/296/5570/1066) 
+
+#### Learning objectives:   
 Comment on the emergence of microbial life and the evolution of Earth systems
     
     
