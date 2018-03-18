@@ -1,0 +1,34 @@
+---
+title: "Module_03_Additional_Readings"
+author: "Yaqian Luo (59751503)"
+date: "version `r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+[1] S. J. Giovannoni, "Vitamins in the sea", *PNAS*, vol. 109, no. 35, pp. 13888-13889, Aug. 2012. (http://www.pnas.org/content/109/35/13888)
+
+[2] M. Torres-Beltrán, A. K. Hawley, D. Capelle, E. Zaikova, D. A. Walsh, A. Mueller, M. Scofield, C. Payne, L. Pakhomova, S. Kheirandish, J. Finke, M. Bhatia, O. Shevchuk, E. A. Gies, D. Fairley, C. Michiels, C. A. Suttle, F. Whitney, S. A. Crowe, P. D. Torte, and S. J. Hallam, "A compendium," *Nature*, pp. 1-10, Oct. 2017. (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5663218/)
+
+[3] A. K. Hawley, M. Torres-Beltrán, E. Zaikova, D. A. Walsh, A.  Mueller, M. Scofield, S. Kheirandish, C. Payne, L. Pakhomova, M. Bhatia, O. Shevchuk, E. A. Gies, D. Fairley, S. A. Malfatti, A. D. Norbeck, H. M. Brewer, L. Pasa-Tolic, T. G. Rio, C. A. Suttle, S. Tringe, and S. J. Hallam, "A compendium of multi-omic sequence information from the Saanich Inlet water column," *Nature*, pp. 1-13, Oct. 2017. (https://www.nature.com/articles/sdata2017160)
+
+[4] R. A. Welch, V. Burland, G. Plunkett, P. Redford, P. Roesch, D. Rasko, E. L. Buckles, S.-R. Liou, A. Boutin, J. Hackett, D. Stroud, G. F. Mayhew, D. J. Rose, S. Zhou, D. C. Schwartz, N. T. Perna, H. L. T. Mobley, M. S. Donnenberg, and F. R. Blattner, "Extensive mosaic structure revealed by the complete genome sequence of uropathogenic Escherichia coli," *PNAS*, vol. 99, no. 26, pp. 17020-17024, Dec. 2002. (http://www.pnas.org/content/99/26/17020.long)
+
+[5] B. J. Callahan, P. J McMurdie and S. P Holmes, "Exact sequence variants should replace operational taxonomic units in marker-gene data analysis," *nature*, pp. 2639-2643, July 2017.(http://www.nature.com/articles/ismej2017119)
+
+[6] A. D. Gaudet., L. M. Ramer, J. Nakonechny, J. J. Cragg, M. S.
+Ramer, "Small-Group Learning in an Upper-Level University Biology Class Enhances Academic Performance and Student Attitudes Toward Group Work," *PLOS ONE*, vol. 5, issue 12, pp. 1-10, Dec. 2010. (http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0015821)
+
+[7] D. Lundin, I. Severin, J. Brendan Logue, Ö. Östman, A. F. Andersson and E. S. Lindström, "Which sequencing depth is sufficient to describe patterns in bacterial a- and b-diversity?" *Environmental Microbiology Reports*, 4 (3): 367-372, Mar. 2012. (https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1758-2229.2012.00345.x)
+
+[8] M. L. Sogin, H. G. Morrison, J. A. Huber, D. M. Welch, S. M. Huse, P. R. Neal, J. M. Arrieta, and G. J. Herndl, "Microbial diversity in the deep sea and the underexplored 'rare biosphere'," *PNAS*, vol. 103, no. 32, pp. 12115-12120, Aug. 2006. (http://www.pnas.org/content/103/32/12115.long)
+
+[9] O. X. Corderoa, L. Ventourasb, E. F. DeLonga, and M. F. Polza, "Public good dynamics drive evolution of iron acquisition strategies in natural bacterioplankton populations," *PNAS*, Aug. 2012. (http://www.pnas.org/content/109/49/20059/tab-figures-data)
+
+[10] S. J. Hallam, M. Torres-Beltrán, and A. K. Hawley, "Monitoring microbial responses to ocean deoxygenation in a model oxygen minimum zone," *Nature*, Oct. 2017. (https://www.nature.com/articles/sdata2017158)
+
+[11] V. Kunin, A. Engelbrektson, H. Ochman and P. Hugenholtz, "Wrinkles in the rare biosphere: pyrosequencing errors can lead to artificial inflation of diversity estimates," *Environmental Microbiology*, 12(1), pp. 118-123, 2010. (https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1462-2920.2009.02051.x)
+
+[12] J. R. Thompson, S. Pacocha, C. Pharino, V. Klepac-Ceraj, D. E. Hunt, J. Benoit, "Genotypic Diversity Within a Natural Coastal Bacterioplankton Population," *Science*, vol. 307, pp. 1311-1312, Feb. 2005. (http://science.sciencemag.org/content/307/5713/1311.long)
+
+[13] J. J. Morris, R. E. Lenski, and E. R. Zinserc, "The Black Queen Hypothesis: Evolution of Dependencies through Adaptive Gene Loss," *mBio*, vol. 3, issue 2, pp. 1-7, Apr. 2012. (http://mbio.asm.org/content/3/2/e00036-12.abstract)
+
