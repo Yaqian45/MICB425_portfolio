@@ -1,0 +1,39 @@
+---
+title: "Module_01_Additional_Readings"
+author: "Yaqian Luo (59751503)"
+date: "version `r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+[1] J. Kallmeyer, R. Pockalny, R. R. Adhikari, D. C. Smith, and S. D'Hondt, "Global distribution of microbial abundance and biomass in subseafloor sediment," *PNAS*, pp: 1-4, July 2012. (http://www.pnas.org/content/109/40/16213)
+
+[2] [R. A. Welch, V. Burland, G. Plunkett III, P. Redford, P. Roesch, D. Rasko, E. L. Buckles, S.-R. Liou, A. Boutin,
+J. Hackett, D. Stroud, G. F. Mayhew, D. J. Rose, S. Zhou, D. C. Schwartz, N. T. Perna, H. L. T. Mobley, M. S. Donnenberg, and F. R. Blattner, "Extensive mosaic structure revealed by the complete genome sequence of uropathogenic *Escherichia coli*," *PNAS*, vol. 99, no. 26, pp:17020-17024, Dec. 2002. (http://www.pnas.org/content/99/26/17020.long)
+
+[3] J. Achenbach. (2012, Jan. 2). *Spaceship Earth: A new view of environmentalism* [Online]. Available: https://www.washingtonpost.com/national/health-science/spaceship-earth-a-new-view-of-environmentalism/2011/12/29/gIQAZhH6WP_story.html?utm_term=baff32d71704.
+
+[4] D. P. Schrag, "Geobiology of the Anthropocene," in A. H. Knoll, D. E. Canfield, and K. O. Konhauser (Eds), *Fundamentals of Geobiology*, 1st edition, Blackwell Publishing Ltd., 2012, pp. 425-436. (https://onlinelibrary.wiley.com/doi/10.1002/9781118280874.ch22)
+
+[5] C. Mooney. (2016, Jan. 7). *Scientists say humans have now brought on an entirely new geologic epoch* [Online]. Available: https://www.washingtonpost.com/news/energy-environment/wp/2016/01/07/scientists-say-humans-have-now-brought-on-an-entirely-new-geologic-epoch/?utm_term=323fc2cc7322.
+
+[6] P. Falkowski, R. J. Scholes, E. Boyle, J. Canadell, D. CanÞeld, J. Elser, N. Gruber, K. Hibbard, P. Ho¬gberg, S. Linder, F. T. Mackenzie, B. Moore III, T. Pedersen, Y. Rosenthal, S. Seitzinger, V. Smetacek, W. Steffen, "The global carbon cycle: A test of our knowledge of earth as a system," *Science*, vol.290, no. 13, pp. 291-296, Oct. 2000. (http://science.sciencemag.org/content/290/5490/291)
+
+[7] A. Leopold, "The Land Ethic," in *A Sand Country Alamanac*. (http://rintintin.colorado.edu/~vancecd/phil3140/Leopold.pdf)
+
+[8] D. E. Canfield, A. N. Glazer, P. G. Falkowski, "The evolution and future of earth's nitrogen cycle," *Science*, vol.330, pp. 192-196, Oct. 2010. (http://science.sciencemag.org/content/330/6001/192.long)
+
+[9] Zehnder, A. J. B., & Stumm, W. (1988). Geochemistry and Biogeochemistry of anaerobic habitats. In A. J. B. Zehnder (Ed.), *Biology of anaerobic microorganisms*. New York: Wiley. (https://www.dora.lib4ri.ch/eawag/islandora/object/eawag:11376)
+
+[10] E. G. Nisbet and N. H. Sleep, "The habitat and nature of early life," *Nature*, vol. 409, pp. 1083-1091, Feb. 2001. (https://www.nature.com/articles/35059210)
+
+[11] W. B. Whitman, D. C. Coleman, and W. J. Wiebe, "Prokaryotes: The unseen majority," *PNAS*, vol. 95, pp. 6578-6583, June 1998. (http://www.pnas.org/content/95/12/6578)
+
+[12] C. N. Waters, J. Zalasiewicz, C. Summerhayes, A. D. Barnosky,
+C. Poirier, A. Gałuszka, A. Cearreta, M. Edgeworth, E. C. Ellis, M. Ellis, C. Jeandel, R. Leinfelder, J. R. McNeill, D. deB. Richter, W. Steffen, J. Syvitski, D. Vidas, M. Wagreich, M. Williams, Z. An, J. Grinevald, E. Odada, N. Oreskes, A. P. Wolfe, "The Anthropocene is functionally and stratigraphically distinct from the Holocene," *Science*, vol.351, issue 6269, pp. 137, Jan. 2016. (http://science.sciencemag.org/content/351/6269/aad2622)
+
+[13] P. G. Falkowski, T. Fenchel, E. F. Delong, "The Microbial Engines That Drive Earth’s Biogeochemical Cycles," *Science*, vol.320, pp. 1034-1039, May 2008. (http://science.sciencemag.org/content/320/5879/1034.full)
+
+[14] J. RockstrÖm, "A safe operating space for humanity," *Nature*, vol. 461, pp. 472-475, Sep. 2009. (https://www.nature.com/articles/461472a)
+
+[15] J. F. Kasting and J. L. Siefert, "Life and the Evolution of Earth's Atmosphere," *Science*, vol. 296, pp. 1066-1068, May 2002. (http://science.sciencemag.org/content/296/5570/1066) 
+
