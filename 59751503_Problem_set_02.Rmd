@@ -1,10 +1,14 @@
 ---
-title: "Problem Set_02"
+title: "Module_01_Problem Set_02"
 author: "Yaqian Luo (59751503)"
 date: "version `r format(Sys.time(), '%B %d, %Y')`"
 output: html_document
 ---
 ### Problem set_02 “Microbial Engines”
+
+#### Reading:  
+P. G. Falkowski, T. Fenchel, E. F. Delong, "The Microbial Engines That Drive Earth’s Biogeochemical Cycles," *Science*, vol.320, pp. 1034-1039, May 2008. (http://science.sciencemag.org/content/320/5879/1034.full)
+
 #### Learning objectives: 
 Discuss the role of microbial diversity and formation of coupled metabolism in driving global biogeochemical cycles.
 
