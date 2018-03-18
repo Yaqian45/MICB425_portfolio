@@ -1,5 +1,5 @@
 ---
-title: "Evidence_worksheet_01"
+title: "Module_01_Evidence_worksheet_01"
 author: "Yaqian Luo (59751503)"
 date: "version `r format(Sys.time(), '%B %d, %Y')`"
 output:
@@ -10,8 +10,11 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
 ## Evidence Worksheet for "Prokaryotes: The Unseen Majority"
 
+### Reading
+W. B. Whitman, D. C. Coleman, and W. J. Wiebe, "Prokaryotes: The unseen majority," *PNAS*, vol. 95, pp. 6578-6583, June 1998. (http://www.pnas.org/content/95/12/6578)
 
 ### Learning Objectives
 Describe the numerical abundance of microbial life in relation to ecology and biogeochemistry of Earth systems.
