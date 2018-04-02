@@ -7,10 +7,6 @@ output:
   word_document: default
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## Evidence Worksheet for "Prokaryotes: The Unseen Majority"
 
 ### Reading
@@ -21,12 +17,12 @@ Describe the numerical abundance of microbial life in relation to ecology and bi
 
 
 ### General Questions
-#### What were the main questions being asked?
+***What were the main questions being asked?***
 
 The questions are: What are the actual number of prokaryotes? and what total amount of their carbon content on earth?
 
 
-#### What were the primary methodological approaches used?
+***What were the primary methodological approaches used?***
 
 The primary methodological approaches used in the paper are classification, literature survey, and comparison. Classification is for the estimation of prokaryotic abundance, literature survey is for data collection, and comparison method is for comprehension of the estimated results. 
 
@@ -37,12 +33,12 @@ Literature survey is the major approach for data collection, because it is the s
 Comparison is another major approach used in the paper. The estimated results are huge and kind of beyond our imagination. Comparison is an effective way to help readers comprehend these enormous numbers by associating them with those numbers easy to understand. In the paper, prokaryote is contrasted with plant, in order to justify the abundance of prokaryotic carbon and nutrients.    
 
 
-#### Summarize the main results or findings. 
+***Summarize the main results or findings.***
 
 The number of prokaryotes and total amount of their cellular carbon on earth are 4-6×10^30^ cells and 350-550 Pg of C, respectively. Prokaryotic carbon is substantial, about 60-100% of total carbon in plants. Aquatic environments, soil, and subsurface are three dominant habitats for earth’s prokaryotes, in which the number of prokaryotic cells are calculated to be 1.2×10^29^, 2.6×10^29^, 3.75-6.0×10^30^, respectively, the amount of carbon content in prokaryotes are 2.2 Pg of C, 26 Pg of C, and 325-519 Pg of C, respectively, and turnover time for heterotrophic prokaryotes is 6-25 days, 0.8 yr, and 2.5 yr, respectively. The annual cell production for prokaryotes is highest in the open ocean.
 
 
-#### Do new questions arise from the results?
+***Do new questions arise from the results?***
 
 Some new questions are raised based on the results of the study. They are:
 
@@ -53,7 +49,7 @@ Some new questions are raised based on the results of the study. They are:
 3.Prokaryotes have huge potential to obtain genetic diversity and a large number of species, due to their large population size and quick turnover time. Nevertheless, we are not sure that whether the current definition of a prokaryotic species is consistent with the real definition, and there may be some taxonomic tribes being grouped into the same species. 
 
 
-#### Were there any specific challenges or advantages in understanding the paper (e.g. did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)? 
+***Were there any specific challenges or advantages in understanding the paper (e.g. did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)?*** 
 
 There are several advantages and challenges in comprehending the paper:
 
