@@ -11,6 +11,9 @@ output: html_document
 
 Specific emphasis should be placed on the process used to find the answer. Be as comprehensive as possible e.g. provide URLs for web sources, literature citations, etc.
 
+###Reading:
+
+Wooley JC, Godzik A, Friedberg I. 2010. A primer on metagenomics. PLoS Computational Biology. Vol. 6, issue 2: e1000667.
 
 ###Specific Questions:
 
