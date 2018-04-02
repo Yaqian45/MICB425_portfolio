@@ -7,7 +7,7 @@ output: html_document
 
 [1] J. Kallmeyer, R. Pockalny, R. R. Adhikari, D. C. Smith, and S. D'Hondt, "Global distribution of microbial abundance and biomass in subseafloor sediment," *PNAS*, pp: 1-4, July 2012. (http://www.pnas.org/content/109/40/16213)
 
-[2] [R. A. Welch, V. Burland, G. Plunkett III, P. Redford, P. Roesch, D. Rasko, E. L. Buckles, S.-R. Liou, A. Boutin,
+[2] R. A. Welch, V. Burland, G. Plunkett III, P. Redford, P. Roesch, D. Rasko, E. L. Buckles, S.-R. Liou, A. Boutin,
 J. Hackett, D. Stroud, G. F. Mayhew, D. J. Rose, S. Zhou, D. C. Schwartz, N. T. Perna, H. L. T. Mobley, M. S. Donnenberg, and F. R. Blattner, "Extensive mosaic structure revealed by the complete genome sequence of uropathogenic *Escherichia coli*," *PNAS*, vol. 99, no. 26, pp:17020-17024, Dec. 2002. (http://www.pnas.org/content/99/26/17020.long)
 
 [3] J. Achenbach. (2012, Jan. 2). *Spaceship Earth: A new view of environmentalism* [Online]. Available: https://www.washingtonpost.com/national/health-science/spaceship-earth-a-new-view-of-environmentalism/2011/12/29/gIQAZhH6WP_story.html?utm_term=baff32d71704.
