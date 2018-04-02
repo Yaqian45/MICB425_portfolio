@@ -122,58 +122,60 @@ ggplot() +
 
 Mothur data
 ```{r}
-# Domain across samples
+library (ggplot2)
+library (dplyr)
+# phylum across samples
 m.perc %>% 
   
-plot_bar(fill="Domain") + 
-  geom_bar(aes(fill=Domain), stat="identity") +
-  labs(title="Figure 7: Domains across samples using mothur data")
+plot_bar(fill="Phylum") + 
+  geom_bar(aes(fill=Phylum), stat="identity") +
+  labs(title="Figure 7: Phylum across samples using mothur data")
 
-#Phyla across samples
+#Phylum across samples
 m.perc %>% 
   
 plot_bar() + 
-  geom_bar(aes(fill=Domain), stat="identity") +
+  geom_bar(aes(fill=Phylum), stat="identity") +
   facet_wrap(~Phylum, scales="free_y")+
-  labs(title="Figure 8: Phyla across samples using mothur data")
+  labs(title="Figure 8: Phylum across samples using mothur data")
 
-# Domain boxplots
+# Phylum boxplots
 m.perc %>%
-  tax_glom(taxrank = 'Domain') %>%
+  tax_glom(taxrank = 'Phylum') %>%
   psmelt() %>% 
 
 ggplot() +
-  geom_boxplot(aes(x=Domain, y=Abundance)) +
+  geom_boxplot(aes(x=Phylum, y=Abundance)) +
   coord_flip() +
-  labs(title="Figure 9: Domain boxplots using mothur data")
+  labs(title="Figure 9: Phylum boxplots using mothur data")
 
 ```
 qiime2 data
 ```{r}
-# Domain across samples
+# Phylum across samples
 q.perc %>% 
   
-plot_bar(fill="Domain") + 
-  geom_bar(aes(fill=Domain), stat="identity") +
-  labs(title="Figure 10: Domains across samples using qiime2 data")
+plot_bar(fill="Phylum") + 
+  geom_bar(aes(fill=Phylum), stat="identity") +
+  labs(title="Figure 10: Phyla across samples using qiime2 data")
 
 #Phyla across samples
 q.perc %>% 
   
 plot_bar() + 
-  geom_bar(aes(fill=Domain), stat="identity") +
+  geom_bar(aes(fill=Phylum), stat="identity") +
   facet_wrap(~Phylum, scales="free_y")+
   labs(title="Figure 11: Phyla across samples using qiime2 data")
 
-# Domain boxplots
+# Phylum boxplots
 q.perc %>%
-  tax_glom(taxrank = 'Domain') %>%
+  tax_glom(taxrank = 'Phylum') %>%
   psmelt() %>% 
 
 ggplot() +
-  geom_boxplot(aes(x=Domain, y=Abundance)) +
+  geom_boxplot(aes(x=Phylum, y=Abundance)) +
   coord_flip() +
-  labs(title="Figure 12: Domain boxplots using qiime2 data")
+  labs(title="Figure 12: Phylum boxplots using qiime2 data")
 ```
 
 Question 3: Within your taxon, what is the richness (number of OTUs/ASVs)?
@@ -181,12 +183,16 @@ Question 3: Within your taxon, what is the richness (number of OTUs/ASVs)?
 Mothur data
 ```{r}
 m.norm %>% 
+  subset_taxa(Phylum=="Cyanobacteria") 
+m.norm %>% 
   subset_taxa(Phylum=="Cyanobacteria")%>%
   estimate_richness(measures = c("Observed"))
 ```
 
 qiime data
 ```{r}
+q.norm %>% 
+  subset_taxa(Phylum=="D_1__Cyanobacteria") 
 q.norm %>% 
   subset_taxa(Phylum=="D_1__Cyanobacteria")%>%
   estimate_richness(measures = c("Observed"))
@@ -384,10 +390,12 @@ ggplot() +
 
 Question 2: 
 
+qiime2 data
+
 ```{r}
 library(dplyr)
 library(ggplot2)
-q.norm %>% 
+q.norm%>% 
   subset_taxa(Phylum=="D_1__Cyanobacteria") %>% 
   tax_glom(taxrank = 'Phylum') %>%
   psmelt() %>%
@@ -404,7 +412,7 @@ q.perc %>%
 ggplot() +
   geom_point(aes(x=Depth_m, y=Abundance_sum)) +
   geom_smooth(method='lm', aes(x=as.numeric(Depth_m), y=Abundance_sum)) +
-  labs(title="Example 7: Abundance unclassified domain across depth using qiime2 data")
+  labs(title="Figure 13: Abundance unclassified domain across depth using qiime2 data")
 ```
 
 ```{r}
@@ -427,7 +435,7 @@ q.perc %>%
 ggplot() +
   geom_point(aes(x=O2_uM, y=Abundance_sum)) +
   geom_smooth(method='lm', aes(x=as.numeric(O2_uM), y=Abundance_sum)) +
-  labs(title="Example 7: Abundance unclassified domain across oxygen using qiime2 data")
+  labs(title="Figure 14: Abundance unclassified domain across oxygen using qiime2 data")
 ```
 ```
 

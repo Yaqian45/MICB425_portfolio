@@ -1,0 +1,111 @@
+---
+title: "Module_02_Problem_set_03"
+author: "Yaqian Luo (59751503)"
+date: "April 1, 2018"
+output: html_document
+---
+
+##Problem set_03 Metagenomics: Genomic Analysis of Microbial Communities
+
+###Learning objectives:  
+
+Specific emphasis should be placed on the process used to find the answer. Be as comprehensive as possible e.g. provide URLs for web sources, literature citations, etc.
+
+
+###Specific Questions:
+
+***How many prokaryotic divisions have been described and how many have no cultured representatives (microbial dark matter)?***
+
+By 2016, we have obtained information on 89 bacterial phyla and 20 archaeal phyla via small 16S RNA database. However, it could be up to 1500 bacteria phyla, since some microbes live in the “shadow biosphere” and need to be found in the future [1]. 
+
+26 of the approximately 52 identifiable major phyla within the domain bacteria have cultivated representatives by 2003 [2]. But the proportion may increase over the past decade.   
+
+***How many metagenome sequencing projects are currently available in the public domain and what types of environments are they sourced from?***
+
+Until now, there are at least about 110,000 metagenome sequencing projects available in European Bioinformatics Institute database. The number is always changing. These projects are from all environment types, including sediments, soil, and aquatic environments.    
+
+***What types of on-line resources are available for warehousing and/or analyzing environmental sequence information (provide names, URLS and applications)?***
+
+1. Kyoto Encyclopedia of Genes and Genomes (KEGG): http://www.genome.jp/kegg/ 
+
+KEGG is a database resource for genomes, biological pathways, diseases, drugs, and chemical substances. It can be applied in bioinformatics research and education, data analysis in genomics, metagenomics, metabolomics, modeling and simulation in systems biology, and translational research in drug development. 
+
+2. MEtaGenome Analyzer (MEGAN): http://ab.inf.uni-tuebingen.de/software/megan6/
+
+MEGAN is a comprehensive analyzing tool for microbial data. It can be employed for taxonomic analysis using the NCBI taxonomy or a customized taxonomy such as SILVA, functional analysis using InterPro2GO, SEED, eggNOG or KEGG, bar charts, word clouds, Voronoi tree maps and many other charts, PCoA, clustering and networks, metadata supports, and many different types of input
+
+3. Integrated Microbial Genomes & Microbiomes (IMG/M): https://img.jgi.doe.gov/cgi-bin/m/main.cgi
+
+This system serves as a community resource for analyzing and annotating genome and metagenome datasets in comprehensive comparative context. The IMG data warehouse integrates genome and metagenome datasets provided by IMG uses with a comprehensive set of publicly available genome and metagenome datasets. There is a set of tools like IMG UI Map available in the system for comparative analysis of microbial genomes. A genome annotation pipeline is provided by IMG/G to integrates information from several tools, including KEGG, Pfam, InterPro, and the Gene Ontology. 
+
+4. Metagenomic Rapid Annotations using Subsystems Technology (MG/RAST): https://www.mg-rast.org/ 
+
+The RAST technology was originally performed to allow automated high-quality annotation of complete or draft microbial genomes using SEED data and has been adapted for metagenome analysis. The annotation of sequence fragments is provided by the server, including phylogenetic classification, functional classification of samples, and comparison between multiple metagenomes. The server is able to compute an initial metabolic reconstruction for the metagenome and allow comparison of metabolic reconstructions of metagenomes and genomes.
+
+5. National Center for Biotechnology Information (NCBI): https://www.ncbi.nlm.nih.gov/ 
+
+NCBI provides databases for genome sequences, functional genomics, protein sequences, and functional domains, and bioinformatics tools for analysis. GenBank for DNA sequences and PubMed, a bibliographic database for the biomedical literature, are two of major databases. Genome Blast sequence can be used for searching genome sequences.
+6. European Bioinformatics Institute (EBI): https://www.ebi.ac.uk/ 
+
+EBI provides data resources on genomes and metagenomes, like Ensembl for genome and ChEMBL for binding, functional and ADMET bioactivity. Tools for analysis and search genomes and metagenome are also available in its website.  
+
+7. OMICTools: https://omictools.com/ 
+
+OMICtools is a community-driven search engine for biological data analysis. It offers an easy means of locating the right tools corresponding to each researcher and their specific biological data analyses. The OMICtools website centralizes more than 18,500 software tools and databases, manually classified, by a team of biocurators including many scientific experts. Key information, a direct link, and access to discussions and evaluations by the biomedical community are provided for each tool. Researchers can directly upload their code versions to improve research traceability [3]. 
+
+8. SILVA: https://www.arb-silva.de/ 
+
+SILVA provides abundance information for metagenomics study, including fully aligned and up to date small (16S/18S, SSU) and large (23S/28S, LSU) subunit ribosomal RNA “Parc” databases on the webpage and ARB files, preconfigured subsets of high-quality, full-length sequences as ARB and FASTA files, extensive search for sequence retrival, a clear rating system for all steps for data processing with emphasis on sequence and alignment quality, and substantial support related to all aspects of data sets, sequence analysis and probe/primer design. 
+
+9. AmpliconNoise: https://code.google.com/archive/p/ampliconnoise/ 
+
+AmpliconNoise is a collection of programs for the removal of noise from 454 sequenced PCR amplicons. Two steps are involved, the removal of noise from the sequencing itself and the removal of PCR point errors. This project also includes the Perseus algorithm for chimera removal.
+
+10. Ribosomal database project (RDP): http://rdp.cme.msu.edu/ 
+
+RDP provides quality-controlled, aligned and annotated bacterial and archaeal 16S rRNA sequences, and Fungal 28S rRNA sequences, and a suite of analysis tools to the scientific community like classifier, probe match, and RDPipeline. 
+
+***What is the difference between phylogenetic and functional gene anchors and how can they be used in metagenome analysis?***
+
+Phylogenetic and functional gene anchors have different patterns in gene transfer. Phylogenetic anchors are transferred vertically, while functional anchors transfer gene horizontally. Phylogenetic gene anchors are ideally single-copy and carry phylogenetic information which allows tree reconstruction. Functional anchors, however, are utilized for identification of specific biogeochemical functions and not useful for phylogeny.  
+
+Phylogenetic anchors are applied in sequence–based analysis, in which phylogenetic anchors can be found in the flanking DNA to provide a link between phylogeny and the functional gene when a gene of interest is identified. In contrast, functional gene anchors are employed in function-based analysis. Phylogenetic anchors and genomic structure in the flanking DNA are identified by sequencing a collection of clones with a common function. This analysis can provide a slice of the metagenome that determin the diversity of genomes with a specific function [4]. 
+
+***What is metagenomic sequence binning? What types of algorithmic approaches are used to produce sequence bins? What are some risks and opportunities associated with using sequence bins for metabolic reconstruction of uncultivated microorganisms?***
+
+Sequence binning is the process that associates sequence data with its original OUT. Sequences are mapped onto genome using pre-existing genome database of similar organisms or grouped based on different qualities.   
+There are two approaches for sequence binning. One is composition-based binning. The other is similarity-based binning. Composition-based binning applies Markov models based on k-mer frequencies to classify sequences. This binning strategy includes TETRA, PhyloPythia, GSOM, and codon-usage methods. Similarity-based binning utilizes similarity function sim to find similarities between samples and reference sequences database to build a species tree. 
+
+One of major problems of the application of composition-based binning is that if the OTUs are closer and numerous, the frequency of misclassification errors are high. Additionally, incomplete coverage of reference genome database may miss key parts and become less representative. However, k-mer is still a promising tool for binning ORFan sequences with few or no homologs, since it does not require for reference sequences. 
+
+Similarity-based binning is implemented by some biotechnology analysis software like MEGAN and CARMA. The species trees produced via the approach is able to show an overview of the dominant species in the sample. But in some cases, if genome from other organisms have similar properties, it may be impossible to produce a precise assignment to an OTU. 
+
+***Is there an alternative to metagenomic shotgun sequencing that can be used to access the metabolic potential of uncultivated microorganisms? What are some risks and opportunities associated with this alternative?***
+
+There are several alternatives to shotgun sequencing: functional metagenomics, single-cell sequencing, fluorescence in situ hybridization (FISH), second generation sequencing, third generation sequencing, and polony-based methods. Their risks and opportunities are discussed as below. 
+
+Functional metagenomics based on phenotypic screening is applied for the study of functions of proteins and other gene produces by DNA sequences [5]. This approach is potential to overcome the limitation of the absence of most microbial diversity from pure culture and discover more novel gene products when DNA sequence is not predictive. However, the limitations of functional metagenomics include cloning bias in library construction, range restrictions on library vector host, and gene expression dependent on host [5]. 
+
+Single-cell sequencing provides the genomic information of an individual cell using advancing sequencing methodology [6]. It has been proved to be a powerful method to obtain new genomes of uncultivated microorganisms. A large number of taxonomic groups have their reference genome published with the application of single-cell sequencing [6]. Nevertheless, this technology may produce inaccuracy data due to amplified sequence bias, genomic dropouts and genetic material contamination [7].
+
+Fluorescence in situ hybridization (FISH) has been widely used for identification of the taxonomy and potential functions of microbes [8]. It is an imaging technique using fluorescent probe to bind with specific sequence like rRNA in cell. This technique can be applied in combination with single-cell isolation techniques for sequencing the whole genome of uncultivated microorganisms [8]. Recent development in this approach, such as individual genes-FISH and catalyzed reporter deposition-FISH, allow researchers to find functional genes with low abundance [8]. 
+
+Second generation sequencing methods have been developed and replace shotgun sequencing for small sized genomes and environmental genomics [9]. These methods are based on the generation of “polymerase colonies”, which enable enzymatic reactions to perform concurrently with the sequence of nucleic acid [9].
+
+ Third generation sequencing is developed to reduce or eliminate the main challenges in sequencing technology like short read lengths and significant error rate [10]. This technology enables us to reconstruct the genome, comprehend genomic variations, recover transcriptomes, and indentify the transcription factor binding sites [11].
+ 
+The number of sequences produced by polony-based methods is larger than shotgun sequencing, but those sequences are shorter than that generated by the first generation sequencing [9]. Although this alternative is unable to read long mononucleotide repeats correctly, it is feasible to sequence whole genomes by sheer volume of DNA sequenced [9]. 
+
+###References:  
+[1] Solden L, Lloyd K, Wrighton K. 2016. The bright side of microbial dark matter: lessons learned from the uncultivated majority. Environmental Microbiology. Vol. 31: 217-226  
+[2] Rappe MS, Giovannoni SJ. 2003. The uncultured microbial majority. Annu. Rev. Microbiol. 57: 369–394.  
+[3] Perrin H, Denorme M, Grosjean J, Dynomant E, Henry VJ, Pichon F, Darmoni S, Desfeux A, Gonzalez BJ. 2017. OMICtools: a community-driven search engine for biological data analysis.  Link: https://arxiv.org/ftp/arxiv/papers/1707/1707.03659.pdf.   
+[4] Srivastava S, Ghosh N, Pal G. 2013. Chapter 10: metagenomics: mining environmental geomes, p 161-190. In Kuhad RC, Singh A (ed), Biotechnology for Environmental Management and Resource Recovery. Springer, New York, NY. DOI: 10.1007/978-881-322-0876-1.   
+[5] Cheng J, Lam KN, Engel K, Hall M, Neufeld JD, Charles TC. 2017. Chapter 1: metagenomic cosmid libraries suitable for functional screening in proteobacteria, p 1-12. In Charles TC, Liles MR, Sessitsch A (ed), Functional Metagenomics: Tools and Applications. Springer, New York, NY. DOI: 10.1007/978-3-319-61510-3.   
+[6] Chen Y, Wang F. 2015. Chapter 3: single-cell sequencing of microorganisms, p 31-40. In Wang X (ed), Single Cell Sequencing and Systems Immunology. Springer, New York, NY. DOI:10.1007/978-94-017-9753-5.  
+[7] Li B, Zhang X, Zheng J. 2015. Single-cell next-generation sequencing and its applications in cancer biology, p 1-18. In Wu W, Choudhry H (ed), Next Generation Sequencing in Cancer Research, Volume 2: From Basepairs to Bedsides. Springer, New York, NY. DOI: 10.1007/978-3-319-15811-2.  
+[8] Ikarm M, Malik A. 2013. Recent development in the methods of studying microbial diversity p 17-51. In Malik A, Grohmann E, Alves M (ed), Management of Microbial Resources in the Environment. Springer, New York, NY. DOI: 10.1007/978-94-007-5931-2.   
+[9] Wooley JC, Godzik A, Friedberg I. 2010. A primer on metagenomics. PLoS Computational Biology. Vol. 6, issue 2: e1000667.   
+[10] Chapter 6: New horizons in next-generation sequencing, p 51-57. In Metwally SE, Ouda OM, Helmy M (ed), Next Generation Sequencing Technologies and Challenges in Sequence Assembly.2014. Springer, New York, NY. DOI: 10.1007/978-1-4939-0715-1.  
+[11] Sung WK (ed). 2017. Algorithms for Next-Generation Sequencing. CRC Press, Taylor & Francis Group, LLC, Boca Raton, FL.  
+
