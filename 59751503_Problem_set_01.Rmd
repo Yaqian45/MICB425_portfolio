@@ -7,7 +7,7 @@ output: html_document
 ### Problem set_01 ““Prokaryotes: The unseen majority”  
 
 #### Reading:  
-W. B. Whitman, D. C. Coleman, and W. J. Wiebe, "Prokaryotes: The unseen majority," *PNAS*, vol. 95, pp. 6578-6583, June 1998. (http://www.pnas.org/content/95/12/6578)
+Whitman WB, Coleman DC, Wiebe WJ. 1998. Prokaryotes: The unseen majority. *PNAS*, vol. 95:6578-6583
 
 #### Learning objectives: 
 Describe the numerical abundance of microbial life in relation to the ecology and biogeochemistry of Earth systems.
@@ -36,9 +36,7 @@ The estimated prokaryotic cell abundance in the upper 200m of the ocean is 3.6×
 The portion of marine cyanobacterium is 8% calculated as below:
 4×10^4^ cells/ml÷5×10^5^ cells/ml×100% = 8%
 
-This ratio affects the capability of ocean to capture carbon dioxide from atmosphere, since cyanobaterium obtains energy by photosynthesis which is a process involving carbon dioxide as a reactant. Cyanobacterium also has huge contributions to the formation of modern atmosphere. They are a net source of oxygen, and even in some cases they are the only source of oxygen. This kind of prokaryotes is also responsible for nitrogen fixation^[1]^. Therefore, cyanobacterium plays a significant role in the atmospheric composition. 
-
-*[1] James F. Kasting and Janet L. Siefert, Life and the Evolution of Earth’s Atmosphere. Environmental Microbiology, 2002, 296, 1066-1068.* 
+This ratio affects the capability of ocean to capture carbon dioxide from atmosphere, since cyanobaterium obtains energy by photosynthesis which is a process involving carbon dioxide as a reactant. Cyanobacterium also has huge contributions to the formation of modern atmosphere. They are a net source of oxygen, and even in some cases they are the only source of oxygen. This kind of prokaryotes is also responsible for nitrogen fixation [1]. Therefore, cyanobacterium plays a significant role in the atmospheric composition. 
 
 
 ***What is the difference between an autotroph, heterotroph, and a lithotroph based on information provided in the text?***
@@ -48,20 +46,16 @@ The way to obtain materials to support its own life is different between autotro
 
 ***Based on information provided in the text and your knowledge of geography what is the deepest habitat capable of supporting prokaryotic life? What is the primary limiting factor at this depth?***
 
-The deepest habitat may be the subsurface with a depth of 15 km below sea level and 4 km below the Mariana Trench (about 11 km below sea level^[2]^). 
+The deepest habitat may be the subsurface with a depth of 15 km below sea level and 4 km below the Mariana Trench (about 11 km below sea level [2]). 
 
 Temperature is the primary limiting factor under this circumstance, because temperature at this depth is about 125℃, which is close to maximal temperature for prokaryotic life.
 
-*[2] Deepest Part of the OceanI (n.d.)[Online]. Available: https://geology.com/records/deepest-part-of-the-ocean.shtml *
 
 ***Based on information provided in the text your knowledge of geography what is the highest habitat capable of supporting prokaryotic life? What is the primary limiting factor at this height?***
 
 The highest habitat for prokaryotes may be in the atmosphere at an altitude of 57-77 km. 
 
-The primary limiting factor in this case may be nutrient and UV. There are several essential materials for prokaryotic life, such as phosphate, which are scarce at this altitude. UV is another inhibitive factor to prokaryotic life because it can destroy DNX or RNA chain and it is not absorbed at this altitude due to lack of ozone in atmosphere^[3]^. Therefore, nutrient and UV may be the dominant factors for prokaryotic life at the highest habitat.
-
-*[3]Ozone layer (n.d.) [Online]. Available: https://en.wikipedia.org/wiki/Ozone_layer *
-
+The primary limiting factor in this case may be nutrient and UV. There are several essential materials for prokaryotic life, such as phosphate, which are scarce at this altitude. UV is another inhibitive factor to prokaryotic life because it can destroy DNX or RNA chain and it is not absorbed at this altitude due to lack of ozone in atmosphere [3]. Therefore, nutrient and UV may be the dominant factors for prokaryotic life at the highest habitat.
 
 ***Based on estimates of prokaryotic habitat limitation, what is the vertical distance of the Earth’s biosphere measured in km?***
 
@@ -115,16 +109,21 @@ Mutation time is:
 
 ***Given the large population size and high mutation rate of prokaryotic cells, what are the implications with respect to genetic diversity and adaptive potential? Are point mutations the only way in which microbial genomes diversify and adapt?***
 
-High mutation rate leads to large genetic diversity and high potential to form new species. Large population size and high mutation rate increase prokaryotes’ ability to survive in extreme environments.
+High mutation rate leads to large genetic diversity and high potential to form new species. Large population size and high mutation rate increase prokaryotes’ ability to survive in extreme environments [4].
 
 Point mutations are not the only way for microorganisms to obtain genomic diversity and new phenotypes. For eukaryotic microorganisms like fungi and green algae, DNA in their cells is arranged in complex chromosomes. Hence large-scale mutations like amplifications and inversions are another approach for eukaryotic microorganisms to increase their genomic diversity. However, point mutations are the only way for prokaryotes to diversify their genomes and gain new adaptation, because they do not have chromosomal structure.
 
 
 ***What relationships can be inferred between prokaryotic abundance, diversity, and metabolic potential based on the information provided in the text?***
 
-There is a large diversity of prokaryotes on Earth due to their large abundance and high mutation rate. Large abundance and high mutation rate increase the probability for prokaryotes to form new genetic sequence, as a result, may obtain new phenotypes.   After several genetic mutations, a new species is generated, which can be completed within a short period of time like days or months. Prokaryotes present on Earth for millions of years. Thus, they have evolved into millions of species, some of which have not been discovered yet.  
+There is a large diversity of prokaryotes on Earth due to their large abundance and high mutation rate. Large abundance and high mutation rate increase the probability for prokaryotes to form new genetic sequence, as a result, may obtain new phenotypes [4]. After several genetic mutations, a new species is generated, which can be completed within a short period of time like days or months. Prokaryotes present on Earth for millions of years. Thus, they have evolved into millions of species, some of which have not been discovered yet.  
 
-Due to the high prokaryotic diversity, their metabolic activities are different from each species. Autotrophs, heterotrophs, and lithoautotrophs are three major metabolisms for prokaryotes, which enable them to use a wide range of materials to support their life, such as methanol, iron and ammonium, and survive in anaerobic and aerobic environments and a variety of ecosystems including marine, soil and subsurface.   
+Due to the high prokaryotic diversity, their metabolic activities are different from each species. Autotrophs, heterotrophs, and lithoautotrophs are three major metabolisms for prokaryotes, which enable them to use a wide range of materials to support their life, such as methanol, iron and ammonium, and survive in anaerobic and aerobic environments and a variety of ecosystems including marine, soil and subsurface [4].   
 
 Although single cell is very small and its metabolic potential is negligible, the metabolic potential of all kinds of prokaryotic cells cannot be ignored due to the huge number of prokaryotic cells. They have huge impacts on Earth’s biogeochemical transformation. For example, prokaryote in the ocean is one of the major atmospheric oxygen sources and has huge effects on the nitrogen cycle. 
 
+####References  
+[1] James F. Kasting and Janet L. Siefert. 2002. Life and the Evolution of Earth’s Atmosphere. Environmental Microbiology, 296: 1066-1068.  
+[2] Deepest Part of the OceanI (n.d.)[Online]. Available: https://geology.com/records/deepest-part-of-the-ocean.shtml.  
+[3]Ozone layer (n.d.) [Online]. Available: https://en.wikipedia.org/wiki/Ozone_layer.  
+[4] Whitman WB, Coleman DC, Wiebe WJ. 1998. Prokaryotes: The unseen majority. PNAS, vol. 95:6578-6583.
