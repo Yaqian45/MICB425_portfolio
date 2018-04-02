@@ -58,13 +58,10 @@ The biogeochemical nitrogen cycle is achieved by three sets of microbes. The fir
 
 *Question 2*
 
-There are interactions between nitrogen cycle and climate change. Nitrogen cycle has direct and indirect impacts on global warming. N2O, a powerful greenhouse gas, is generated during the processes of nitrification as a byproduct and denitraification as an intermediate product^[1]^. The emission of N2O to atmosphere accelerates the rate of global warming. Besides, NOx, which is also emitted in nitrogen cycle, indirectly affect radiative forcing through effects on atmospheric concentrations of CH4, O3 and aerosol particulate matter^[2]^. However, the emission leads to a net cooling effect on a short time. 
+There are interactions between nitrogen cycle and climate change. Nitrogen cycle has direct and indirect impacts on global warming. N2O, a powerful greenhouse gas, is generated during the processes of nitrification as a byproduct and denitraification as an intermediate product [2]. The emission of N2O to atmosphere accelerates the rate of global warming. Besides, NOx, which is also emitted in nitrogen cycle, indirectly affect radiative forcing through effects on atmospheric concentrations of CH4, O3 and aerosol particulate matter [3]. However, the emission leads to a net cooling effect on a short time. 
 
-Climate change is able to change nitrogen fluxes in the globally biogeochemical cycle, since it is able to alter biochemical processes involved in nitrogen cycle as well as the amount of nitrogen released to water or air. Extreme precipitation events flush more fertilizer or manure into freshwater and reduce the time for denitrification because runoff is speeded up^[2]^. Consequently, the amount of nitrogen in aquatic environments increases and the release of nitrogen gas to atmosphere declines. 
+Climate change is able to change nitrogen fluxes in the globally biogeochemical cycle, since it is able to alter biochemical processes involved in nitrogen cycle as well as the amount of nitrogen released to water or air. Extreme precipitation events flush more fertilizer or manure into freshwater and reduce the time for denitrification because runoff is speeded up [3]. Consequently, the amount of nitrogen in aquatic environments increases and the release of nitrogen gas to atmosphere declines. 
 
-*[1] T. Usui, I. Koike, and N. Ogura, N2O Production, Nitrification and Denitrification in an Estuarine Sediment. Estuarine, Coastal and Shelf Science, 2001,52: 769-781.*
-
-*[2] Suddick, E.C., Whitney, P., Townsend, A.R., The role of nitrogen in climate change and the impacts of nitrogen-climate interactions in the United States: foreword to thematic issue. Biogeochemistry, 2013, 114: 1-10.*
 
 ***What is the relationship between microbial diversity and metabolic diversity and how does this relate to the discovery of new protein families from microbial community genomes?***
 
@@ -81,3 +78,8 @@ Because microbial diversity is dependent on genome diversity and the number of n
 ***On what basis do the authors consider microbes the guardians of metabolism?***
 
 Microbes are considered as the guardians of metabolism based on the fact of their ability to catalyze reactions in biogeochemical cycle and the central gene set for the ability distributed spatially and temporally. Microorganisms form Earth's environment like atmosphere through catalyzing redox reactions with enzymes translated from their genes. They using the same way control the biogeochemical cycles of nutrients and elements significant to life, such as nitrogen cycle and sulfate cycle. Although environmental selection may extinct a certain type of microbe, it is highly possible that the core gene responsible for a specific metabolic pathway in the microbial species survive in other cases. Eventually, the metabolic pathway is maintained over the long evolutionary time on Earth.   
+
+####References  
+[1] P. G. Falkowski, T. Fenchel, E. F. Delong, "The Microbial Engines That Drive Earth’s Biogeochemical Cycles," *Science*, vol.320, pp. 1034-1039, May 2008.   
+[2] T. Usui, I. Koike, and N. Ogura, N2O Production, Nitrification and Denitrification in an Estuarine Sediment. Estuarine, Coastal and Shelf Science, 2001,52: 769-781.  
+[3] Suddick, E.C., Whitney, P., Townsend, A.R., The role of nitrogen in climate change and the impacts of nitrogen-climate interactions in the United States: foreword to thematic issue. Biogeochemistry, 2013, 114: 1-10.
