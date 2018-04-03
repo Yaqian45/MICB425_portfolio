@@ -32,6 +32,7 @@ Literature survey is the major approach for data collection, because it is the s
 
 Comparison is another major approach used in the paper. The estimated results are huge and kind of beyond our imagination. Comparison is an effective way to help readers comprehend these enormous numbers by associating them with those numbers easy to understand. In the paper, prokaryote is contrasted with plant, in order to justify the abundance of prokaryotic carbon and nutrients.    
 
+Cellular abundance is estimated with cellular density and volume/area in different environments based on specific assumptions. The data of cellular density and volume/area is collected from literature. Carbon content is calculated through determination of average cellular carbon and the number of prokaryotes in different habitats.  
 
 ***Summarize the main results or findings.***
 
