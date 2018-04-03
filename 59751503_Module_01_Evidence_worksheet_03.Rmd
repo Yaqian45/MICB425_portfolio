@@ -1,0 +1,59 @@
+---
+title: "Module_01_Evidence_worksheet_03"
+author: "Yaqian Luo (59751503)"
+date: "April 2, 2018"
+output: html_document
+---
+##Module 1 Origins and Earth Systems  
+##Evidence worksheet_03 “The Anthropocene”
+
+###Learning objectives:  
+
+Evaluate human impacts on the ecology and biogeochemistry of Earth systems.
+
+###Reading:  
+C. N. Waters, J. Zalasiewicz, C. Summerhayes, A. D. Barnosky, C. Poirier, A. Gałuszka, A. Cearreta, M. Edgeworth, E. C. Ellis, M. Ellis, C. Jeandel, R. Leinfelder, J. R. McNeill, D. deB. Richter, W. Steffen, J. Syvitski, D. Vidas, M. Wagreich, M. Williams, Z. An, J. Grinevald, E. Odada, N. Oreskes, A. P. Wolfe, "The Anthropocene is functionally and stratigraphically distinct from the Holocene," Science, vol.351, issue 6269, pp. 137, Jan. 2016.
+
+###General Questions:  
+
+***What were the main questions being asked?***
+
+Following questions are being asked in the paper: 
+
+1.	Have humans changed the Earth to an extent that recent and currently forming geological deposits is different from those of the Holocene and early epochs?
+
+2.	When did these stratigraphic signals become recognizable worldwide?
+
+3.	How are stratigraphic units formally recognized earlier in the Quaternary period?
+
+4.	How are stratigraphic signals identified and used in stratigraphic characterization and correlation of Anthropocene epoch?
+
+***What were the primary methodological approaches used?***
+
+The major methodological approaches in this research are classification and literature survey. The stratigraphic signals of Anthropocene are generally classified into several categories based on locations where signals show up and their influences: sediments and ice, climate change, and biosphere. Each stratigraphic signal is proved by compelling evidence in literature and comparison with historical records in Holocene or early epochs. For example, the concentration of atmospheric CO2 in air bubbles in Antarctic glacial ice for early geological time and current time are collected and described in the paper, which indicates a stratigraphic signature of constant rise in CO2 concentration since around 1850.  
+
+***Summarize the main results or findings.***
+
+Quaternary stratigraphic units are defined based on climate change events, similarly to the determination of three subdivisions in Holocene epoch. The driving human forces responsible for the anthropogenic signatures are a combination of the forces of accelerated technological development, rapid growth of human population, and increased consumption of resources. The stratigraphic signals correlated to Anthropocene epoch are the appearance of manufactured material in sediments, the modification of biogeochemical cycles, climate change, and biotic changes.
+
+Stratigraphic signals of Anthropocene epoch have been shown in sediments and ice. New anthropogenic materials and deposits, such as aluminum, concrete, plastics, unburned particles produced during fossil fuel combustion, have had huge production since the 20th century. They will leave identifiable fossil and geochemical records in sediments or permanent markers in both sediments and glacial ice. On the other hand, human activities including land use for residence and industries, deforestation, and dam constructions, have significantly directly or indirectly modified sedimentary processes over the past several decades. Besides, the geochemical signatures introduced by human, like increased concentrations of pesticide residues, nutrients and industrial metals in soil, have stratigraphic consequences. Moreover, radiogenic and carbon signatures have been discovered in sediments and ice respectively.  
+
+Currently abnormally global warming and high global sea levels, caused by increasing anthropogenic emission of greenhouse gases, are considered as other robust stratigraphic signals of Anthropocene. Additionally, the anthropogenic energy imbalance amplifies stratigraphic signals related to climate change and sea-level rise. 
+
+Accelerated biotic change is another stratigraphic signal for Anthropocene. A notable increase can be observed in extinction rates of species from the 19th century, and species assemblages and relative abundance have been altered globally due to species invasion and human activities. 
+
+***Do new questions arise from the results?***
+
+There are several questions needed to further investigate based on the findings in the research:
+
+1.	In which way, the Anthropocene can be defined? By GSSA , GSSP or both?
+
+2.	When did the Anthropocene exactly start?
+
+3.	Is it necessary to formalize the Anthropocene? Or would it be better to leave it as an informal but solidly founded geological time term like Precambrian?
+
+***Were there any specific challenges or advantages in understanding the paper (e.g. did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)?***
+
+Abundant evidence from literature is provided in the paper to support each of stratigraphic signals. This information constructs strong links between these stratigraphic signatures and Anthropocene. For instance, the emergence of new anthropogenic materials in sediments reflects the difference between Anthropocene and earlier geological time like Holocene. Climate change pattern in historical records is describe in the paper to show the abnormality of current global warming, another possible signal of Anthropocene. Therefore, conclusion that we are experiencing a new geological time called as Anthropocene is strongly justified based on this compelling evidence.
+
+A figure summarizing the time when these stratigrapic signals appear would be more helpful for the understanding of Anthropocene’s characteristics and determination of the start of the new geological time. Additionally, although trends of some signals over the past decades are obvious in many of figures shown in the paper, such as the increasing CO2 concentration from the ice core and high species extinction rate, it would be more convincing if statistical analysis is conducted to check significant difference of Anthropocene from previous geological time.  
