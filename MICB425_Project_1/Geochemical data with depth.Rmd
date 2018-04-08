@@ -1,0 +1,96 @@
+---
+title: "Geochemical data"
+author: "Yaqian Luo"
+date: "March 23, 2018"
+output: html_document
+---
+
+```{r}
+library(ggplot2)
+library(plotrix)
+library(tidyverse)
+
+sam_data=data.frame(m.norm@sam_data)
+#concentration of oxygen and NO3 across depth
+sam1=sam_data%>%
+  ggplot() +
+  geom_point(aes(y=O2_uM, x=Depth_m, colour = "O2_uM"), size=3)+
+  geom_line(aes(y=O2_uM, x=Depth_m, colour = "O2_uM"), size=1)+
+  xlim(200,0)+
+  geom_point(aes(y=NO3_uM, x=Depth_m, colour = "NO3_uM"), size=3)+
+  geom_line(aes(y=NO3_uM, x=Depth_m, colour = "NO3_uM"), size=1)+
+  geom_point(aes(y=SiO2_uM, x=Depth_m, colour = "SiO2_uM"), size=3)+
+  geom_line(aes(y=SiO2_uM, x=Depth_m, colour = "SiO2_uM"), size=1)+
+  scale_color_manual("", values = c("O2_uM"= "red", "NO3_uM" = "green","SiO2_uM"="blue"))+
+  ylab("Concentration(uM)")+xlab("Depth(m)")+
+  labs(title="Figure 25: Concentration of O2, NO3 and SiO2 across depth")
+sam1+coord_flip()
+```
+
+```{r}
+library(plotrix)
+library(tidyverse)
+library(ggplot2)
+
+sam_data=data.frame(m.norm@sam_data)
+#concentration of oxygen and NO3 across depth
+sam1=
+  twoord.plot( lx=sam_data$Depth_m,ly=sam_data$O2_uM, rx=sam_data$Depth_m,ry=sam_data$NO3_uM,  xlab='Depth(m)',ylab='Concentration(uM)', rylab='Concentration(uM)', type=c('line','line'))+labs(title="Figure 25: Concentration of O2 and NO3 across depth")
+                                                                  
+sam1
+sam1+coord_flip()
+```
+
+```{r}
+#Concentration of PO4, NH4, and H2S,across depth
+sam2=sam_data%>%
+  ggplot() +
+  geom_point(aes(y=PO4_uM, x=Depth_m, colour = "PO4_uM"), size=3)+
+  geom_line(aes(y=PO4_uM, x=Depth_m, colour = "PO4_uM"), size=1)+
+  xlim(200,0)+
+  geom_point(aes(y=NH4_uM, x=Depth_m, colour = "NH4_uM"), size=3)+
+  geom_line(aes(y=NH4_uM, x=Depth_m, colour = "NH4_uM"), size=1)+
+  geom_point(aes(y=H2S_uM, x=Depth_m, colour = "H2S_uM"), size=3)+
+  geom_line(aes(y=H2S_uM, x=Depth_m, colour = "H2S_uM"), size=1)+
+  geom_point(aes(y=N2O_nM, x=Depth_m, colour = "N2O_nM"), size=3)+
+  geom_line(aes(y=N2O_nM, x=Depth_m, colour = "N2O_nM"), size=1)+
+  geom_point(aes(y=Temperature_C, x=Depth_m, colour = "Temperature_C"), size=3)+
+  geom_line(aes(y=Temperature_C, x=Depth_m, colour = "Temperature_C"), size=1)+
+  scale_color_manual("", values = c("PO4_uM"= "red", "NH4_uM" = "green","H2S_uM" = "black","Temperature_C" = "purple","N2O_nM"="orange"))+
+  ylab("Concentration(uM/nM) or Temperature(C)")+xlab("Depth(m)")+
+  labs(title="Figure 26: Concentration of PO4, NH4, H2S, N2O, and temperature across depth")
+sam2+coord_flip()
+```
+
+```{r}
+#Concentration of fluorescence across depth
+library(dplyr)
+sam_data1=sam_data%>%mutate(CH4_uM=CH4_nM/1000)
+sam3=sam_data1%>%
+  ggplot() +
+  geom_point(aes(y=Fluorescence_mgm_3, x=Depth_m, colour = "Fluorescence_mgm_3"), size=3)+
+  geom_line(aes(y=Fluorescence_mgm_3, x=Depth_m, colour = "Fluorescence_mgm_3"), size=1)+
+  geom_point(aes(y=NO2_uM, x=Depth_m, colour = "NO2_uM"), size=3)+
+  geom_line(aes(y=NO2_uM, x=Depth_m, colour = "NO2_uM"), size=1)+
+  geom_point(aes(y=CH4_uM, x=Depth_m, colour = "CH4_uM"), size=3)+
+  geom_line(aes(y=CH4_uM, x=Depth_m, colour = "CH4_uM"), size=1)+
+  xlim(200,0)+
+  scale_color_manual("", values = c("Fluorescence_mgm_3"= "red","NO2_uM"="blue", "CH4_uM"="black"))+
+  ylab("Fluorescence(mgm3) or Concentration(uM)")+xlab("Depth(m)")+
+  labs(title="Figure 27: Fluorescence and NO2 concentration across depth")
+sam3+coord_flip()
+```
+
+```{r}
+library(tidyverse)
+library(dplyr)
+sam_data1=sam_data%>%mutate(CH4_uM=CH4_nM/1000)
+nutrient=sam_data1 %>% select(Depth_m,O2_uM,PO4_uM,SiO2_uM,NO3_uM,NH4_uM,NO2_uM,H2S_uM,N2O_nM,CH4_uM,Temperature_C, Fluorescence_mgm_3) %>% gather(nutrient,uM,O2_uM,PO4_uM,SiO2_uM,NO3_uM,NH4_uM,NO2_uM,H2S_uM,N2O_nM,CH4_uM, Temperature_C, Fluorescence_mgm_3)
+library(ggplot2)
+ggplot(nutrient,aes(x=Depth_m,y=uM))+
+  geom_line()+
+  geom_point()+
+  ylab("Concentration or degree or mgm3")+
+  facet_wrap(~nutrient,scales="free_y")+
+  labs(title="Figure 25: Geochemical parameters across depth")
+```
