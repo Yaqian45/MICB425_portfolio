@@ -1,0 +1,873 @@
+---
+title: "MICB425_portfolio"
+author: "Yaqian Luo (59751503)"
+date: "version `r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: yes
+---
+# Module_01: Origins and Earth Systems  
+
+## Module_01_Evidence_Worksheet_01: "Prokaryotes: The Unseen Majority"
+
+#### Reading
+W. B. Whitman, D. C. Coleman, and W. J. Wiebe, "Prokaryotes: The unseen majority," *PNAS*, vol. 95, pp. 6578-6583, June 1998. (http://www.pnas.org/content/95/12/6578)
+
+#### Learning Objectives
+Describe the numerical abundance of microbial life in relation to ecology and biogeochemistry of Earth systems.
+
+
+#### General Questions
+***What were the main questions being asked?***
+
+The questions are: What are the actual number of prokaryotes? and what total amount of their carbon content on earth?
+
+
+***What were the primary methodological approaches used?***
+
+The primary methodological approaches used in the paper are classification, literature survey, and comparison. Classification is for the estimation of prokaryotic abundance, literature survey is for data collection, and comparison method is for comprehension of the estimated results. 
+
+Since prokaryote is ubiquitous on Earth, classification of its habitats is helpful to estimate the number of prokaryotes and the amount of carbon content in microbes. Prokaryotes’ habitats generally include aquatic environments, soil, subsurface, and others like animals, leaves, and air. The first three habitats are concerned, because they have been proved in the paper to be the major place for prokaryotes. For each of them, they are divided into several groups for estimation. For example, subsurface consists of marine subsurface and terrestrial subsurface, and different methods and values are applied to determine the number of prokaryotes and carbon content in different kind of subsurface. 
+
+Literature survey is the major approach for data collection, because it is the simplest and quickest method to obtain data needed. For the calculations of number of prokaryotes, values of cellular density, habitat volume or area, and relative parameters are collected from abundant literatures. 
+
+Comparison is another major approach used in the paper. The estimated results are huge and kind of beyond our imagination. Comparison is an effective way to help readers comprehend these enormous numbers by associating them with those numbers easy to understand. In the paper, prokaryote is contrasted with plant, in order to justify the abundance of prokaryotic carbon and nutrients.    
+
+Cellular abundance is estimated with cellular density and volume/area in different environments based on specific assumptions. The data of cellular density and volume/area is collected from literature. Carbon content is calculated through determination of average cellular carbon and the number of prokaryotes in different habitats.  
+
+***Summarize the main results or findings.***
+
+The number of prokaryotes and total amount of their cellular carbon on earth are 4-6×10^30^ cells and 350-550 Pg of C, respectively. Prokaryotic carbon is substantial, about 60-100% of total carbon in plants. Aquatic environments, soil, and subsurface are three dominant habitats for earth’s prokaryotes, in which the number of prokaryotic cells are calculated to be 1.2×10^29^, 2.6×10^29^, 3.75-6.0×10^30^, respectively, the amount of carbon content in prokaryotes are 2.2 Pg of C, 26 Pg of C, and 325-519 Pg of C, respectively, and turnover time for heterotrophic prokaryotes is 6-25 days, 0.8 yr, and 2.5 yr, respectively. The annual cell production for prokaryotes is highest in the open ocean.
+
+
+***Do new questions arise from the results?***
+
+Some new questions are raised based on the results of the study. They are:
+
+1.It has already been proved in the paper that prokaryotes are abundant and have huge carbon and nutrient contents. However, it is still not clear that whether prokaryote is the largest living reservoir for carbon and essential elements on earth.
+
+2.Based on the results of turnover time for prokaryotes in different habitats, a question needs to be answered that why the turnover time for prokaryote in subsurface is far longer than that in other ecosystem.
+
+3.Prokaryotes have huge potential to obtain genetic diversity and a large number of species, due to their large population size and quick turnover time. Nevertheless, we are not sure that whether the current definition of a prokaryotic species is consistent with the real definition, and there may be some taxonomic tribes being grouped into the same species. 
+
+
+***Were there any specific challenges or advantages in understanding the paper (e.g. did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)?*** 
+
+There are several advantages and challenges in comprehending the paper:
+
+1.Habitats are redefined in the paper, which is helpful for understanding methods used in the estimation and making more accurate calculations. For example, subsurface in the paper refers to terrestrial habitats below 8 m and marine sediments below 10 cm, not including upper 10 cm of marine sediments that is a part of aquatic environments according to the paper.
+
+2.The estimation of prokaryotic abundance and turnover time involves a lot of calculation. However, formulas for calculations are not presented in the paper, making it difficult for readers to understand the results and researchers to replicate the study. For example, it is hard to figure out how to calculate the generation time for prokaryotes in upper 200m of the ocean based on the efficiency of carbon assimilation and the amount of net productivity without any relevant formulas in the paper.
+
+3.Assumptions are often made during the estimation of prokaryotic abundance and carbon contents. They are useful to obtain final results, but also show deficiencies of calculation approaches need to be solved in the future studies. For instance, there are two methods introduced for the estimation of terrestrial subsurface prokaryotes’ abundance. Both of them make some assumptions. The average porosity of terrestrial subsurface is assumed to be 3% in the first approach, while the ratio of unattached prokaryotes in aquifer is considered to be consistent for the second approach. As a result, it is reported that the number of prokaryotes in terrestrial subsurface falls into a range of 2.5-25×10^29^ cells, which needs more accuracy in the further research.  
+
+## Module_01_Evidence_Worksheet_02: "Life and the Evolution of Earth’s Atmosphere"" 
+
+#### Reading:  
+J. F. Kasting and J. L. Siefert, "Life and the Evolution of Earth's Atmosphere," *Science*, vol. 296, pp. 1066-1068, May 2002. (http://science.sciencemag.org/content/296/5570/1066) 
+
+#### Learning objectives:   
+Comment on the emergence of microbial life and the evolution of Earth systems
+    
+    
+* Indicate the key events in the evolution of Earth systems at each approximate moment in the time series. If times need to be adjusted or added to the timeline to fully account for the development of Earth systems, please do so. 
+
+    + 4.6 billion years ago  
+Earth was born. 
+
+    + 4.5 billion years ago  
+Moon was formed which influenced the spin and tilt of Earth;  
+A rock vapor atmosphere was formed immediately after the birth of Moon. 
+
+    + 4.4 billion years ago  
+The oldest minerals known on Earth are zircons formed 4.4-Gyr;  
+Ocean and early atmosphere were formed.
+    
+    + 4.1 billion years ago  
+Life might occur.
+    
+    + 4.0 billion years ago  
+The oldest rock, Acasta gneiss, was formed 4.0 billion years ago. 
+
+    + 3.8 billion years ago  
+Massive meteorite impacts halted;  
+Life was sustained by anoxygenic photosynthesis;    
+Methanogens might evolve. 
+
+    + 3.5 billion years ago    
+Life must be presented on Earth;  
+Oxygenic photosynthesis and the evolution of cyanobateria occurred;  
+Biochemical carbon cycle started to perform.
+
+    + 3.2 billion years ago  
+Filamentous appeared on Earth.
+    
+    + 3.0 billion years ago  
+Microbial life was widespread in the mid-Archaean.
+
+    + 2.7 billion years ago  
+Biological lipids were shown in 2.7-Gyr rocks;  
+ancestral eukaryotes appeared.
+    
+    + 2.2 billion years ago  
+Rocks were redbeds;  
+Complex eukaryotes might show up;    
+The cellular cybernetic switched between mitochondria and chloroplasts;  
+Earth became a snowball at first time.
+
+    + 2.1 billion years ago   
+Multicellular life appeared.
+
+    + 1.3 billion years ago  
+The ancestor of animals started to evolve. 
+    
+    + 550,000 years ago  
+Humans appeared.
+
+    + 200,000 years ago
+The second most recent glacial period began. 
+
+* Describe the dominant physical and chemical characteristics of Earth systems at the following waypoints:  
+
+    + **Hadean**  
+    1. Earth was rich in water vapor and carbon dioxide, and tempertature was above 500℃ when it was born.  
+    2. Earth radiated heat to space.  
+    3. Surface temperature lingered near 100℃ with a steam greenhouse until 4 billion years ago.  
+    4. Earth was glacial with intervals of inferno after the meteorite impacts. 
+    
+    + **Archean**  
+    1. The oceans was heated over 110℃, and seawater chemistry was always changing during meteorite impacts.
+    2.In the early Archaean, there was a relatively oxidized atmosphere-ocean system and a reduced fuilds in contact with mantle-derived magmas.
+    3. Greenhouse gases (methane and carbon dioxide) were predominant.
+    4. The atmosphere was rich in sulphur gases and carbon dioxide with partial pressure over 2 bars.  
+    5. Sulphate was presented in 3.5-Gyr rocks.  
+    6. Minerals were contained in many Archaean rocks like detrital pyrite, siderite and uraninite.  
+    
+    + **Proterozoic**  
+    1. The oxygen level increased sharply about 2.2 billion years ago.  
+    2. The atmosphere became oxic.
+    
+    + **Phanerozoic**
+    1. oxygenation of atmosphere increased.  
+    2. The top of troposphere is cold and water falls back to Earth's surface.  
+    3. Stratosphere is dry with little hydrogen at the top. 
+    4. Greenhouse gases like water vapor and carbon dioxide warms up the surface of Earth. 
+    
+## Module_01_Evidence_Worksheet_03: “The Anthropocene”  
+
+
+#### Learning objectives:  
+
+Evaluate human impacts on the ecology and biogeochemistry of Earth systems.
+
+#### Reading:  
+C. N. Waters, J. Zalasiewicz, C. Summerhayes, A. D. Barnosky, C. Poirier, A. Gałuszka, A. Cearreta, M. Edgeworth, E. C. Ellis, M. Ellis, C. Jeandel, R. Leinfelder, J. R. McNeill, D. deB. Richter, W. Steffen, J. Syvitski, D. Vidas, M. Wagreich, M. Williams, Z. An, J. Grinevald, E. Odada, N. Oreskes, A. P. Wolfe, "The Anthropocene is functionally and stratigraphically distinct from the Holocene," Science, vol.351, issue 6269, pp. 137, Jan. 2016.
+
+#### General Questions:  
+
+***What were the main questions being asked?***
+
+Following questions are being asked in the paper: 
+
+1.	Have humans changed the Earth to an extent that recent and currently forming geological deposits is different from those of the Holocene and early epochs?
+
+2.	When did these stratigraphic signals become recognizable worldwide?
+
+3.	How are stratigraphic units formally recognized earlier in the Quaternary period?
+
+4.	How are stratigraphic signals identified and used in stratigraphic characterization and correlation of Anthropocene epoch?
+
+***What were the primary methodological approaches used?***
+
+The major methodological approaches in this research are classification and literature survey. The stratigraphic signals of Anthropocene are generally classified into several categories based on locations where signals show up and their influences: sediments and ice, climate change, and biosphere. Each stratigraphic signal is proved by compelling evidence in literature and comparison with historical records in Holocene or early epochs. For example, the concentration of atmospheric CO2 in air bubbles in Antarctic glacial ice for early geological time and current time are collected and described in the paper, which indicates a stratigraphic signature of constant rise in CO2 concentration since around 1850.  
+
+***Summarize the main results or findings.***
+
+Quaternary stratigraphic units are defined based on climate change events, similarly to the determination of three subdivisions in Holocene epoch. The driving human forces responsible for the anthropogenic signatures are a combination of the forces of accelerated technological development, rapid growth of human population, and increased consumption of resources. The stratigraphic signals correlated to Anthropocene epoch are the appearance of manufactured material in sediments, the modification of biogeochemical cycles, climate change, and biotic changes.
+
+Stratigraphic signals of Anthropocene epoch have been shown in sediments and ice. New anthropogenic materials and deposits, such as aluminum, concrete, plastics, unburned particles produced during fossil fuel combustion, have had huge production since the 20th century. They will leave identifiable fossil and geochemical records in sediments or permanent markers in both sediments and glacial ice. On the other hand, human activities including land use for residence and industries, deforestation, and dam constructions, have significantly directly or indirectly modified sedimentary processes over the past several decades. Besides, the geochemical signatures introduced by human, like increased concentrations of pesticide residues, nutrients and industrial metals in soil, have stratigraphic consequences. Moreover, radiogenic and carbon signatures have been discovered in sediments and ice respectively.  
+
+Currently abnormally global warming and high global sea levels, caused by increasing anthropogenic emission of greenhouse gases, are considered as other robust stratigraphic signals of Anthropocene. Additionally, the anthropogenic energy imbalance amplifies stratigraphic signals related to climate change and sea-level rise. 
+
+Accelerated biotic change is another stratigraphic signal for Anthropocene. A notable increase can be observed in extinction rates of species from the 19th century, and species assemblages and relative abundance have been altered globally due to species invasion and human activities. 
+
+***Do new questions arise from the results?***
+
+There are several questions needed to further investigate based on the findings in the research:
+
+1.	In which way, the Anthropocene can be defined? By GSSA , GSSP or both?
+
+2.	When did the Anthropocene exactly start?
+
+3.	Is it necessary to formalize the Anthropocene? Or would it be better to leave it as an informal but solidly founded geological time term like Precambrian?
+
+***Were there any specific challenges or advantages in understanding the paper (e.g. did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)?***
+
+Abundant evidence from literature is provided in the paper to support each of stratigraphic signals. This information constructs strong links between these stratigraphic signatures and Anthropocene. For instance, the emergence of new anthropogenic materials in sediments reflects the difference between Anthropocene and earlier geological time like Holocene. Climate change pattern in historical records is describe in the paper to show the abnormality of current global warming, another possible signal of Anthropocene. Therefore, conclusion that we are experiencing a new geological time called as Anthropocene is strongly justified based on this compelling evidence.
+
+A figure summarizing the time when these stratigrapic signals appear would be more helpful for the understanding of Anthropocene’s characteristics and determination of the start of the new geological time. Additionally, although trends of some signals over the past decades are obvious in many of figures shown in the paper, such as the increasing CO2 concentration from the ice core and high species extinction rate, it would be more convincing if statistical analysis is conducted to check significant difference of Anthropocene from previous geological time. 
+
+## Module_01_Problem_Set_01: “Prokaryotes: The unseen majority”
+
+#### Reading:  
+Whitman WB, Coleman DC, Wiebe WJ. 1998. Prokaryotes: The unseen majority. *PNAS*, vol. 95:6578-6583
+
+#### Learning objectives: 
+Describe the numerical abundance of microbial life in relation to the ecology and biogeochemistry of Earth systems.
+
+#### Specific Questions:
+
+***What are the primary prokaryotic habitats on Earth and how do they vary with respect to their capacity to support life? Provide a breakdown of total cell abundance for each primary habitat from the tables provided in the text.*** 
+
+*Qrestion 1*   
+The primary prokaryotic habitats are aquatic environments, soil, and subsurface.
+
+*Question 2*  
+Aquatic environments: Prokaryotic cell abundance is in huge variance under different aquatic conditions. The average of cellular density for prokaryotes decreases from 5 ×10^5^ cells/ml in upper 200m of the open ocean to 5 ×10^4^ cells/ml where the depth is over 200m. Although cellular density in freshwaters and saline lakes is about 106 cells/ml and higher than that in seawater, the total cell number of prokaryotes in these two kinds of aquatic ecosystems is three orders of magnitude below the number in seawaters, due to small volume compared to seawater. Cell abundance in polar region contributes to a small portion of the total cellular number in aquatic environments.
+
+Soil: Huge difference in prokaryotic cell abundance also exists among different types of soils. The number of prokaryotes in forest soils is much less than that in others among which there is little variance.
+
+Subsurface: cell density declines with depth in unconsolidated subsurface sediments. It is estimated in the paper that 97% of prokaryotic cells in unconsolidated sediment occur at depth no more than 600m.  
+
+*Question 3*  
+The total number of prokaryotic cells on Earth is 415-640×10^28^. The number in aquatic habitats, soil and subsurface are 11.8×10^28^, 25.6×10^28^, and 380-605×10^28^, respectively.
+
+***What is the estimated prokaryotic cell abundance in the upper 200 m of the ocean and what fraction of this biomass is represented by marine cyanobacterium including Prochlorococcus? What is the significance of this ratio with respect to carbon cycling in the ocean and the atmospheric composition of the Earth?***
+
+The estimated prokaryotic cell abundance in the upper 200m of the ocean is 3.6×10^28^ cells.
+
+The portion of marine cyanobacterium is 8% calculated as below:
+4×10^4^ cells/ml÷5×10^5^ cells/ml×100% = 8%
+
+This ratio affects the capability of ocean to capture carbon dioxide from atmosphere, since cyanobaterium obtains energy by photosynthesis which is a process involving carbon dioxide as a reactant. Cyanobacterium also has huge contributions to the formation of modern atmosphere. They are a net source of oxygen, and even in some cases they are the only source of oxygen. This kind of prokaryotes is also responsible for nitrogen fixation [1]. Therefore, cyanobacterium plays a significant role in the atmospheric composition. 
+
+
+***What is the difference between an autotroph, heterotroph, and a lithotroph based on information provided in the text?***
+
+The way to obtain materials to support its own life is different between autotroph, heterotroph, and lithotroph. Autotroph is able to produce complex organic compounds using inorganic carbon (like carbonate) and energy from light or chemical reactions. For heterotroph, organic carbon is their carbon as well as energy source. Lithotroph obtains energy from inorganic substrate (such as ammonium).
+
+
+***Based on information provided in the text and your knowledge of geography what is the deepest habitat capable of supporting prokaryotic life? What is the primary limiting factor at this depth?***
+
+The deepest habitat may be the subsurface with a depth of 15 km below sea level and 4 km below the Mariana Trench (about 11 km below sea level [2]). 
+
+Temperature is the primary limiting factor under this circumstance, because temperature at this depth is about 125℃, which is close to maximal temperature for prokaryotic life.
+
+
+***Based on information provided in the text your knowledge of geography what is the highest habitat capable of supporting prokaryotic life? What is the primary limiting factor at this height?***
+
+The highest habitat for prokaryotes may be in the atmosphere at an altitude of 57-77 km. 
+
+The primary limiting factor in this case may be nutrient and UV. There are several essential materials for prokaryotic life, such as phosphate, which are scarce at this altitude. UV is another inhibitive factor to prokaryotic life because it can destroy DNX or RNA chain and it is not absorbed at this altitude due to lack of ozone in atmosphere [3]. Therefore, nutrient and UV may be the dominant factors for prokaryotic life at the highest habitat.
+
+***Based on estimates of prokaryotic habitat limitation, what is the vertical distance of the Earth’s biosphere measured in km?***
+
+The deepest habitat for prokaryotic life may be around 15 km below the sea level and the highest habitat may be 57-77 km above the ground. So the vertical distance of biosphere on Earth is about 72-92 km.
+
+
+***How was annual cellular production of prokaryotes described in Table 7 column four determined? (Provide an example of the calculation)***
+
+The cellular production rate is calculated using the formula below:  
+cellular production rate = Population size × 365 days/yr ÷ turnover time
+
+e.g.  For Marine heterotrophs in the upper 200 m of the open sea, there is:  
+cellular production rate = 3.6×10^28^ cells×365 days/yr÷16 days = 8.2×10^29^ cells/yr
+
+
+***What is the relationship between carbon content, carbon assimilation efficiency and turnover rates in the upper 200m of the ocean? Why does this vary with depth in the ocean and between terrestrial and marine habitats?***
+
+*Question 1*  
+Large amount of carbon available for prokaryotes and high carbon assimilation efficiency accelerate prokaryotes’ turnover rates. However, prokaryotes in the ocean need more carbon and their turnover rates decrease when carbon assimilation efficiency is low. 
+
+The turnover rate of prokaryotes living in the upper 200m of the ocean is calculated as follows:  
+Total amount of cellular carbon for prokaryotes in the upper 200m of the ocean is :  
+3.6×10^28^ cells × 20 fg C/cell = 0.72 Pg C  
+The amount of net productivity to support prokaryotes is:  
+0.72 Pg C×4 = 2.88 Pg C  
+Net primary carbon productivity in marine consumed by prokaryotes in the upper 200m is:  
+51 Pg C/yr×85% = 43 Pg C/yr  
+Turnover rate for heterotrophs in upper 200m ocean is:  
+43 Pg C/yr ÷2.88 Pg C=14.9/yr  
+
+*Question 2*  
+The average turnover time rises with depth in the ocean. One reason may be that temperature in the deep ocean is lower than that in the upper ocean, which declines the efficiency of carbon assimilation. Another possible cause is the amount of carbon content needed to support prokaryotes’ life increases with depth in the ocean, since cell abundance in deep oceanic water is larger than that in the upper ocean. As a result, the average turnover time for prokaryotes rises in deeper ocean. 
+
+The calculated average turnover time for prokaryotes living in terrestrial habitats is far larger than that in marine environment. There are several possible explanations for the difference. Firstly, the required amount of carbon content for prokaryotes in terrestrial habitats may be overestimated, because there are other metabolic activities detected like sulfate reduction and lithoautotrophic processes for the growth of prokaryotes in terrestrial habitat. Secondly, subsurface biomass may be overestimated and carbon assimilation efficiency may be underestimated when turnover rates of prokaryotes in subsurface is calculated. Therefore, the calculated result for terrestrial habitats may be larger than the real value.   
+
+
+***How were the frequency numbers for four simultaneous mutations in shared genes determined for marine heterotrophs and marine autotrophs given an average mutation rate of 4 x 10^-7^ per DNA replication? (Provide an example of the calculation with units. Hint: cell and generation cancel out)***
+
+The calculation for average mutation rate is presented below.  
+Mutation frequency (/yr) = mutation rate × cell abundance× turnover rate (/yr)  
+Mutation time (hr) = 365 day/yr×24 hr/day÷mutation frequency (/yr)  
+
+Take marine heterotrophs in the upper 200 m as an example:   
+Mutation rate for four simultaneous mutation is:  
+(4×10^-7^)^4^ = 256×10^-28^ per generation  
+Mutation frequency is:  
+256×10^-28^per generation × 3.6 ×10^28^ cells × 365 day/yr ÷ 16 day = 21024/yr  
+Mutation time is:  
+365 day/yr×24 hr/day÷21024/yr = 0.4 hr
+
+
+***Given the large population size and high mutation rate of prokaryotic cells, what are the implications with respect to genetic diversity and adaptive potential? Are point mutations the only way in which microbial genomes diversify and adapt?***
+
+High mutation rate leads to large genetic diversity and high potential to form new species. Large population size and high mutation rate increase prokaryotes’ ability to survive in extreme environments [4].
+
+Point mutations are not the only way for microorganisms to obtain genomic diversity and new phenotypes. For eukaryotic microorganisms like fungi and green algae, DNA in their cells is arranged in complex chromosomes. Hence large-scale mutations like amplifications and inversions are another approach for eukaryotic microorganisms to increase their genomic diversity. However, point mutations are the only way for prokaryotes to diversify their genomes and gain new adaptation, because they do not have chromosomal structure.
+
+
+***What relationships can be inferred between prokaryotic abundance, diversity, and metabolic potential based on the information provided in the text?***
+
+There is a large diversity of prokaryotes on Earth due to their large abundance and high mutation rate. Large abundance and high mutation rate increase the probability for prokaryotes to form new genetic sequence, as a result, may obtain new phenotypes [4]. After several genetic mutations, a new species is generated, which can be completed within a short period of time like days or months. Prokaryotes present on Earth for millions of years. Thus, they have evolved into millions of species, some of which have not been discovered yet.  
+
+Due to the high prokaryotic diversity, their metabolic activities are different from each species. Autotrophs, heterotrophs, and lithoautotrophs are three major metabolisms for prokaryotes, which enable them to use a wide range of materials to support their life, such as methanol, iron and ammonium, and survive in anaerobic and aerobic environments and a variety of ecosystems including marine, soil and subsurface [4].   
+
+Although single cell is very small and its metabolic potential is negligible, the metabolic potential of all kinds of prokaryotic cells cannot be ignored due to the huge number of prokaryotic cells. They have huge impacts on Earth’s biogeochemical transformation. For example, prokaryote in the ocean is one of the major atmospheric oxygen sources and has huge effects on the nitrogen cycle. 
+
+#### References  
+[1] James F. Kasting and Janet L. Siefert. 2002. Life and the Evolution of Earth’s Atmosphere. Environmental Microbiology, 296: 1066-1068.  
+[2] Deepest Part of the OceanI (n.d.)[Online]. Available: https://geology.com/records/deepest-part-of-the-ocean.shtml.  
+[3]Ozone layer (n.d.) [Online]. Available: https://en.wikipedia.org/wiki/Ozone_layer.  
+[4] Whitman WB, Coleman DC, Wiebe WJ. 1998. Prokaryotes: The unseen majority. PNAS, vol. 95:6578-6583.
+
+## Module_01_Problem_set_02: “Microbial Engines”
+
+#### Reading:  
+P. G. Falkowski, T. Fenchel, E. F. Delong, "The Microbial Engines That Drive Earth’s Biogeochemical Cycles," *Science*, vol.320, pp. 1034-1039, May 2008. (http://science.sciencemag.org/content/320/5879/1034.full)
+
+#### Learning objectives: 
+Discuss the role of microbial diversity and formation of coupled metabolism in driving global biogeochemical cycles.
+
+#### Specific Questions:
+
+***What are the primary geophysical and biogeochemical processes that create and sustain conditions for life on Earth? How do abiotic versus biotic processes vary with respect to matter and energy transformation and how are they interconnected?***
+
+*Question 1*
+
+Tectonics and atmospheric photochemical processes are two primary geophysical processes on Earth. The biological fluxes of the six major elements-H,C,N,O,S, and P are the major biogeochemical processes.
+
+*Question 2*
+
+The chemical reactions abiotic and biotic processes depend on are different. Abiotic processes are based on acid-base chemistry involving formation and break of chemical bonds and transfers of protons without electrons. Biotic processes are driven by redox reactions, in which electrons and protons are both transferred. Not all of biotic processes are directly dependent on chemical bond energy. One example is photosynthesis. In terms of mass transformation, the importance of these two types of processes on biological chemical cycling is not the same. Biotic processes play significant roles in the biological fluxes of H,C,N,O, and S, while abiotic processes have contributions to the fluxes of C, S, and P.
+
+*Question 3*
+
+Both abiotic and biotic processes are responsible for the biogeochemical cycle of elements. Abiotic processes like erosion, geothermal activity and abiotic oxidation are able to bring the elements in sediments and atmosphere back to the biogeochemical cycle which is largely driven by biotic processes. For example, through geothermal processes, sulfate as HS^-^ and SO3^2-^ is regenerated into biochemical processes from Earth’s mantle and crust, and then contribute to the biotic processes of SO4^2-^/S respiration and anoxygenic photosynthesis.
+
+
+***Why is Earth’s redox state considered an emergent property?***
+
+Abiotic and biotic processes are formed during the evolution of biogeochemical cycle. They work together and change the redox condition of Earth's surface. As a result, the average redox state of Earth is created by feedbacks between geophysical and biological processes. 
+  
+
+***How do reversible electron transfer reactions give rise to element and nutrient cycles at different ecological scales? What strategies do microbes use to overcome thermodynamic barriers to reversible electron flow?***
+
+*Question 1*
+
+Element and nutrient cycles are maintained by thermodynamically favorable pathways and interactions among a variety of microbial species. 
+
+Reversible reactions apply thermodynamically favorable pathways to sustain elements cycle under different conditions. For example, in some cases where hydrogen is sufficient, methane is generated by methanogenic Archaea through the reversible reaction using CO2 and H2 as reactants. However, at the places lack of hydrogen, methanogens consume methane because the reverse reaction is favorable in this case. 
+
+Additionally, reversible reactions are sometimes catalyzed by the interactions between microorganisms from different species which may be temporally and spatially separated. For instance, the biogeochemical cycle of nitrogen is accomplished via cooperation of diverse microbes, including aerobic ammonium oxidizing bacteria and anaerobic denitrification bacteria. 
+
+*Question 2*
+
+Microorganisms use identical or near-identical pathways and cooperate with other species to overcome thermodynamic barriers. Identical or near-identical pathways, which are thermodynamically favorable in reversible reactions, may be employed. These pathways are easier for microbes to overcome thermodynamic barriers compared with their reverse processes. For instance, when hydrogen is insufficient, methane is oxidized by microbes to hydrogen, which is reverse to the formation reaction of methane performed by methanogenic Archaea. 
+
+Besides, microbes sometimes may cooperate with multispecies for biogeochemical transformation, so that they are able to overcome thermodynamic barriers with the help from other microorganisms. Green sulfur bacteria and some Archaebacteria work with organisms able to perform citric acid cycle to get energy they need for carbon dioxide assimilation. 
+
+***Using information provided in the text, describe how the nitrogen cycle partitions between different redox “niches” and microbial groups. Is there a relationship between the nitrogen cycle and climate change?***
+
+*Question 1*
+
+The biogeochemical nitrogen cycle is achieved by three sets of microbes. The first set of microbial group reduces N2 in atmosphere to NH4+ anaerobically, catalyzed by an enzyme called nitrogenase. The second set of microorganisms is responsible for the oxidization of NH4^+^ to NO3^-^ in a two-stage pathway under presence of oxygen. NH4^+^ is oxidized to NO2^-^ by ammonium oxidizing bacteria, and then NO2^-^ is subsequently oxidized to NO3^-^ by nitrate oxidizing bacteria. The third set of microbes is able to utilize NO3^-^ and NO2^-^ as electron acceptor and transform organic carbon into CO2 without oxygen. This process produces N2 to atmosphere. Therefore the nitrogen cycle is closed.  
+
+*Question 2*
+
+There are interactions between nitrogen cycle and climate change. Nitrogen cycle has direct and indirect impacts on global warming. N2O, a powerful greenhouse gas, is generated during the processes of nitrification as a byproduct and denitraification as an intermediate product [2]. The emission of N2O to atmosphere accelerates the rate of global warming. Besides, NOx, which is also emitted in nitrogen cycle, indirectly affect radiative forcing through effects on atmospheric concentrations of CH4, O3 and aerosol particulate matter [3]. However, the emission leads to a net cooling effect on a short time. 
+
+Climate change is able to change nitrogen fluxes in the globally biogeochemical cycle, since it is able to alter biochemical processes involved in nitrogen cycle as well as the amount of nitrogen released to water or air. Extreme precipitation events flush more fertilizer or manure into freshwater and reduce the time for denitrification because runoff is speeded up [3]. Consequently, the amount of nitrogen in aquatic environments increases and the release of nitrogen gas to atmosphere declines. 
+
+
+***What is the relationship between microbial diversity and metabolic diversity and how does this relate to the discovery of new protein families from microbial community genomes?***
+
+*Question 1*
+
+Microbial diversity may not lead to metabolic diversity. According to the modes of evolution described in the text, diverse microbial groups may perform the same metabolic pathway due to horizontal gene transfer. For example, nitrogenases genes have been widely distributed among different microbial groups on Earth, as well as methanogenesis genes. Both of them are essential to biogeochemical element cycles.    
+
+However, by evaluating the relative depth of protein “sequence space”, the number of protein families in microbial groups is found to be linear proportional to genome size which is correlated to evolutionary rate. 
+
+*Question 2*
+
+Because microbial diversity is dependent on genome diversity and the number of novel protein families is linearly proportional to genome size, the number of newly discovered protein families is also linearly correlated with the size of novel genomes sequenced.  
+
+***On what basis do the authors consider microbes the guardians of metabolism?***
+
+Microbes are considered as the guardians of metabolism based on the fact of their ability to catalyze reactions in biogeochemical cycle and the central gene set for the ability distributed spatially and temporally. Microorganisms form Earth's environment like atmosphere through catalyzing redox reactions with enzymes translated from their genes. They using the same way control the biogeochemical cycles of nutrients and elements significant to life, such as nitrogen cycle and sulfate cycle. Although environmental selection may extinct a certain type of microbe, it is highly possible that the core gene responsible for a specific metabolic pathway in the microbial species survive in other cases. Eventually, the metabolic pathway is maintained over the long evolutionary time on Earth.   
+
+#### References  
+[1] P. G. Falkowski, T. Fenchel, E. F. Delong, "The Microbial Engines That Drive Earth’s Biogeochemical Cycles," *Science*, vol.320, pp. 1034-1039, May 2008.   
+[2] T. Usui, I. Koike, and N. Ogura, N2O Production, Nitrification and Denitrification in an Estuarine Sediment. Estuarine, Coastal and Shelf Science, 2001,52: 769-781.  
+[3] Suddick, E.C., Whitney, P., Townsend, A.R., The role of nitrogen in climate change and the impacts of nitrogen-climate interactions in the United States: foreword to thematic issue. Biogeochemistry, 2013, 114: 1-10.
+
+## Module_01_Writing_Assignment_01
+
+#### Prompt:  
+
+*Microbial life can easily live without us; we, however, cannot survive without the global catalysis and environmental transformations it provides.” Do you agree or disagree with this statement? Answer the question using specific reference to your reading, discussions and content from evidence worksheets and problem sets.*  
+
+#### Introduction  
+
+Microbial engine have maintained the world for millions of years through global catalysis and environmental transformation. However things are changing in the new epoch. A new geological epoch name “Anthropocene” was proposed several years ago to describe human’s dominant impacts on Earth’s environment today [1]. Scientists have found a lot of current stratigraphic signatures caused by human disturbance distinct from that in the Holocene. Besides, technology and its exponential growth rate allow humans obtain the ability to alter the world at present or in the near future. There is even a saying that humans are able to survive without microbial support, because we can transform environments faster than microbes and control the direction of transformation to make environment more favorable to our life and activities. However, I still believe that humans can only survive in a world with microbes. One of the major reasons is that microbes are the engine of elements cycles and creates the environment sustaining our life. Secondly, there are still a plenty of biochemical pathways that we do not fully understand, making it difficult to replace microbes. And also, microbes can help us solve global issues we are encountering today like food scarcity and environmental pollution. I think they are our most reliable friends. 
+
+#### Microbes can easily live without us	
+
+There is no doubt that microbes can live on Earth easily without human beings, since they have been present on Earth for a longer time than humans and have huge abundance. Their ability to transfer genes horizontally and form protective cellular structure allow them survive unfavorable situations. 
+
+Microbial history on Earth is an extraordinarily long story. At least 3.5 billion years ago, microbes appeared on Earth, and form Earth to what it looks like today [2]. However, as a mammal species, humans just started to stand on the stage of Earth around 200,000 years ago [3]. In addition, microbes are distributed almost everywhere on the planet, may be from marine subsurface about 15 km below the sea level to the atmosphere at an altitude of 57-77 km [4]. In contrast, the terrestrial surface of Earth is the major habitat for humans. Several factors help microbes exist on Earth over a vast span of evolutionary time. They are large species abundance, horizontal gene transformation and the specific cellular structure.   
+
+Due to the large abundance and wide distribution of microbial species and genes, it is impossible to wipe out all of microbial species from our planet, as long as life continues to exist on earth. Microbial abundance is difficult to count. The number of prokaryotes on earth is roughly estimated to be 4-6×10^30^ cells[4], and microbial abundance in subseafloor sedimentary is reported to be 2.9×10^29^ cells [5]. Based on these figures with high magnitude, it is easily concluded that the number of microbes on the globe is extraordinarily huge. The large abundance enables microbes to mutate, acquire genetic diversity and form novel species at a high speed, and then easily adapt to new living conditions under environmental pressures [4][6]. One example is nitrogenase, an enzyme significant to nitrogen fixation and is irreversibly inhibited by oxygen. Nitrogen-fixing organisms have evolved mechanisms to protect nitrogenase from oxygen in order to survive in aerobic environment [6].  
+
+What’s more, some central genes for biogeochemical cycles are horizontally transferred among microbial species, such as dissimilatory sulfite reductases and ammonia monooxygenases genes [6] for sulfate and nitrogen cycle respectively. As a result, even though a specific microbial species become extinct by negative natural selection, other alternative microbial species can take its place and occupy the ecological niche to keep elements cycles continuing. 
+
+Besides, some microbial species are able to protect themselves from disadvantageous environments by forming a dormant cellular structure called endospore. This structure has high resistantance to detrimental living conditions like ultraviolet radiation, desiccation, high temperature and freezing, and can survive for a long period of time [7]. It is reported that endospores of Antarctic bacteria are capable of keeping dormant at a temperature of -14℃ for more than 10,000 years[8]. endospores also contain microbial genetic information. Thus it can revive itself to vegetative cells when environment becomes favorable. Bacillus and Clostridium are two examples of bacteria able to form endospore. This self-protective cellular structure may be helpful for microbes to endure several global mass-extinction episodes and keep alive over the millions of years. 
+
+#### Human needs microbes
+
+Human, however, is not able to live in a world without microbes. Microbes create a habitable living condition we are dependent on by catalyzing biogeochemical cycles and transforming Earth’s environment, while we are unable to mimic these biochemical processes on our own. Another reason is that microbes can help us to resolve some global issues we are facing today. 
+  
+*Microbes form our living environment*
+
+Microbes form our living environment by making contributions in biogeochemical cycles and the evolution of Earth’s environment as well as constructing the inner environment for our bodies. 
+
+Earth’s environment is affected by microbes through biogeochemical cycles. Six essential elements-H, C, N, O, S, and P- are the building blocks for all of living organisms on Earth, including human, to form their genetic information and cellular structures. The global element cycles largely driven by microbially catalyzed redox reactions, introduce these elements into biosphere from abiotic environment [6]. For example, nitrogenase, an enzyme produced by microbes, catalyzes the redox reaction converting nitrogen gas in atmosphere into ammonium which is then oxidized to nitrate and absorbed by plants and animals through food chains. Although there are non-biological processes like lightning able to fix nitrogen, the biological process described above is the predominant pathway. Therefore, these six essential elements might not be available for humans, if the microbial links between abiotic environment and biosphere in the global cycles were broken. 
+
+Microbes also play significant roles in the evolution of Earth’s environment. The evolution of the structure of microbial mats might result in the emergence of photosynthesis around 3.5 billion years ago, which equipped atmosphere with oxidation power, increased microbial productivity, and allowed organisms to live freely on the planet [3]. After 1.3 billion years, green bacteria with chloroplasts working with other microbial species increased atmospheric oxygen level drastically [3]. Besides, microbes make substantial contributions to the formation of modern atmosphere. Most of oxygen we breathe today is not from terrestrial photosynthesis, but from marine photosynthesis performed mostly by microorganisms like eukaryotic algae and cyanobacteria [9]. Thus, it can be imagined that humans might die due to shortage of atmospheric oxygen if microbes stopped producing oxygen.  
+
+In addition to impacting the external environment, microbes also have effects on our health. The relationship between some microbial species and humans is mutualism, which means we cannot life healthily without these microorganisms. For instance, we get benefits from gastrointestinal microbiota fermenting dietary fiber into short-chain fatty acids, which are then utilized as energy and nutrients and oxidized to carbon dioxide through respiration process in our bodies [10]. This microbial community also helps us to adsorb essential minerals like calcium and iron and synthesize some important compounds, such as vitamin B and xenobiotics. Therefore we might not be able to gain sufficient energy and nutrients to sustain our life without gastrointestinal microbiota.    
+
+*Human technology cannot replace microbes*
+
+Although scientific technology has developed rapidly over the past few decades and will continue to grow at an unprecedented rate, we will still rely on the environmental conditions provided by microbes in the foreseeable future. The main reason is the hardness to comprehend all microbial metabolisms and replace microbial functions in biogeochemical cycles due to microbes’ high mutation rate and lack of sufficient information. 
+
+It is extremely difficult for humans to fully understand, manipulate or even mimic all microbial metabolisms because of their complexity and diversity. Until now, the biological processes for nitrogen cycle are still being investigated. New microbial species, such as ammonia-oxidizing archaea [11] and comammox [12], are discovered recently and revise our understanding on nitrogen cycle. But their relationships with ammonia-oxidizing bacteria and nitrite-oxidizing bacteria are still a mystery. Additionally, it is estimated that there about one trillion species of microbes on Earth, while 99.999 percent of them have not been discovered [13]. As a result, it is highly possible that there are some species that are of importance in biogeochemical cycles but have not been discovered by humans.
+
+The high mutation rate of microbial genes is another factor that obstructs our comprehension on microbial mechanisms. With the assumption of a prokaryotic mutation rate of 4×10^-7^ mutations per gene per DNA replication, Whitman et al. calculated four simultaneous mutation in every gene shared by the population of marine heterotrophs and soil prokaryotes at high rate of once every 0.4 and 3.4 hours [4]. The high mutation rate leads to the high-speed changes of genetic diversity, and consequently novel mechanisms are created that are difficult to detect at the first time and first place.
+
+Lack of comprehensive information on microbes, it is really hard for us to perform biochemical mechanisms artificially and replace microbes in the global biogeochemical cycles. And also we do not have sufficient knowledge on the intricate relationships among microbial species and between microbes and abiotic environment. We might underestimate the significance of some mechanisms to the global environment. As a result, the likelihood to generate a favorable condition for human life by ourselves is very small, even if technology is advanced enough to allow humans to mimic microbial mechanisms.
+
+*We still need microbes to solve global issues*
+
+Microbes not only form a habitable environment for humans, but also play critical roles in human activities and help us address global issues like famine and environmental pollution. For instance, we develop genetic engineering technology to form new cells with targeting genes which are able to generate certain proteins and applied in a variety of industries like food production and diseases treatment. This technology need to use microbial cells to achieve gene-engineered bacteria. Another example is wastewater treatment. In order to prevent eutrophication in aquatic environment, bacteria involved in nitrogen and phosphorus cycles, such as ammonium oxidizing bacteria and polyphosphate-accumulating organisms, are employed in wastewater treatment processes to remove nitrogen and phosphate from the effluent [14].  
+
+#### Conclusion
+
+Thanks to microbes for providing such a wonderful place with abundant nutrients and perfect atmosphere for us, and helping us resolve our social, economic and environmental issues. They are amazing organisms with simple cellular structures compared with human, but too complex to been completely understood. It is hard to imagine a world without microbes. But one thing is definite that human cannot survive in such a world. Since we are so relied on these powerful organisms, we should cooperate with them to mitigate our negative impacts on Earth which is the home not just for us but also for every living species.     
+
+#### References
+
+[1] C. N. Waters, J.Zalasiewicz, C. Summerhayes, “The Anthropocene is functionally and stratigraphically distinct from the Holocene,” *Science*, vol.351, issue 6269, pp. 2622/1-2622/10, Jan. 2016.  
+[2] E.G. Nisbet and N.H. Sleep, “The habitat and nature of early life,” *Nature*, vol.409, pp. 1083-1091, Feb. 2001.   
+[3] D. P. Schrag, “Geobiology of the anthropocene,” in *Fundamentals of Geobiology*, 1st edition, Blackwell Publishing Ltd., 2012, pp. 425-436.  
+[4] W. B. Whitman, D. C. Coleman, and W. J. Wiebe, “Prokaryotes: The unseen majority,” *Pro. Natl. Acad. Sci.*, vol. 95, pp. 6578-6583, June 1998.   
+[5] J. Kallmeyer, R. Pockalny, and R. R. Adhikari, “Global distribution of microbial abundance and biomass in subseafloor sediment,” *PNAS*, pp. 1-4.  
+[6] P. G. Falkowski, T. Fenchel, and E. F. Delong, “The microbial engines that drive earth’s biogeochemical cycles,” *Science*, vol.320, pp. 1034-1039, May 2008.    
+[7] *Endospore* (n.d.) [Online]. Available: https://en.wikipedia.org/wiki/Endospore   
+[8] J. G. Black, “Characteristics of Prokaryotic and Eukaryotic Cells,” in *Microbiology: principles and explorations*, 7th edition, Wiley, 2011, pp. 90-93.    
+[9] J. F. Kasting and J. L. Siefert, “Life and the evolution of earth’s atmosphere,” *Science*, vol.296, pp. 1066-1068, May 2002.   
+[10] *Gut flora* (n.d.) [Online]. Available: https://en.wikipedia.org/wiki/Gut_flora#Functions   
+[11] R. Hatzenpichler, “Diversity, physiology, and niche differentiation of ammonia-oxidizing archaea,” *Applied Environmental Microbiology*, vol.78, pp. 7501-7510, Nov.2012.   
+[12] D. Holger, E.V. Lebedeva, P. Pjevac, P. Han, C. Herbold, M. Albertsen, N. Jehmlich, M. Palatinszky, J. Vierheilig, A. Bulaev, R. H. Kirkegaard, M. von Bergen, T. Rattei, B. Bendinger, P.H. Nielsen, M. Wanger “Complete nitrification by Nitrospira bacteria,” *Nature*, doi:10.1038/nature16461.  
+[13] N. Bakalar. (2016, May 23). *Earth May Be Home to a Trillion Species of Microbes* [Online]. Available:  https://www.nytimes.com/2016/05/24/science/one-trillion-microbes-on-earth.html   
+[14] Metcalf and Eddy, *Wastewater engineering treatment and reuse*, 4th Edition, McGraw Hill, 2003.
+
+## Module_01_Additional_Readings:
+
+[1] J. Kallmeyer, R. Pockalny, R. R. Adhikari, D. C. Smith, and S. D'Hondt, "Global distribution of microbial abundance and biomass in subseafloor sediment," *PNAS*, pp: 1-4, July 2012. (http://www.pnas.org/content/109/40/16213)
+
+[2] R. A. Welch, V. Burland, G. Plunkett III, P. Redford, P. Roesch, D. Rasko, E. L. Buckles, S.-R. Liou, A. Boutin,
+J. Hackett, D. Stroud, G. F. Mayhew, D. J. Rose, S. Zhou, D. C. Schwartz, N. T. Perna, H. L. T. Mobley, M. S. Donnenberg, and F. R. Blattner, "Extensive mosaic structure revealed by the complete genome sequence of uropathogenic *Escherichia coli*," *PNAS*, vol. 99, no. 26, pp:17020-17024, Dec. 2002. (http://www.pnas.org/content/99/26/17020.long)
+
+[3] J. Achenbach. (2012, Jan. 2). *Spaceship Earth: A new view of environmentalism* [Online]. Available: https://www.washingtonpost.com/national/health-science/spaceship-earth-a-new-view-of-environmentalism/2011/12/29/gIQAZhH6WP_story.html?utm_term=baff32d71704.
+
+[4] D. P. Schrag, "Geobiology of the Anthropocene," in A. H. Knoll, D. E. Canfield, and K. O. Konhauser (Eds), *Fundamentals of Geobiology*, 1st edition, Blackwell Publishing Ltd., 2012, pp. 425-436. (https://onlinelibrary.wiley.com/doi/10.1002/9781118280874.ch22)
+
+[5] C. Mooney. (2016, Jan. 7). *Scientists say humans have now brought on an entirely new geologic epoch* [Online]. Available: https://www.washingtonpost.com/news/energy-environment/wp/2016/01/07/scientists-say-humans-have-now-brought-on-an-entirely-new-geologic-epoch/?utm_term=323fc2cc7322.
+
+[6] P. Falkowski, R. J. Scholes, E. Boyle, J. Canadell, D. CanÞeld, J. Elser, N. Gruber, K. Hibbard, P. Ho¬gberg, S. Linder, F. T. Mackenzie, B. Moore III, T. Pedersen, Y. Rosenthal, S. Seitzinger, V. Smetacek, W. Steffen, "The global carbon cycle: A test of our knowledge of earth as a system," *Science*, vol.290, no. 13, pp. 291-296, Oct. 2000. (http://science.sciencemag.org/content/290/5490/291)
+
+[7] A. Leopold, "The Land Ethic," in *A Sand Country Alamanac*. (http://rintintin.colorado.edu/~vancecd/phil3140/Leopold.pdf)
+
+[8] D. E. Canfield, A. N. Glazer, P. G. Falkowski, "The evolution and future of earth's nitrogen cycle," *Science*, vol.330, pp. 192-196, Oct. 2010. (http://science.sciencemag.org/content/330/6001/192.long)
+
+[9] Zehnder, A. J. B., & Stumm, W. (1988). Geochemistry and Biogeochemistry of anaerobic habitats. In A. J. B. Zehnder (Ed.), *Biology of anaerobic microorganisms*. New York: Wiley. (https://www.dora.lib4ri.ch/eawag/islandora/object/eawag:11376)
+
+[10] E. G. Nisbet and N. H. Sleep, "The habitat and nature of early life," *Nature*, vol. 409, pp. 1083-1091, Feb. 2001. (https://www.nature.com/articles/35059210)
+
+[11] W. B. Whitman, D. C. Coleman, and W. J. Wiebe, "Prokaryotes: The unseen majority," *PNAS*, vol. 95, pp. 6578-6583, June 1998. (http://www.pnas.org/content/95/12/6578)
+
+[12] C. N. Waters, J. Zalasiewicz, C. Summerhayes, A. D. Barnosky,
+C. Poirier, A. Gałuszka, A. Cearreta, M. Edgeworth, E. C. Ellis, M. Ellis, C. Jeandel, R. Leinfelder, J. R. McNeill, D. deB. Richter, W. Steffen, J. Syvitski, D. Vidas, M. Wagreich, M. Williams, Z. An, J. Grinevald, E. Odada, N. Oreskes, A. P. Wolfe, "The Anthropocene is functionally and stratigraphically distinct from the Holocene," *Science*, vol.351, issue 6269, pp. 137, Jan. 2016. (http://science.sciencemag.org/content/351/6269/aad2622)
+
+[13] P. G. Falkowski, T. Fenchel, E. F. Delong, "The Microbial Engines That Drive Earth’s Biogeochemical Cycles," *Science*, vol.320, pp. 1034-1039, May 2008. (http://science.sciencemag.org/content/320/5879/1034.full)
+
+[14] J. RockstrÖm, "A safe operating space for humanity," *Nature*, vol. 461, pp. 472-475, Sep. 2009. (https://www.nature.com/articles/461472a)
+
+[15] J. F. Kasting and J. L. Siefert, "Life and the Evolution of Earth's Atmosphere," *Science*, vol. 296, pp. 1066-1068, May 2002. (http://science.sciencemag.org/content/296/5570/1066) 
+
+# Module_02: Remapping the body of the world
+
+## Module_02_Evidence_Worksheet_04
+
+## Module_02_Problem_set_03: Metagenomics: Genomic Analysis of Microbial Communities
+
+#### Learning objectives:  
+
+Specific emphasis should be placed on the process used to find the answer. Be as comprehensive as possible e.g. provide URLs for web sources, literature citations, etc.
+
+#### Reading:
+
+Wooley JC, Godzik A, Friedberg I. 2010. A primer on metagenomics. PLoS Computational Biology. Vol. 6, issue 2: e1000667.
+
+#### Specific Questions:
+
+***How many prokaryotic divisions have been described and how many have no cultured representatives (microbial dark matter)?***
+
+By 2016, we have obtained information on 89 bacterial phyla and 20 archaeal phyla via small 16S RNA database. However, it could be up to 1500 bacteria phyla, since some microbes live in the “shadow biosphere” and need to be found in the future [1]. 
+
+26 of the approximately 52 identifiable major phyla within the domain bacteria have cultivated representatives by 2003 [2]. But the proportion may increase over the past decade.   
+
+***How many metagenome sequencing projects are currently available in the public domain and what types of environments are they sourced from?***
+
+Until now, there are at least about 110,000 metagenome sequencing projects available in European Bioinformatics Institute database. The number is always changing. These projects are from all environment types, including sediments, soil, and aquatic environments.    
+
+***What types of on-line resources are available for warehousing and/or analyzing environmental sequence information (provide names, URLS and applications)?***
+
+1. Kyoto Encyclopedia of Genes and Genomes (KEGG): http://www.genome.jp/kegg/ 
+
+KEGG is a database resource for genomes, biological pathways, diseases, drugs, and chemical substances. It can be applied in bioinformatics research and education, data analysis in genomics, metagenomics, metabolomics, modeling and simulation in systems biology, and translational research in drug development. 
+
+2. MEtaGenome Analyzer (MEGAN): http://ab.inf.uni-tuebingen.de/software/megan6/
+
+MEGAN is a comprehensive analyzing tool for microbial data. It can be employed for taxonomic analysis using the NCBI taxonomy or a customized taxonomy such as SILVA, functional analysis using InterPro2GO, SEED, eggNOG or KEGG, bar charts, word clouds, Voronoi tree maps and many other charts, PCoA, clustering and networks, metadata supports, and many different types of input
+
+3. Integrated Microbial Genomes & Microbiomes (IMG/M): https://img.jgi.doe.gov/cgi-bin/m/main.cgi
+
+This system serves as a community resource for analyzing and annotating genome and metagenome datasets in comprehensive comparative context. The IMG data warehouse integrates genome and metagenome datasets provided by IMG uses with a comprehensive set of publicly available genome and metagenome datasets. There is a set of tools like IMG UI Map available in the system for comparative analysis of microbial genomes. A genome annotation pipeline is provided by IMG/G to integrates information from several tools, including KEGG, Pfam, InterPro, and the Gene Ontology. 
+
+4. Metagenomic Rapid Annotations using Subsystems Technology (MG/RAST): https://www.mg-rast.org/ 
+
+The RAST technology was originally performed to allow automated high-quality annotation of complete or draft microbial genomes using SEED data and has been adapted for metagenome analysis. The annotation of sequence fragments is provided by the server, including phylogenetic classification, functional classification of samples, and comparison between multiple metagenomes. The server is able to compute an initial metabolic reconstruction for the metagenome and allow comparison of metabolic reconstructions of metagenomes and genomes.
+
+5. National Center for Biotechnology Information (NCBI): https://www.ncbi.nlm.nih.gov/ 
+
+NCBI provides databases for genome sequences, functional genomics, protein sequences, and functional domains, and bioinformatics tools for analysis. GenBank for DNA sequences and PubMed, a bibliographic database for the biomedical literature, are two of major databases. Genome Blast sequence can be used for searching genome sequences.
+6. European Bioinformatics Institute (EBI): https://www.ebi.ac.uk/ 
+
+EBI provides data resources on genomes and metagenomes, like Ensembl for genome and ChEMBL for binding, functional and ADMET bioactivity. Tools for analysis and search genomes and metagenome are also available in its website.  
+
+7. OMICTools: https://omictools.com/ 
+
+OMICtools is a community-driven search engine for biological data analysis. It offers an easy means of locating the right tools corresponding to each researcher and their specific biological data analyses. The OMICtools website centralizes more than 18,500 software tools and databases, manually classified, by a team of biocurators including many scientific experts. Key information, a direct link, and access to discussions and evaluations by the biomedical community are provided for each tool. Researchers can directly upload their code versions to improve research traceability [3]. 
+
+8. SILVA: https://www.arb-silva.de/ 
+
+SILVA provides abundance information for metagenomics study, including fully aligned and up to date small (16S/18S, SSU) and large (23S/28S, LSU) subunit ribosomal RNA “Parc” databases on the webpage and ARB files, preconfigured subsets of high-quality, full-length sequences as ARB and FASTA files, extensive search for sequence retrival, a clear rating system for all steps for data processing with emphasis on sequence and alignment quality, and substantial support related to all aspects of data sets, sequence analysis and probe/primer design. 
+
+9. AmpliconNoise: https://code.google.com/archive/p/ampliconnoise/ 
+
+AmpliconNoise is a collection of programs for the removal of noise from 454 sequenced PCR amplicons. Two steps are involved, the removal of noise from the sequencing itself and the removal of PCR point errors. This project also includes the Perseus algorithm for chimera removal.
+
+10. Ribosomal database project (RDP): http://rdp.cme.msu.edu/ 
+
+RDP provides quality-controlled, aligned and annotated bacterial and archaeal 16S rRNA sequences, and Fungal 28S rRNA sequences, and a suite of analysis tools to the scientific community like classifier, probe match, and RDPipeline. 
+
+***What is the difference between phylogenetic and functional gene anchors and how can they be used in metagenome analysis?***
+
+Phylogenetic and functional gene anchors have different patterns in gene transfer. Phylogenetic anchors are transferred vertically, while functional anchors transfer gene horizontally. Phylogenetic gene anchors are ideally single-copy and carry phylogenetic information which allows tree reconstruction. Functional anchors, however, are utilized for identification of specific biogeochemical functions and not useful for phylogeny.  
+
+Phylogenetic anchors are applied in sequence–based analysis, in which phylogenetic anchors can be found in the flanking DNA to provide a link between phylogeny and the functional gene when a gene of interest is identified. In contrast, functional gene anchors are employed in function-based analysis. Phylogenetic anchors and genomic structure in the flanking DNA are identified by sequencing a collection of clones with a common function. This analysis can provide a slice of the metagenome that determin the diversity of genomes with a specific function [4]. 
+
+***What is metagenomic sequence binning? What types of algorithmic approaches are used to produce sequence bins? What are some risks and opportunities associated with using sequence bins for metabolic reconstruction of uncultivated microorganisms?***
+
+Sequence binning is the process that associates sequence data with its original OUT. Sequences are mapped onto genome using pre-existing genome database of similar organisms or grouped based on different qualities.   
+There are two approaches for sequence binning. One is composition-based binning. The other is similarity-based binning. Composition-based binning applies Markov models based on k-mer frequencies to classify sequences. This binning strategy includes TETRA, PhyloPythia, GSOM, and codon-usage methods. Similarity-based binning utilizes similarity function sim to find similarities between samples and reference sequences database to build a species tree. 
+
+One of major problems of the application of composition-based binning is that if the OTUs are closer and numerous, the frequency of misclassification errors are high. Additionally, incomplete coverage of reference genome database may miss key parts and become less representative. However, k-mer is still a promising tool for binning ORFan sequences with few or no homologs, since it does not require for reference sequences. 
+
+Similarity-based binning is implemented by some biotechnology analysis software like MEGAN and CARMA. The species trees produced via the approach is able to show an overview of the dominant species in the sample. But in some cases, if genome from other organisms have similar properties, it may be impossible to produce a precise assignment to an OTU. 
+
+***Is there an alternative to metagenomic shotgun sequencing that can be used to access the metabolic potential of uncultivated microorganisms? What are some risks and opportunities associated with this alternative?***
+
+There are several alternatives to shotgun sequencing: functional metagenomics, single-cell sequencing, fluorescence in situ hybridization (FISH), second generation sequencing, third generation sequencing, and polony-based methods. Their risks and opportunities are discussed as below. 
+
+Functional metagenomics based on phenotypic screening is applied for the study of functions of proteins and other gene produces by DNA sequences [5]. This approach is potential to overcome the limitation of the absence of most microbial diversity from pure culture and discover more novel gene products when DNA sequence is not predictive. However, the limitations of functional metagenomics include cloning bias in library construction, range restrictions on library vector host, and gene expression dependent on host [5]. 
+
+Single-cell sequencing provides the genomic information of an individual cell using advancing sequencing methodology [6]. It has been proved to be a powerful method to obtain new genomes of uncultivated microorganisms. A large number of taxonomic groups have their reference genome published with the application of single-cell sequencing [6]. Nevertheless, this technology may produce inaccuracy data due to amplified sequence bias, genomic dropouts and genetic material contamination [7].
+
+Fluorescence in situ hybridization (FISH) has been widely used for identification of the taxonomy and potential functions of microbes [8]. It is an imaging technique using fluorescent probe to bind with specific sequence like rRNA in cell. This technique can be applied in combination with single-cell isolation techniques for sequencing the whole genome of uncultivated microorganisms [8]. Recent development in this approach, such as individual genes-FISH and catalyzed reporter deposition-FISH, allow researchers to find functional genes with low abundance [8]. 
+
+Second generation sequencing methods have been developed and replace shotgun sequencing for small sized genomes and environmental genomics [9]. These methods are based on the generation of “polymerase colonies”, which enable enzymatic reactions to perform concurrently with the sequence of nucleic acid [9].
+
+ Third generation sequencing is developed to reduce or eliminate the main challenges in sequencing technology like short read lengths and significant error rate [10]. This technology enables us to reconstruct the genome, comprehend genomic variations, recover transcriptomes, and indentify the transcription factor binding sites [11].
+ 
+The number of sequences produced by polony-based methods is larger than shotgun sequencing, but those sequences are shorter than that generated by the first generation sequencing [9]. Although this alternative is unable to read long mononucleotide repeats correctly, it is feasible to sequence whole genomes by sheer volume of DNA sequenced [9]. 
+
+#### References:  
+[1] Solden L, Lloyd K, Wrighton K. 2016. The bright side of microbial dark matter: lessons learned from the uncultivated majority. Environmental Microbiology. Vol. 31: 217-226  
+[2] Rappe MS, Giovannoni SJ. 2003. The uncultured microbial majority. Annu. Rev. Microbiol. 57: 369–394.  
+[3] Perrin H, Denorme M, Grosjean J, Dynomant E, Henry VJ, Pichon F, Darmoni S, Desfeux A, Gonzalez BJ. 2017. OMICtools: a community-driven search engine for biological data analysis.  Link: https://arxiv.org/ftp/arxiv/papers/1707/1707.03659.pdf.   
+[4] Srivastava S, Ghosh N, Pal G. 2013. Chapter 10: metagenomics: mining environmental geomes, p 161-190. In Kuhad RC, Singh A (ed), Biotechnology for Environmental Management and Resource Recovery. Springer, New York, NY. DOI: 10.1007/978-881-322-0876-1.   
+[5] Cheng J, Lam KN, Engel K, Hall M, Neufeld JD, Charles TC. 2017. Chapter 1: metagenomic cosmid libraries suitable for functional screening in proteobacteria, p 1-12. In Charles TC, Liles MR, Sessitsch A (ed), Functional Metagenomics: Tools and Applications. Springer, New York, NY. DOI: 10.1007/978-3-319-61510-3.   
+[6] Chen Y, Wang F. 2015. Chapter 3: single-cell sequencing of microorganisms, p 31-40. In Wang X (ed), Single Cell Sequencing and Systems Immunology. Springer, New York, NY. DOI:10.1007/978-94-017-9753-5.  
+[7] Li B, Zhang X, Zheng J. 2015. Single-cell next-generation sequencing and its applications in cancer biology, p 1-18. In Wu W, Choudhry H (ed), Next Generation Sequencing in Cancer Research, Volume 2: From Basepairs to Bedsides. Springer, New York, NY. DOI: 10.1007/978-3-319-15811-2.  
+[8] Ikarm M, Malik A. 2013. Recent development in the methods of studying microbial diversity p 17-51. In Malik A, Grohmann E, Alves M (ed), Management of Microbial Resources in the Environment. Springer, New York, NY. DOI: 10.1007/978-94-007-5931-2.   
+[9] Wooley JC, Godzik A, Friedberg I. 2010. A primer on metagenomics. PLoS Computational Biology. Vol. 6, issue 2: e1000667.   
+[10] Chapter 6: New horizons in next-generation sequencing, p 51-57. In Metwally SE, Ouda OM, Helmy M (ed), Next Generation Sequencing Technologies and Challenges in Sequence Assembly.2014. Springer, New York, NY. DOI: 10.1007/978-1-4939-0715-1.  
+[11] Sung WK (ed). 2017. Algorithms for Next-Generation Sequencing. CRC Press, Taylor & Francis Group, LLC, Boca Raton, FL.  
+
+## Module_02_Additional_Readings:
+
+[1] J. C. Wooley, A. Godzik, I. Friedberg, "A primer on metagenomics," *PLOS Computational Biology*, vol. 6, issue 2, pp. 1-13, Feb. 2010. (http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000667)
+
+[2] M. Taupp, K. Mewis, and S. J. Hallam, "The art and design of functional metagenomic screens," *Current Opinion in Biotechnology*, 22: 1-8, 2011. (https://www.sciencedirect.com/science/article/pii/S0958166911000371?via%3Dihub)
+
+[3] E. L. Madsen, "Identifying microorganisms responsible for ecologically significant biogeochemical processes," *Nature*, vol. 3, pp. 439-446, May 2005. (http://www.nature.com/articles/nrmicro1151)
+
+[4] A. Martinez, A. S. Bradley, J. R. Waldbauer, R. E. Summons, and E. F. DeLong, "Proteorhodopsin photosystem gene expression enables photophosphorylation in a heterologous host," *PNAS*, vol. 104, no. 13, pp. 5590-5595, Mar. 2007. (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1838496/)
+
+# Module_03: Microbial Sepcies Concepts
+
+## Module_03_Evidence_Worksheet_05
+
+## Module_03_Problem_set_04
+
+#### Learning objectives: 
+
+* Gain experience estimating diversity within a hypothetical microbial community
+
+#### Outline:
+
+In class Day 1:
+
+1. Define and describe species within your group's "microbial" community.  
+2. Count and record individuals within your defined species groups.  
+3. Remix all species together to reform the original community.  
+4. Each person in your group takes a random sample of the community (*i.e.* devide up the candy).
+
+Assignment:
+
+5. Individually, complete a collection curve for your sample.  
+6. Calculate alpha-diversity based on your original total community and your individual sample.  
+
+In class Day 2:
+
+7. Compare diversity between groups.
+
+#### Part 1: Description and enumeration
+
+For your community:
+
+* Construct a table listing each species, its distinguishing characteristics, the name you have given it, and the number of occurrences of the species in the collection.
+
+```{r}
+#To make tables
+library(kableExtra)
+library(knitr)
+#To manipulate and plot data
+library(tidyverse)
+# Create community data
+Community = data.frame(
+  number = c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32),
+  name = c("mmgreen", "mmred", "mmblue","mmyellow","mmbrown","mmorange","sktbrown","sktred","sktgreen","sktorange","sktyellow","gmbrred","gmbrpink","gmbrgreen","gmbrorange","gmbryellow","gmbrwhite","mipink","migreen","miyellow","miorange","mired","wmred","blyellow","blgreen","blpurple","blorange","blred","chcltkiss","lgpink","lgyellow","lgblue"),
+  characteristics = c("m&m green", "m&m red", "m&m blue","m&m yellow","m&m brown","m&m orange","skittle brown","skittle red","skittle green","skittle orange","skittle yellow","gummi bear red","gummi bear pink","gummi bear green","gummi bear orange","gummi bear yellow","gummi bear white","m&i pink","m&i green","m&i yellow","m&i orange","m&i red","worms red","balls yellow","balls green", "balls purple","balls orange","balls red","chacolate kiss","lego pink","lego yellow","lego blue"),
+  occurences = c(28, 28, 60,44,30,63,39,33,42,35,23,15,16,18,15,19,16,39,36,27,32,40,14,4,5,3,5,7,16,7,5,4)
+)
+
+# Construct a table list for community
+Community %>% 
+  kable("html") %>%
+  kable_styling(bootstrap_options = "striped", font_size = 10, full_width = F)
+```
+	
+For your community:
+
+* Ask yourself if your collection of microbial cells from seawater represents the actual diversity of microorganisms inhabiting waters along the Line-P transect. Were the majority of different species sampled or were many missed? 
+ 
+#### Part 2: Collector's curve
+
+For your sample:
+
+* ***Create a collector's curve for your sample (not the entire original community).***
+
+```{r}
+# Import data for collector's curve
+Collector_curve = read.table(file="Collector_curve_data.txt", header=TRUE,sep="\t")
+
+# Create a collector's curve
+ggplot(Collector_curve, aes(x=individuals, y=species)) +
+  geom_point() +
+  geom_smooth() +
+  labs(x="Cumulative number of individuals classified", y="Cumulative number of species observed")
+```
+
+* ***Does the curve flatten out? If so, after how many individual cells have been collected?***
+
+The curve becomes flat after about 75 individuals have been classified.
+
+* ***What can you conclude from the shape of your collector's curve as to your depth of sampling?***
+
+As more and more individuals classified, the collector's curve becomes flat gradually, and eventually parallel to x axis. 
+
+#### Part 3: Diversity estimates (alpha diversity)
+Using the table from Part 1, calculate species diversity using the following indices or metrics.
+
+##### Diversity: Simpson Reciprocal Index
+
+* ***What is the Simpson Reciprocal Index for your sample?***
+
+```{r}
+# Import sample data
+Sample= read.table(file="Sample_data.txt",header=TRUE,sep="\t")
+
+# Calculate the Simpson Reciprocal Index (SRI) for the sample
+library(dplyr)
+1/sum(Sample%>%
+  mutate(proportion=occurences/sum(occurences))%>%
+  transmute(proportion_2=proportion^2))
+```
+
+* ***What is the Simpson Reciprocal Index for your original total community?***
+
+```{r}
+# Calculate the Simpson Reciprocal Index (SRI) for the community
+1/sum(Community%>%
+  mutate(proportion=occurences/sum(occurences))%>%
+  transmute(proportion_2=proportion^2))
+```
+
+##### Richness: Chao1 richness estimator
+
+* ***What is the chao1 estimate for your sample?***
+
+```{r}
+obs=Sample%>% filter(occurences!=0)%>% count()
+a=Sample%>% filter(occurences==1)%>% count()
+b=Sample%>% filter(occurences>=2)%>% count()
+obs+a^2/(2*b) 
+```
+
+* ***What is the chao1 estimate for your original total community?***
+
+```{r}
+obs=Community%>% filter(occurences!=0)%>% count()
+a=Community%>% filter(occurences==1)%>% count()
+b=Community%>% filter(occurences>=2)%>% count()
+obs+a^2/(2*b) 
+```
+
+#### Part 4: Alpha-diversity functions in R
+
+For your sample:
+
+* ***What are the Simpson Reciprocal Indices for your sample and community using the R function?***
+
+**Sample**
+```{r}
+library(vegan)
+# Construct a sample species table 
+Sample_diversity = 
+  Sample %>% 
+  select(name, occurences) %>% 
+  spread(name, occurences)
+
+Sample_diversity
+
+# Calculate Simposon Reciprocal Indices for the sample
+diversity(Sample_diversity, index="invsimpson")
+```
+
+**Community**
+```{r}
+# Construct the community species table
+Community_diversity = 
+  Community %>% 
+  select(name, occurences) %>% 
+  spread(name, occurences)
+
+Community_diversity
+
+# Calculate Simpson Reciprocal Indices for the community
+diversity(Community_diversity, index="invsimpson")
+```
+
+* ***What are the chao1 estimates for your sample and community using the R function?***
+    
+**Sample**
+```{r}
+# Calculate chao1 estimates for sample
+specpool(Sample_diversity)
+```
+
+**Community**
+```{r}
+# Calculate chao1 estimates for community
+specpool(Community_diversity)
+```
+
+   + Verify that these values match your previous calculations.
+   
+Chao1 richness estimators determined by alpha-diversity functions are the same as the values calculated in part 3.
+
+#### Part 5: Concluding activity
+If you are stuck on some of these final questions, reading the [Kunin et al. 2010](https://www.ncbi.nlm.nih.gov/pubmed/19725865) and [Lundin et al. 2012](https://www.ncbi.nlm.nih.gov/pubmed/23760801) papers may provide helpful insights. 
+
+* How does the measure of diversity depend on the definition of species in your samples?
+* Can you think of alternative ways to cluster or bin your data that might change the observed number of species?
+* How might different sequencing technologies influence observed diversity in a sample? 
+
+## Module_03_Writing_Assignment_03
+
+## Module_03_Additional_Readings
+
+[1] S. J. Giovannoni, "Vitamins in the sea", *PNAS*, vol. 109, no. 35, pp. 13888-13889, Aug. 2012. (http://www.pnas.org/content/109/35/13888)
+
+[2] M. Torres-Beltr?n, A. K. Hawley, D. Capelle, E. Zaikova, D. A. Walsh, A. Mueller, M. Scofield, C. Payne, L. Pakhomova, S. Kheirandish, J. Finke, M. Bhatia, O. Shevchuk, E. A. Gies, D. Fairley, C. Michiels, C. A. Suttle, F. Whitney, S. A. Crowe, P. D. Torte, and S. J. Hallam, "A compendium," *Nature*, pp. 1-10, Oct. 2017. (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5663218/)
+
+[3] A. K. Hawley, M. Torres-Beltr?n, E. Zaikova, D. A. Walsh, A.  Mueller, M. Scofield, S. Kheirandish, C. Payne, L. Pakhomova, M. Bhatia, O. Shevchuk, E. A. Gies, D. Fairley, S. A. Malfatti, A. D. Norbeck, H. M. Brewer, L. Pasa-Tolic, T. G. Rio, C. A. Suttle, S. Tringe, and S. J. Hallam, "A compendium of multi-omic sequence information from the Saanich Inlet water column," *Nature*, pp. 1-13, Oct. 2017. (https://www.nature.com/articles/sdata2017160)
+
+[4] R. A. Welch, V. Burland, G. Plunkett, P. Redford, P. Roesch, D. Rasko, E. L. Buckles, S.-R. Liou, A. Boutin, J. Hackett, D. Stroud, G. F. Mayhew, D. J. Rose, S. Zhou, D. C. Schwartz, N. T. Perna, H. L. T. Mobley, M. S. Donnenberg, and F. R. Blattner, "Extensive mosaic structure revealed by the complete genome sequence of uropathogenic Escherichia coli," *PNAS*, vol. 99, no. 26, pp. 17020-17024, Dec. 2002. (http://www.pnas.org/content/99/26/17020.long)
+
+[5] B. J. Callahan, P. J McMurdie and S. P Holmes, "Exact sequence variants should replace operational taxonomic units in marker-gene data analysis," *nature*, pp. 2639-2643, July 2017.(http://www.nature.com/articles/ismej2017119)
+
+[6] A. D. Gaudet., L. M. Ramer, J. Nakonechny, J. J. Cragg, M. S.
+Ramer, "Small-Group Learning in an Upper-Level University Biology Class Enhances Academic Performance and Student Attitudes Toward Group Work," *PLOS ONE*, vol. 5, issue 12, pp. 1-10, Dec. 2010. (http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0015821)
+
+[7] D. Lundin, I. Severin, J. Brendan Logue, ?. ?stman, A. F. Andersson and E. S. Lindstr?m, "Which sequencing depth is sufficient to describe patterns in bacterial a- and b-diversity?" *Environmental Microbiology Reports*, 4 (3): 367-372, Mar. 2012. (https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1758-2229.2012.00345.x)
+
+[8] M. L. Sogin, H. G. Morrison, J. A. Huber, D. M. Welch, S. M. Huse, P. R. Neal, J. M. Arrieta, and G. J. Herndl, "Microbial diversity in the deep sea and the underexplored 'rare biosphere'," *PNAS*, vol. 103, no. 32, pp. 12115-12120, Aug. 2006. (http://www.pnas.org/content/103/32/12115.long)
+
+[9] O. X. Corderoa, L. Ventourasb, E. F. DeLonga, and M. F. Polza, "Public good dynamics drive evolution of iron acquisition strategies in natural bacterioplankton populations," *PNAS*, Aug. 2012. (http://www.pnas.org/content/109/49/20059/tab-figures-data)
+
+[10] S. J. Hallam, M. Torres-Beltr?n, and A. K. Hawley, "Monitoring microbial responses to ocean deoxygenation in a model oxygen minimum zone," *Nature*, Oct. 2017. (https://www.nature.com/articles/sdata2017158)
+
+[11] V. Kunin, A. Engelbrektson, H. Ochman and P. Hugenholtz, "Wrinkles in the rare biosphere: pyrosequencing errors can lead to artificial inflation of diversity estimates," *Environmental Microbiology*, 12(1), pp. 118-123, 2010. (https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1462-2920.2009.02051.x)
+
+[12] J. R. Thompson, S. Pacocha, C. Pharino, V. Klepac-Ceraj, D. E. Hunt, J. Benoit, "Genotypic Diversity Within a Natural Coastal Bacterioplankton Population," *Science*, vol. 307, pp. 1311-1312, Feb. 2005. (http://science.sciencemag.org/content/307/5713/1311.long)
+
+[13] J. J. Morris, R. E. Lenski, and E. R. Zinserc, "The Black Queen Hypothesis: Evolution of Dependencies through Adaptive Gene Loss," *mBio*, vol. 3, issue 2, pp. 1-7, Apr. 2012. (http://mbio.asm.org/content/3/2/e00036-12.abstract)
+
+## Project_01
+
+### Project_01_Report
+
+### Project_01_Self-assessment
+
+# Module_04: Distributed metabolic networks
+
+## Project_02
+
+### Project_02_Report
+
+### Project_02_Self-assessment
