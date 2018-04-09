@@ -120,7 +120,7 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">MICB425_portfolio</h1>
 <h4 class="author"><em>Yaqian Luo (59751503)</em></h4>
-<h4 class="date"><em>version April 08, 2018</em></h4>
+<h4 class="date"><em>version April 09, 2018</em></h4>
 
 </div>
 
@@ -684,19 +684,19 @@ There are two approaches for sequence binning. One is composition-based binning.
 <h4>Part 1: Description and enumeration</h4>
 <p>For your community:</p>
 <ul>
-<li>Construct a table listing each species, its distinguishing characteristics, the name you have given it, and the number of occurrences of the species in the collection.</li>
+<li><strong><em>Construct a table listing each species, its distinguishing characteristics, the name you have given it, and the number of occurrences of the species in the collection.</em></strong></li>
 </ul>
 <pre class="r"><code>#To make tables
 library(kableExtra)
 library(knitr)
 #To manipulate and plot data
 library(tidyverse)</code></pre>
-<pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.2.1 --</code></pre>
+<pre><code>## -- Attaching packages ---------------------------------------------------------------------- tidyverse 1.2.1 --</code></pre>
 <pre><code>## v ggplot2 2.2.1     v purrr   0.2.4
 ## v tibble  1.4.2     v dplyr   0.7.4
 ## v tidyr   0.8.0     v stringr 1.3.0
 ## v readr   1.1.1     v forcats 0.3.0</code></pre>
-<pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+<pre><code>## -- Conflicts ------------------------------------------------------------------------- tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()</code></pre>
 <pre class="r"><code># Create community data
@@ -1181,8 +1181,9 @@ lego blue
 </table>
 <p>For your community:</p>
 <ul>
-<li>Ask yourself if your collection of microbial cells from seawater represents the actual diversity of microorganisms inhabiting waters along the Line-P transect. Were the majority of different species sampled or were many missed?</li>
+<li><strong><em>Ask yourself if your collection of microbial cells from seawater represents the actual diversity of microorganisms inhabiting waters along the Line-P transect. Were the majority of different species sampled or were many missed?</em></strong></li>
 </ul>
+<p>My sample can represents the actual diversity in the community. Although four species are missed, they are not the majority species.</p>
 </div>
 <div id="part-2-collectors-curve" class="section level4">
 <h4>Part 2: Collector’s curve</h4>
@@ -1327,10 +1328,20 @@ specpool(Community_diversity)</code></pre>
 <h4>Part 5: Concluding activity</h4>
 <p>If you are stuck on some of these final questions, reading the <a href="https://www.ncbi.nlm.nih.gov/pubmed/19725865">Kunin et al. 2010</a> and <a href="https://www.ncbi.nlm.nih.gov/pubmed/23760801">Lundin et al. 2012</a> papers may provide helpful insights.</p>
 <ul>
-<li>How does the measure of diversity depend on the definition of species in your samples?</li>
-<li>Can you think of alternative ways to cluster or bin your data that might change the observed number of species?</li>
-<li>How might different sequencing technologies influence observed diversity in a sample?</li>
+<li><strong><em>How does the measure of diversity depend on the definition of species in your samples?</em></strong></li>
 </ul>
+<p>The definition of species has significant effects of the calculated values of diversity. Species in the sample are defined based on different colors, shapes, and tastes. However measured diversity in the sample will change if species richness and evenness are altered when different methods are used to identify species.</p>
+<ul>
+<li><strong><em>Can you think of alternative ways to cluster or bin your data that might change the observed number of species?</em></strong></li>
+</ul>
+<p>If data is clustered based on colors, shapes or materials, observed species number will change.</p>
+<ul>
+<li><strong><em>How might different sequencing technologies influence observed diversity in a sample?</em></strong></li>
+</ul>
+<p>Different sequencing methods and sequencing depth may bring errors in the measurement of sample diversity. Sequencing methods with distinct stringencies on read quality filtering and identity thresholds can lead to false phylotypes detected and the recruitment of erroneous OTUs and singletons into larger clusters, resulting in artificial inflation of diversity estimates at different levels [1]. Additionally, detection on different regions (e.g. 5’-forward and 3’-reverse) can also cause errors at different levels. Kunin et al. 2010 shows that the 5’-forward region had an average of 15% more reads with one or more errors than did the 3’-reverse region when reads were treated in the same quality filtering level [1]. On the other hand, the representative of sample diversity on the community is significantly affected by sequencing depth. Lundin et al. 2012 reports that for a community with total sequences of 15000-20000, 1000 denoised sequences for each sample are sufficient to estimate trends in β-diversity accurately and precisely, while 5000 denoised sequences may be needed for α-diversity estimation [2].</p>
+<p><em>References:</em><br />
+[1] V. Kunin, A. Engelbrektson, H. Ochman and P. Hugenholtz, “Wrinkles in the rare biosphere: pyrosequencing errors can lead to artificial inflation of diversity estimates,” <em>Environmental Microbiology</em>, 12(1), pp. 118-123, 2010.<br />
+[2] D. Lundin, I. Severin, J. Brendan Logue, ?. ?stman, A. F. Andersson and E. S. Lindstr?m, “Which sequencing depth is sufficient to describe patterns in bacterial a- and b-diversity?” <em>Environmental Microbiology Reports</em>, 4 (3): 367-372, Mar. 2012.</p>
 </div>
 </div>
 <div id="module_03_writing_assignment_03" class="section level2">

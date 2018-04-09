@@ -669,7 +669,7 @@ In class Day 2:
 
 For your community:
 
-* Construct a table listing each species, its distinguishing characteristics, the name you have given it, and the number of occurrences of the species in the collection.
+* ***Construct a table listing each species, its distinguishing characteristics, the name you have given it, and the number of occurrences of the species in the collection.***
 
 ```{r}
 #To make tables
@@ -693,8 +693,10 @@ Community %>%
 	
 For your community:
 
-* Ask yourself if your collection of microbial cells from seawater represents the actual diversity of microorganisms inhabiting waters along the Line-P transect. Were the majority of different species sampled or were many missed? 
- 
+* ***Ask yourself if your collection of microbial cells from seawater represents the actual diversity of microorganisms inhabiting waters along the Line-P transect. Were the majority of different species sampled or were many missed?***
+
+My sample can represents the actual diversity in the community. Although four species are missed, they are not the majority species.
+
 #### Part 2: Collector's curve
 
 For your sample:
@@ -823,9 +825,21 @@ Chao1 richness estimators determined by alpha-diversity functions are the same a
 #### Part 5: Concluding activity
 If you are stuck on some of these final questions, reading the [Kunin et al. 2010](https://www.ncbi.nlm.nih.gov/pubmed/19725865) and [Lundin et al. 2012](https://www.ncbi.nlm.nih.gov/pubmed/23760801) papers may provide helpful insights. 
 
-* How does the measure of diversity depend on the definition of species in your samples?
-* Can you think of alternative ways to cluster or bin your data that might change the observed number of species?
-* How might different sequencing technologies influence observed diversity in a sample? 
+* ***How does the measure of diversity depend on the definition of species in your samples?***
+
+The definition of species has significant effects of the calculated values of diversity. Species in the sample are defined based on different colors, shapes, and tastes.  However measured diversity in the sample will change if species richness and evenness are altered when different methods are used to identify species. 
+
+* ***Can you think of alternative ways to cluster or bin your data that might change the observed number of species?***
+
+If data is clustered based on colors, shapes or materials, observed species number will change.
+
+* ***How might different sequencing technologies influence observed diversity in a sample?*** 
+
+Different sequencing methods and sequencing depth may bring errors in the measurement of sample diversity. Sequencing methods with distinct stringencies on read quality filtering and identity thresholds can lead to false phylotypes detected and the recruitment of erroneous OTUs and singletons into larger clusters, resulting in artificial inflation of diversity estimates at different levels [1]. Additionally, detection on different regions (e.g. 5’-forward and 3’-reverse) can also cause errors at different levels. Kunin et al. 2010 shows that the 5’-forward region had an average of 15% more reads with one or more errors than did the 3’-reverse region when reads were treated in the same quality filtering level [1]. On the other hand, the representative of sample diversity on the community is significantly affected by sequencing depth. Lundin et al. 2012 reports that for a community with total sequences of 15000-20000, 1000 denoised sequences for each sample are sufficient to estimate trends in β-diversity accurately and precisely, while 5000 denoised sequences may be needed for α-diversity estimation [2].
+
+*References:*  
+[1] V. Kunin, A. Engelbrektson, H. Ochman and P. Hugenholtz, "Wrinkles in the rare biosphere: pyrosequencing errors can lead to artificial inflation of diversity estimates," *Environmental Microbiology*, 12(1), pp. 118-123, 2010.  
+[2] D. Lundin, I. Severin, J. Brendan Logue, ?. ?stman, A. F. Andersson and E. S. Lindstr?m, "Which sequencing depth is sufficient to describe patterns in bacterial a- and b-diversity?" *Environmental Microbiology Reports*, 4 (3): 367-372, Mar. 2012.  
 
 ## Module_03_Writing_Assignment_03
 
