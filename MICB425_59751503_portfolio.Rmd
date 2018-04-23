@@ -1041,6 +1041,589 @@ Ramer, "Small-Group Learning in an Upper-Level University Biology Class Enhances
 
 ### Project_01_Report
 
+#### Authors
+
+Team 1: Albert Chang (), Alison Fong (33399149), Karen Lau (16524143), Yaqian
+ Luo (59751503), Jessica Ngo (31837131), Peter (Kiet) Truong (36645133)
+
+####Abstract  
+
+To study the diversity and biochemical responses of microbial communities in the context of oxygen minimum zones (OMZs), Saanich Inlet was used as a model ecosystem from which water samples were collected at seven major depths spanning the oxycline. A metagenomic study was conducted in which genomic DNA was extracted from the water samples, PCR amplified, assembled into contiguous sequences, and processed into operational taxonomic units (OTUs) and amplicon sequence variants (ASVs) using mothur and QIIME2 pipelines. Based on OTU and ASV results, we chose to focus in on Cyanobacteria as our taxon of interest. Both mothur and QIIME2 data produced alpha diversity values based on Shannon's diversity index that suggest a decrease of Cyanobacterial abundance as depth increases. In addition, Cyanobacterial abundance significantly differs across depth and oxygen concentration according to both mothur and QIIME2 data; specifically, abundance significantly decreases at deeper depths and in environments with lower concentrations of oxygen. Within the Cyanobacteria phylum, there are 15 OTUs and 51 ASVs across all samples. Abundance of five OTUs from the mothur pipeline showed significant changes across both depth and oxygen. In contrast, abundance of none of the ASVs from the QIIME2 pipeline showed significant changes across depth, although 17 ASVs showed significant changes across oxygen concentrations. An increase of Cyanobacterial abundance at shallow depths may be explained in part by their ability to absorb red and orange light at the upper boundaries of the water column. This is also supported by the significant change in oxygen and chlorophyll A concentrations across the depth profile. Another explanation for low Cyanobacterial abundance at lower depths may be due to changes in temperature; where temperature drops below 10^o^C at 100m, Cyanobacterial growth stops completely.To study the diversity and biochemical responses of microbial communities in the context of oxygen minimum zones (OMZs), Saanich Inlet was used as a model ecosystem from which water samples were collected at seven major depths spanning the oxycline. A metagenomic study was conducted in which genomic DNA was extracted from the water samples, PCR amplified, assembled into contiguous sequences, and processed into operational taxonomic units (OTUs) and amplicon sequence variants (ASVs) using mothur and QIIME2 pipelines. Based on OTU and ASV results, we chose to focus in on Cyanobacteria as our taxon of interest. Both mothur and QIIME2 data produced alpha diversity values based on Shannon's diversity index that suggest a decrease of Cyanobacterial abundance as depth increases. In addition, Cyanobacterial abundance significantly differs across depth and oxygen concentration according to both mothur and QIIME2 data; specifically, abundance significantly decreases at deeper depths and in environments with lower concentrations of oxygen. Within the Cyanobacteria phylum, there are 15 OTUs and 51 ASVs across all samples. Abundance of five OTUs from the mothur pipeline showed significant changes across both depth and oxygen. In contrast, abundance of none of the ASVs from the QIIME2 pipeline showed significant changes across depth, although 17 ASVs showed significant changes across oxygen concentrations. An increase of Cyanobacterial abundance at shallow depths may be explained in part by their ability to absorb red and orange light at the upper boundaries of the water column. This is also supported by the significant change in oxygen and chlorophyll A concentrations across the depth profile. Another explanation for low Cyanobacterial abundance at lower depths may be due to changes in temperature; where temperature drops below 10^o^C at 100m, Cyanobacterial growth stops completely.  
+
+####Introduction  
+
+Oxygen minimum zones (OMZs) are areas in the ocean where dissolved oxygen concentrations fall below 20 $\mu$M (1). Due to temperature increases and other effects caused by global warming, OMZs are expanding at a notable rate. Saanich Inlet, a seasonally anoxic fjord off the coast of British Columbia, is a model ecosystem for studying the diversity and biochemical responses of microbial communities to the hypoxic environments commonly observed in OMZs (1, 2). In particular, Saanich Inlet has been used to model the metabolic coupling and symbiotic interactions that occur in OMZs (3).  The inlet undergoes recurring cycles of water column stratification and deep water renewal, rendering it a model ecosystem for studying microbial responses to changes in ocean deoxygenation levels (4). Increased levels of primary productivity in ocean surfaces during the spring season, as well as the limited mixing which occurs between the basin and surface waters both result in the development of an anoxic body of water with increasing depth in the Inlet (2). These anoxic regions become populated with chemolithoautotrophs, and eventually lead to a decrease in aerobically respiring organisms found deeper within these zones. Past studies have demonstrated that these kinds of metabolic shifts generally lead to a loss of nitrogen along with the production of greenhouse gases, most notably methane (CH~4~) and nitrous oxide (N~2~O) (1).  
+
+In order to investigate the changes that occur in these OMZs, water samples of various depths were collected from Saanich Inlet. Genomic DNA was extracted from these to conduct a metagenomics study, allowing to overcome the barrier of uncultivability of these samples and enable a more thorough exploration of the relationship which exists between the microbes and their communities based on genetic distribution of metabolic processes (5, 6, 7, 8). The extracted DNA is sequenced to generate raw data, which can then be assembled into contiguous sequences. These contigs generated by amplicon sequencing are then compared to a sequence database to determine the microbial taxa present in the environment at each water depth. This involves processing the sequencing data, and there currently exists two methods for this type of data analysis: operational taxonomic units (OTUs) and amplicon sequence variants (ASVs). OTU based pipelines work based on clustering reads which differ by less than a fixed dissimilarity threshold (9). This allows more data to be kept, although some may not be representative of the actual taxa in the community. On the contrary, ASV based pipelines resolve these sequence variants by inferring biological sequences in the sample prior to amplification and possible sequencing errors, and are able to distinguish variants which differ by even one nucleotide (9). This treats each ASV as individual species, though has the potential to discard more data and bias towards sequences that are less error-prone.  
+
+The objective of this paper is to analyze the data generated from both OTU and ASV pipelines in order to decide which produces more logical inferences, and ultimately determining which pipeline would be preferred to carry out future analysis of collected water samples. The taxonomy of interest which was selected for this comparison was the phylum Cyanobacteria. Cyanobacteria was selected as there are sufficient numbers of OTUs and ASVs to make sound comparisons, but not so much so that computation-wise it would be infeasible.  
+
+####Methods  
+
+#####Sampling  
+
+Samples were obtained on Saanich Inlet Cruise 72 and taken from seven major depths spanning the oxycline: 10, 100, 120, 135, 150, 165 and 200 m. Waters were filtered, and genomic DNA was extracted. Further sampling details can be found in (3).  
+
+#####DNA Sequencing 
+
+Samples were PCR amplified using the 515F and 808R primers, then sequenced according to the standard operating protocol on an Illumina MiSeq platform with Phred33 quality scores.  
+
+#####Data Processing
+Sequences were processed using either mothur or QIIME2 as follows:  
+
+*Mothur Pipeline*: mothur was used to clean-up the data. In brief, paired end reads were combined into contigs using their overlapping regions. Low quality sequences, useless sequence data, chimeric sequences and singletons were removed. OTUs were then determined at 97% similarity. OTUs were classified using the SILVA databases, and the taxonomies for each OTU were condensed. The OTU table, taxonomy data and sample metadata were subsequently cleaned up and combined into a phyloseq object.  
+
+*QIIME2 Pipeline*: Demultiplexed sequences were imported into QIIME as manifest reads. QIIME was used to clean up the data along with ASV determination in one step. Sequence quality was visually evaluated, and sequence quality trimming was conducted. All other trimming/filtering parameters were left as default. ASV determination was completed using the Dada2 protocol. ASV classification was completed using the Silva version 119 database at 99% similarity. The ASV table, taxonomy data and sample metadata were subsequently cleaned up and combined into a phyloseq object.  
+
+#####Data Analysis   
+
+The aforementioned phyloseq objects were imported into R version 3.4.3 (Windows) or 1.1.383 (Mac). The tidyverse, phyloseq, magrittr, knitr and cowplot packages were loaded and used to complete the data analysis. Data was piped into linear models and ANOVA tests to determine statistical significance at the 95% confidence level.  
+
+######Environment setup and Data Cleaning
+
+```{r, echo=FALSE, "loading packages and data"}
+library("tidyverse")
+library("phyloseq")
+library("magrittr")
+library("knitr")
+library("cowplot")
+
+load("./mothur_phyloseq.RData")
+load("./qiime2_phyloseq.RData")
+```
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(error = TRUE)
+```
+
+```{r, echo=FALSE, "data cleaning"}
+#Mothur data
+set.seed(4832)
+m.norm = rarefy_even_depth(mothur, sample.size=100000)
+m.perc = transform_sample_counts(m.norm, function(x) 100 * x/sum(x))
+
+#Qiime2 data
+set.seed(4832)
+q.norm = rarefy_even_depth(qiime2, sample.size=100000)
+q.perc = transform_sample_counts(q.norm, function(x) 100 * x/sum(x))
+
+```
+
+####Results  
+
+1. How does microbial community structure change with depth and oxygen concentration?  
+
+**Alpha-diversity comparison:**   
+*Mothur*  
+As shown in Figure 1, alpha-diversity by Shannon's diversity index based on mothur shows an overall decreasing trend as depth increases. Specifically, a stable trend is observed from depths of 0-100m, starts decreasing at 100-150m and stabilizes at 150-200m. Figure 1 also shows an overall increasing trend as oxygen increases. Specifically, Shannon's diversity index increases from 2.3-4.25 at oxygen concentrations of 0-40$\mu$M and decreases from 4.25-3.9 at oxygen concentrations of 40-220?M. It was also observed that Shannon's diversity index is higher in oxic conditions (3.84 ? 0.45) than anoxic conditions (2.39 ? 0.07).  
+
+*QIIME2*  
+The trends of Shannon's diversity index across depth and oxygen based on QIIME2 data are similar to those of mothur data. However, QIIME2 pipeline produces higher Shannon's diversity index than mothur does. Shannon's diversity index increases from 2.9-5.2 at oxygen concentrations of 0-40$\mu$M and decreases from 5.2-5.1 at oxygen concentrations of 40-200m. Figure 2 shows that Shannon's diversity index is higher in oxic conditions (4.80 ? 0.43) than anoxic conditions (3.15 ? 0.18).  
+
+######Alpha-diversity of mothur data
+```{r, echo=FALSE, "Question 1a_1", fig.width=14, fig.height=10}
+#Mothur data
+m.alpha = estimate_richness(m.norm, measures = c("Chao1", "Shannon"))
+m.meta.alpha = full_join(rownames_to_column(m.alpha), rownames_to_column(data.frame(m.perc@sam_data)), by = "rowname")
+
+#Mother data - Alpha diversity across depth
+plot_1=m.meta.alpha %>%
+ggplot() +
+   geom_point(aes(x=Depth_m, y=Shannon)) +
+   geom_smooth(method='auto', aes(x=as.numeric(Depth_m), y=Shannon)) +
+   labs(y="Shannon's diversity index", x="Depth (m)")
+
+#Mothur data - Alpha diversity across oxygen
+plot_2=m.meta.alpha %>%
+ggplot() +
+  geom_point(aes(x=O2_uM, y=Shannon)) +
+  labs(y="Shannon's diversity index", x="Oxygen (uM)")
+
+#Mothur data - Alpha diversity by oxic/anoxic
+plot_3=m.meta.alpha %>%
+  mutate(O2_group = ifelse(O2_uM == 0, "anoxic", "oxic")) %>%
+ggplot() +
+  geom_boxplot(aes(x=O2_group, y=Shannon)) +
+  labs(y="Shannon's diversity index", x="Oxygen")
+
+plot_grid(plot_1, plot_2, plot_3, labels=c("A", "B","c"))+
+   labs(caption="Figure 1. Alpha-diversity across depth or oxygen using mothur data. A) Alpha-diversity across depth using mothur data.
+        B) Alpha-diversity across oxygen using mothur data. C) Alpha-diversity by oxic/anoxic using mothur data")+
+  theme(plot.caption = element_text(size=rel(1.2)))
+
+# Average and standard deviation of mothur by oxic/anoxic
+m.oxygen=m.meta.alpha %>%
+  mutate(O2_group = ifelse(O2_uM == 0, "anoxic", "oxic")) 
+
+m.anoxic=m.oxygen%>%
+  filter(O2_group=="anoxic")
+  
+ave.m.anoxic=mean(m.anoxic$Shannon)
+st.m.anoxic=sd(m.anoxic$Shannon)
+
+m.oxic=m.oxygen%>%
+  filter(O2_group=="oxic")
+
+ave.m.oxic=mean(m.oxic$Shannon)
+st.m.oxic=sd(m.oxic$Shannon)
+
+m.avg_std = data.frame(
+  Statistic=c("Average","Standard deviation"),
+  Oxic=c(ave.m.oxic, st.m.oxic),
+  Anoxic=c(ave.m.anoxic, st.m.anoxic)
+)
+
+kable(m.avg_std,captio="Table 1. Average and standard deviation of alpha-diversity by oxic/anoxic with mothur data", align = "c")
+
+```
+
+######Alpha-diversity of QIIME2 data
+``` {r, echo=FALSE, "Question 1a_2", fig.width=14, fig.height=10}
+#Qiime2 data
+q.alpha = estimate_richness(q.norm, measures = c("Chao1", "Shannon"))
+q.meta.alpha = full_join(rownames_to_column(q.alpha), rownames_to_column(data.frame(q.perc@sam_data)), by = "rowname")
+
+#Qiime 2 data - Alpha diversity across depth
+plot_4=q.meta.alpha %>%
+ 
+ggplot() +
+   geom_point(aes(x=Depth_m, y=Shannon)) +
+   geom_smooth(method='auto', aes(x=as.numeric(Depth_m), y=Shannon)) +
+   labs(y="Shannon's diversity index", x="Depth (m)")
+ 
+#Qiime2 data - Alpha-diversity across oxygen
+plot_5=q.meta.alpha %>%
+ggplot() +
+  geom_point(aes(x=O2_uM, y=Shannon)) +
+  labs(y="Shannon's diversity index", x="Oxygen (uM)") 
+ 
+#Qiime2 data - Alpha-diversity by oxic/anoxic
+plot_6=q.meta.alpha %>%
+  mutate(O2_group = ifelse(O2_uM == 0, "anoxic", "oxic")) %>%
+ggplot() +
+  geom_boxplot(aes(x=O2_group, y=Shannon)) +
+  labs(y="Shannon's diversity index", x="Oxygen")
+  
+plot_grid(plot_4, plot_5, plot_6, labels=c("A", "B","c"))+
+   labs(caption="Figure 2. Alpha-diversity across depth or oxygen using QIIME2 data. A) Alpha-diversity across depth using QIIME2 data. 
+        B) Alpha-diversity across oxygen using QIIME2 data. C) Alpha-diversity by oxic/anoxic using QIIME2 data")+
+  theme(plot.caption = element_text(size=rel(1.2)))
+
+# Average and standard deviation of quiime2 by oxic/anoxic
+q.oxygen=q.meta.alpha %>%
+  mutate(O2_group = ifelse(O2_uM == 0, "anoxic", "oxic")) 
+
+q.anoxic=q.oxygen%>%
+  filter(O2_group=="anoxic")
+
+ave.q.anoxic=mean(q.anoxic$Shannon)
+sd.q.anoxic=sd(q.anoxic$Shannon)
+
+q.oxic=q.oxygen%>%
+  filter(O2_group=="oxic")
+
+ave.q.oxic=mean(q.oxic$Shannon)
+sd.q.oxic=sd(q.oxic$Shannon)
+
+q.avg_std = data.frame(
+  Statistic=c("Average","Standard deviation"),
+  Oxic=c(ave.q.oxic, sd.q.oxic),
+  Anoxic=c(ave.q.anoxic, sd.q.anoxic)
+)
+
+kable(q.avg_std,captio="Table 2. Average and standard deviation of alpha-diversity by oxic/anoxic with QIIME2 data", align = "c")
+
+```
+
+**Taxa presence and abundance:**  
+
+*Mothur* 
+31 taxa in the phylum level are detected by mothur pipeline (Figure 3). These taxa, however, have abundance at different magnitudes. Among of them, Proteobacteria is the most predominant phylum in all samples with the highest average abundance over 75. On the contrary, phylum Peregrinlbacteria has abundance no larger than 0.001 in the seven samples (Figure 3). Additionally, different taxa have distinct changes in abundance across depth. For instance, both Thaumarchaeota and Verrucomicrobia reach their maximum abundance at depth of 100m and and gradually decrease in abundance until 200m, while Latescibacteria and Fibrobacteres are almost undetectable in shallow water and their abundances increase dramatically at depth of 200m.  
+
+*QIIME2*   
+QIIME2 pipeline detects 29 known taxa and unknown taxa in phylum level (Figure 4).  Proteobacteria is still the most abundant phylum across samples. Taxa Chlorobi and Candidate division OP3 have the smallest abundance no larger than 0.004. Different pipelines may result in different changes in abundance for the common taxa shared by mothur and QIIME2 data. Although the change patterns of phylum Actinobacteria in abundance across depth are the same in both datasets, Chloroflexi abundance increases gradually with depth in QIIME2 data different from its change pattern in mothur data, in which abundance declines at depth from 100m to 135m and increases gradually until 200m.  
+
+```{r, echo=FALSE, "Question 1b_1", fig.width=19, fig.height=15}
+#Mothur data - Phyla across samples
+m.perc %>%
+plot_bar() +
+  geom_bar(aes(fill=Phylum), stat="identity") +
+  facet_wrap(~Phylum, scales="free_y")+
+  theme(legend.position="none")+
+  labs(caption="Figure 3. Taxa within phylum level across samples using mothur data")+
+  theme(plot.caption = element_text(hjust=0.5, size=rel(1.7)))
+```
+
+```{r, echo=FALSE, "Question 1b_2", fig.width=18, fig.height=13}
+#Qiime2 data - Phyla across samples
+q.perc %>%
+plot_bar() +
+  geom_bar(aes(fill=Phylum), stat="identity") +
+  facet_wrap(~Phylum, scales="free_y")+
+  theme(legend.position="none")+
+  labs(caption="Figure 4. Taxa within phylum level across samples using qiime2 data")+
+  theme(plot.caption = element_text(hjust=0.5, size=rel(1.7)))
+```
+
+
+2. Does your taxon of interest significantly differ in abundance with depth and/or oxygen concentration?  
+
+*Mothur*   
+The difference in cyanobacteria abundance within depth or oxygen was estimated by the linear model using mothur processed data. The statistical results show that abundance of cyanobacteria is significantly different with depth (p = 0.01263) and oxygen (p = 0.00012). However linear models in Figure 5 indicate completely distinct trends of cyanobacteria abundance across depth and oxygen, where there is a decrease in abundance as depth increases and an increase in abundance as oxygen concentrations increases respectively.  
+
+*QIIME2*   
+For data processed by QIIME2 pipeline, ANOVA tests indicate cyanobacteria abundance in the seven samples has significantly difference across depth (p = 0.014) and oxygen (p = 0.013).The linear models in Figure 6 reveal that cyanobacteria abundance decreases at deeper water or in the environment with insufficient oxygen.  
+
+```{r, echo=FALSE, "Question 2a", fig.width=10, fig.height=4}
+#Calculating significance with linear model for depth
+m.norm %>% 
+  subset_taxa(Phylum=="Cyanobacteria") %>% 
+  tax_glom(taxrank = 'Phylum') %>%
+  psmelt() %>%
+  
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+
+#Plot to go along with linear model above
+plot_7=m.perc %>% 
+  subset_taxa(Phylum=="Cyanobacteria") %>% 
+  psmelt() %>% 
+  group_by(Sample) %>% 
+  summarize(Abundance_sum=sum(Abundance), Depth_m=mean(Depth_m)) %>% 
+  
+  ggplot() +
+  geom_point(aes(x=Depth_m, y=Abundance_sum)) +
+  geom_smooth(method='lm', aes(x=as.numeric(Depth_m), y=Abundance_sum)) 
+
+#Calculating significance with linear model for oxygen
+m.norm %>% 
+  subset_taxa(Phylum=="Cyanobacteria") %>% 
+  tax_glom(taxrank = 'Phylum') %>% 
+  psmelt() %>% 
+  
+  lm(Abundance ~ O2_uM, .) %>% 
+  summary()
+
+#Plot to go along with linear model above
+plot_8=m.perc %>% 
+  subset_taxa(Phylum=="Cyanobacteria") %>% 
+  psmelt() %>% 
+  group_by(Sample) %>% 
+  summarize(Abundance_sum=sum(Abundance), O2_uM=mean(O2_uM)) %>% 
+  
+  ggplot() +
+  geom_point(aes(x=O2_uM, y=Abundance_sum)) +
+  geom_smooth(method='lm', aes(x=as.numeric(O2_uM), y=Abundance_sum)) 
+
+plot_grid(plot_7, plot_8, labels=c("A", "B"))+
+  labs(caption="Figure 5. Abundance of Cyanobacteria across depth/oxygen concentrations using mothur OTUs. 
+       A) Abundance of Cyanobacteria across depth. B) Abundance of Cyanobacteria across oxygen concentrations.")+
+  theme(plot.caption = element_text(hjust=0.5,size=rel(0.8)))
+```
+
+
+```{r, echo=FALSE, "Question 2b", fig.width=10, fig.height=4}
+
+#Calculating significance with linear model for depth
+q.norm %>%
+  subset_taxa(Phylum=="D_1__Cyanobacteria") %>%
+  tax_glom(taxrank = 'Phylum') %>%
+  psmelt() %>%
+  
+  lm(Abundance ~ Depth_m, .) %>%
+  summary()
+
+#Plot to go along with linear model above
+plot_9=q.perc %>%
+  subset_taxa(Phylum=="D_1__Cyanobacteria") %>%
+  psmelt() %>%
+  group_by(Sample) %>%
+  summarize(Abundance_sum=sum(Abundance), Depth_m=mean(Depth_m)) %>%
+ 
+ggplot() +
+  geom_point(aes(x=Depth_m, y=Abundance_sum)) +
+  geom_smooth(method='lm', aes(x=as.numeric(Depth_m), y=Abundance_sum)) 
+
+#Calculating significance with linear model for oxygen
+q.norm %>%
+  subset_taxa(Phylum=="D_1__Cyanobacteria") %>%
+  tax_glom(taxrank = 'Phylum') %>%
+  psmelt() %>%
+  lm(Abundance ~ O2_uM, .) %>%
+  summary()
+
+#Plot to go along with linear model above
+plot_10=q.perc %>%
+  subset_taxa(Phylum=="D_1__Cyanobacteria") %>%
+  psmelt() %>%
+  group_by(Sample) %>%
+  summarize(Abundance_sum=sum(Abundance), O2_uM=mean(O2_uM)) %>%
+ 
+ggplot() +
+  geom_point(aes(x=O2_uM, y=Abundance_sum)) +
+  geom_smooth(method='lm', aes(x=as.numeric(O2_uM), y=Abundance_sum)) 
+
+plot_grid(plot_9, plot_10, labels=c("A", "B"))+
+  labs(caption="Figure 6. Abundance of Cyanobacteria across depth/oxygen concentrations using QIIME2 ASVs. 
+       A) Abundance of Cyanobacteria across depth. B) Abundance of Cyanobacteria across oxygen concentrations.")+
+  theme(plot.caption = element_text(hjust=0.5,size=rel(0.8)))
+```
+
+3. Within your taxon, what is the richness (number of OTUs/ASVs)?  
+
+*Mothur*   
+Across all samples, there are 15 OTUs within cyanobacteria phylum. Table 3 presents the numbers of OTUs within cyanobacteria phylum for each sample. Most of samples contain  3-5 OTUs within cyanobacteria, except Saanich_120 and Saanich_200 which only have 1 and 0 cyanobacteria OTUs respectively.  
+
+*QIIME2*    
+There are 51 ASVs within cyanobacteria phylum across all samples. The number of ASVs within cyanobacteria phylum for each sample is shown in Table 2. Saanich_010, Saanich 120, and Saanich_135  have relatively high ASV number equal to or over 15. However, it is important to note that there are no singletons within the ASV dataset, and the function used to estimate richness, "estimate_richness" from the phyloseq library is highly dependent on the number of singletons, and warns of unreliable or wrong results in the absence of singletons in the data.  
+
+
+######Table showing richness of OTUs using mothur data and ASVs using QIIME2 data  
+```{r, echo=FALSE, "Question 3a"}
+m.norm %>% 
+  subset_taxa(Phylum=="Cyanobacteria")
+
+mothur_otu=m.norm %>% subset_taxa(Phylum=="Cyanobacteria") %>% estimate_richness(measures = c("Observed"))
+
+q.norm %>% 
+  subset_taxa(Phylum=="D_1__Cyanobacteria")
+
+qiime_asv=q.norm %>% subset_taxa(Phylum=="D_1__Cyanobacteria") %>%estimate_richness(measures = c("Observed"))
+
+sam_data=data.frame(m.norm@sam_data)
+
+Depth=sam_data%>%select("Depth_m")
+
+otu_asv=cbind(Depth, mothur_otu, qiime_asv)
+colnames(otu_asv)=c("Depth_m","OTU","ASV")
+kable(otu_asv, caption="Table 3. OTUs/ASVs across depth",align = "c")
+
+```
+
+4. Do the abundances of OTUs/ASVs within your taxon of interest change significantly with depth and/or oxygen concentration?  
+
+Using the linear model for statistical interpretation, after correcting the p-value for multiple comparisons, the abundance of  OTUs 0189, 0658, 1104, 3852, and 4312 from the mothur pipeline within the cyanobacteria phylum changed significantly with both depth and oxygen. Interestingly, the abundance of ASVs in the QIIME2 pipeline did not have any significant changes across the depth profiles after correcting for the p-value. However, there were 17 ASVs that had a significant abundance change with respect to oxygen concentrations.  
+
+######Mothur
+```{r, echo=FALSE, "Question 4a",fig.width=10,fig.height=7}
+#filtered table 
+m.Cyano=m.norm %>% subset_taxa(Phylum=="Cyanobacteria") 
+m.filtered=data.frame(m.Cyano@tax_table)
+
+#General linear model for each OTU across depth
+otu_stats = data.frame("Estimate" = numeric(0), "Std. Error"= numeric(0),"t value"= numeric(0),"P_value"= numeric(0))
+for (otu in row.names(m.filtered)){
+  require(tidyverse)
+  require(knitr)
+    linear_fit = m.norm %>% 
+    psmelt() %>% 
+    filter(OTU==otu) %>% 
+    lm(Abundance ~ Depth_m, .) %>% 
+    summary()
+  otu_data = linear_fit$coefficients["Depth_m",]
+  otu_stats <- rbind(otu_stats, otu_data)
+}
+
+colnames(otu_stats)<- (c("Estimate", "Std. Error","t value","P_value"))
+otu_depth=otu_stats%>%
+  mutate(Adjusted_P=p.adjust(P_value, method="fdr"))
+row.names(otu_depth) <- row.names(m.filtered)
+otu_depth_filter=otu_depth[which(otu_depth[,"Adjusted_P"]<=0.05),]
+kable(otu_depth_filter,caption="Table 4. Correlation data of Cyanobacteria OTUs with significant differences across depth using mothur data",align = "c")
+
+#Calculating abundances of OTUs across depth
+m.perc %>%
+  subset_taxa(Phylum=="Cyanobacteria") %>%
+  psmelt() %>%
+ 
+ggplot() +
+  geom_point(aes(x=Depth_m, y=Abundance)) +
+  geom_smooth(method='lm', aes(x=Depth_m, y=Abundance)) +
+  facet_wrap(~OTU, scales="free_y") +
+  labs(caption="Figure 7. Abundance of OTUs within Phylum Cyanobacteria across depth using mothur data")+
+  theme(plot.caption = element_text(hjust=0.5, size=rel(0.9)))
+
+#General linear model for each OTU across oxygen
+otu_stats_O2 = data.frame("Estimate" = numeric(0), "Std. Error"= numeric(0),"t value"= numeric(0),"P_value"= numeric(0))
+for (otu in row.names(m.filtered)){
+  require(tidyverse)
+  require(knitr)
+    linear_fit = m.norm %>% 
+    psmelt() %>% 
+    filter(OTU==otu) %>% 
+    lm(Abundance ~ O2_uM, .) %>% 
+    summary()
+  otu_data_O2 = linear_fit$coefficients["O2_uM",]
+  otu_stats_O2 <- rbind(otu_stats_O2, otu_data_O2)
+}
+
+colnames(otu_stats_O2)<- (c("Estimate", "Std. Error","t value","P_value"))
+otu_oxygen=otu_stats_O2%>%
+  mutate(Adjusted_P=p.adjust(P_value, method="fdr"))
+row.names(otu_oxygen) <- row.names(m.filtered)
+otu_oxygen_filter=otu_oxygen[which(otu_oxygen[,"Adjusted_P"]<=0.05),]
+kable(otu_oxygen_filter,caption="Table 5. Correlation data of Cyanobacteria OTUs with significant differences across oxygen using mothur data", align = "c")
+
+#Calculating abundances of OTUs across oxygen
+m.perc %>%
+  subset_taxa(Phylum=="Cyanobacteria") %>%
+  psmelt() %>%
+ 
+ggplot() +
+  geom_point(aes(x=O2_uM, y=Abundance)) +
+  geom_smooth(method='lm', aes(x=O2_uM, y=Abundance)) +
+  facet_wrap(~OTU, scales="free_y") +
+  labs(caption="Figure 8. Abundance of OTUs within Cyanobacteria across oxygen using mothur data")+
+  theme(plot.caption = element_text(hjust=0.5, size=rel(0.9)))
+
+```
+
+######QIIME2
+```{r, echo=FALSE, "Question 4b_1"}
+#filtered table 
+q.Cyano=q.norm %>% subset_taxa(Phylum=="D_1__Cyanobacteria") 
+q.filtered=data.frame(q.Cyano@tax_table)
+
+#General linear model for each ASV across depth
+asv_stats = data.frame("Estimate" = numeric(0), "Std. Error"= numeric(0),"t value"= numeric(0),"P_value"= numeric(0))
+for (asv in row.names(q.filtered)){
+  require(tidyverse)
+  require(knitr)
+    linear_fit = q.norm %>% 
+    psmelt() %>% 
+    filter(OTU==asv) %>% 
+    lm(Abundance ~ Depth_m, .) %>% 
+    summary()
+  asv_data = linear_fit$coefficients["Depth_m",]
+  asv_stats <- rbind(asv_stats, asv_data)
+}
+
+colnames(asv_stats)<- (c("Estimate", "Std. Error","t value","P_value"))
+asv_depth=asv_stats%>%
+  mutate(Adjusted_P=p.adjust(P_value, method="fdr"))
+row.names(asv_depth) <- row.names(q.filtered)
+
+asv_depth_filter=asv_depth[which(asv_depth[,"Adjusted_P"]<=0.05),]
+z=nrow(asv_depth_filter)
+
+if (z!=0) {
+  kable(asv_depth_filter,caption="Correlation data of Cyanobacteria ASVs with significant differences across depth using QIIME2 data",align = "c")
+}else{
+    print("None of ASV has significantly different abundance acrossing depth with QIIME2 data")}
+```
+
+```{r, echo=FALSE, "Question 4b_2", fig.width=15, fig.height=10}
+#Calculating abundances of ASVs across depth
+q.perc %>%
+  subset_taxa(Phylum=="D_1__Cyanobacteria") %>%
+  psmelt() %>%
+ 
+ggplot() +
+  geom_point(aes(x=Depth_m, y=Abundance)) +
+  geom_smooth(method='lm', aes(x=Depth_m, y=Abundance)) +
+  facet_wrap(~OTU, scales="free_y") +
+  labs(caption="Figure 9. Abundance of ASVs within cyanobacteria across depth using QIIME2 data")+
+  theme(plot.caption = element_text(hjust=0.5, size=rel(1.3)))
+```
+
+```{r, echo=FALSE, "Question 4b_3"}
+#General linear model for each ASV across oxygen
+asv_stats_O2 = data.frame("Estimate" = numeric(0), "Std. Error"= numeric(0),"t value"= numeric(0),"P_value"= numeric(0))
+for (asv in row.names(q.filtered)){
+  require(tidyverse)
+  require(knitr)
+    linear_fit = q.norm %>% 
+    psmelt() %>% 
+    filter(OTU==asv) %>% 
+    lm(Abundance ~ O2_uM, .) %>% 
+    summary()
+  asv_data_O2 = linear_fit$coefficients["O2_uM",]
+  asv_stats_O2 <- rbind(asv_stats_O2, asv_data_O2)
+}
+
+colnames(asv_stats_O2)<- (c("Estimate", "Std. Error","t value","P_value"))
+asv_oxygen=asv_stats_O2%>%
+  mutate(Adjusted_P=p.adjust(P_value, method="fdr"))
+row.names(asv_oxygen) <- row.names(q.filtered)
+asv_oxygen_filter=asv_oxygen[which(asv_oxygen[,"Adjusted_P"]<=0.05),]
+kable(asv_oxygen_filter,caption="Table 6. Correlation data of Cyanobacteria ASVs with significant differences across oxygen using QIIME2 data", align = "c")
+```
+
+```{r, echo=FALSE, "Question 4b_4", fig.width=16, fig.height=10}
+#Calculating abundance of ASVs across oxygen
+q.perc %>%
+  subset_taxa(Phylum=="D_1__Cyanobacteria") %>%
+  psmelt() %>%
+ 
+ggplot() +
+  geom_point(aes(x=O2_uM, y=Abundance)) +
+  geom_smooth(method='lm', aes(x=O2_uM, y=Abundance)) +
+  facet_wrap(~OTU, scales="free_y") +
+  labs(caption="Figure 10. Abundance of ASVs within Cyanobacteria across oxygen using QIIME2 data")+
+  theme(plot.caption = element_text(hjust=0.5, size=rel(1.3)))
+```
+
+5. Are the answers to the above the same using mothur and QIIME2 processed data?  
+
+In terms of differences between the two pipelines, the overall trend between both datasets were similar, however the statistical interpretations of the datasets varied. For starters, the Shannon diversity for the whole microbial community processed with mothur was generally smaller than that estimated by QIIME 2 processed data. Additionally, ANOVA tests indicated that the Shannon diversity had no significant change across depth from the mothur pipeline (p = 0.054). In contrast, there was statistical significance with the Shannon diversity across depth from the QIIME2 dataset (p = 0.022). Within the Cyanobacterial taxon, there were 51 ASVs calculated from the QIIME2 pipeline compared to 15 OTUs from the Mothur pipeline. Interestingly, while there is a difference in the richness between both datasets, 5 of the OTUs had a significantly different abundance with respect to depth and oxygen profiles, while none of the ASVs had a significant change in abundance across depth and 17 ASVs which had a significant difference in abundance across oxygen concentrations. Despite all these variations, the Cyanobacterial taxon itself had a significant difference in abundance with respect to depth and oxygen profiles along the water column across both pipelines.
+
+###### ANOVA on alpha-diversity of mothur data across depth 
+```{r,echo=FALSE}
+#Mothur data - ANOVA test on Alpha diversity across depth
+summary(aov(Shannon ~ Depth_m, data = m.meta.alpha))
+```
+###### ANOVA on alpha-diversity of QIIME2 data across depth
+```{r, echo=FALSE}
+#Qiime2 data - ANOVA test on Alpha diversity across depth
+summary(aov(Shannon ~ Depth_m, data = q.meta.alpha))
+```
+
+####Discussion
+
+The significant differences for Cyanobacteria abundance across depth and oxygen may be caused by photosynthesis and water temperature. Bacteria of the phylum Cyanobacteria obtain their energy through photosynthesis. These phototrophs are characterized by phycocyanin, a bluish pigment, which functions as an auxiliary light-harvesting protein complex to chlorophyll. Phycocyanin absorbs orange and red light at approximately 620nm and fluoresces at about 650nm depending on the species (10). This is particularly interesting because orange and red light are typically absorbed within the first 50m of a water column (11). From our data in Fig 5 & 6, it was found that there are significant differences in the abundance of Cyanobacteria across the Saanich Inlet depth profiles in both the mothur and QIIME2 pipelines. It is likely that this significance exists as a result of Cyanobacteria thriving at the upper boundaries of the water column, where they are still able to absorb red and orange light that is essential for Cyanobacterial photosynthesis. Furthermore, these findings are supported by the oxygen and fluorescence profiles across the water column (Fig 11). There is a significant difference in the concentration of oxygen and chlorophyll A across depth profiles. Higher concentrations of chlorophyll A and oxygen were found within the top 50m, which indicates increased photosynthetic activity. Moreover, there was a significant difference in the abundance of Cyanobacteria across oxygen concentrations and chlorophyll A concentrations for both pipelines; high oxygen and chlorophyll A concentrations were associated with a larger abundance. With Cyanobacterial photosynthesis contributing a substantial proportion of oxygen to Earth's atmosphere, it is not surprising that a high abundance of Cyanobacteria is associated with a high concentration of oxygen and chlorophyll A, and a shallow depth. Moreover, it has been reported that the growth rate of cyanobacteria is significantly influenced by temperature. Cyanobacteria were observed to have a lower growth rate at colder temperatures. For marine cyanobacteria, the optimal growth temperature range is 20 - 27.5^o^C; at these temperatures, cyanobacteria grow at a rate of 0.8 d^-1^  (12). When the temperature dropped to approximately 15^o^C, the growth rate of cyanobacteria slowed to 0.22 d^-1^. Interestingly, when temperature dropped below 10^o^C, cyanobacterial growth rates came to a complete stop (13). Therefore, in our study, the decline of cyanobacteria abundance with depth may at least partly attributed to the decreasing temperature. According temperature data for each sample, the temperature is close to 13^o^C at 10m, and decreases to about 9^o^C when at depths below 100m. Hence, the growth rate of cyanobacteria at depths below 100m is substantially slower than the growth rate at the water's surface. This leads to a lower abundance at lower depths.  
+
+Implications of potential differences in pipelines for microbial ecology make it difficult to make conclusive statements in research and discovery, since we become unable to differentiate actual biological differences seen and differences due to a particular pipeline being used. This could also suggest that one pipeline is more suited to the dataset. In fact, this difference could also be exploited, and manipulated so that a pipeline is selected based on the results that it gives, rather than the more appropriate pipeline for the given dataset.  
+
+In the context of this project, the main difference between the two pipelines is based on whether the pipeline produces OTUs (mothur) or ASVs (QIIME2). Both of them use different clustering algorithms to determine "true" sequences, and as a result, there are usually far more ASVs in the QIIME2 pipeline than OTUs created with the mothur pipeline. Therefore, when doing downstream analysis of the pipeline results, this may be one of the reasons why there is a large disparity in between the numbers of sequences and quality of the sequences produced even when using the same initial data.  
+
+However, when it came to counting abundances within our taxon, cyanobacteria, there was a far lower abundance seen in qiime2 results than mothur results which cannot be explained by having more numerous ASVs than OTUs. Interestingly, when running the estimate_richness function on our qiime2 data for determining abundance, this resulted in the warning that our data provided did not have any singletons (supposedly in the output), and that results are probably unreliable or wrong. This error did not occur with running this function on mothur data.
+Further analysis of why this error is seen with qiime2 data should be done before fully trusting the results of this function with qiime2 data.  
+
+In subsequent analyses with these two pipelines, perhaps a more in-depth analysis of each function available with the phyloseq package should be tested. A dataset of a well-studied and known community could be used so that the output of the functions can be compared with respect to the pipeline used. Comparisons can be made for the outputs of each pipeline, and results from the mothur and QIIME2 pipelines can be assessed with reference to the expected results. Use cases should also be considered, and standard use cases for either pipeline should be indicated so exploitation of pipelines for favourable results does not occur. Mothur may be more suited to a particular dataset, while QIIME2 could be more appropriate for another dataset that should be used with a "denoising" algorithm.  
+
+Future directions for this project could possibly involve the analysis of water samples from other OMZs at various depths, along with observation of the Cyanobacteria data present in those samples to see if the relationships are exhibited between oxygen, nitrogen, and the phyla population as with this study. These can also be analyzed once again with both mothur and QIIME2 for further comparison between the pipelines.  
+
+```{r, echo=FALSE, fig.width=10, fig.height=7}
+# Geochemical parameters across depth
+sam_data=data.frame(m.norm@sam_data)
+sam_data1=sam_data%>%mutate(CH4_uM=CH4_nM/1000)
+nutrient=sam_data1 %>% select(Depth_m,O2_uM,PO4_uM,SiO2_uM,NO3_uM,NH4_uM,NO2_uM,H2S_uM,N2O_nM,CH4_uM,Temperature_C, Fluorescence_mgm_3) %>% gather(nutrient,uM,O2_uM,PO4_uM,SiO2_uM,NO3_uM,NH4_uM,NO2_uM,H2S_uM,N2O_nM,CH4_uM, Temperature_C, Fluorescence_mgm_3)
+library(ggplot2)
+ggplot(nutrient,aes(x=Depth_m,y=uM))+
+  geom_line()+
+  geom_point()+
+  ylab("Concentration or degree or mgm3")+
+  facet_wrap(~nutrient,scales="free_y")+
+  labs(caption="Figure 11. Geochemical parameters across depth")+
+  theme(plot.caption = element_text(hjust=0.5, size=rel(0.8)))
+```
+
+####References
+
+1. Walsh DA, Zaikova E, Howes CG, Song YC, Wright JJ, Tringe SG, Hallam SJ. 2009. Metagenome of a versatile chemolithoautotroph from expanding oceanic dead zones. Science 326(5952): 578-582.  
+2. Torres-Beltr?n M, Hawley AK, Capelle D, Zaikova E, Walsh DA., Mueller A, Finke J. 2017. A compendium of geochemical information from the Saanich Inlet water column. Nature scientific data 4(170159).  
+3. Hawley AK, Torres-Beltr?n M, Zaikova E, Walsh DA, Mueller A, Scofield M, Kheirandish S, Payne C, Pakhomova L, Bhatia M, Shevchek O, Gies EA, Fairley D, Malfatii SA, Norbeck AD, Brewer HM, Pasa-Tolic, L, del Rio TG, Suttle CA, Trige S, Hallam SJ. Data Descriptor: A compendium of multi-omic sequence information from the Saanich Inlet water column. Nature scientific data 4(170160).  
+4. Hallam SJ, Torres-Beltr?n M, Hawley AK. Comment: Monitoring microbial responses to ocean deoxygenation in a model oxygen minimum zone. Nature scientific data 4(170158).  
+5. National Research Council. 2007. The new science of metagenomics: revealing the secrets of our microbial planet. National Academies Press, Washington, DC.  
+6. Bowers RM, Kyrpides NC, Stepanauskas R, Harmon-Smith M, Doud D, Reddy TBK, Tringe SG. 2017. Minimum information about a single amplified genome (MISAG) and a metagenome-assembled genome (MIMAG) of bacteria and archaea. Nature Biotechnology 35: 725-731.  
+7. Falkowski PG, Fenchel T, Delong EF. 2008. The microbial engines that drive Earth's biogeochemical cycles. Science 320(5879): 1034-1039.  
+8. Wooley JC, Godzik A, Friedberg I. 2010. A primer on metagenomics. PLoS computational biology 6(2), e1000667.  
+9. Callahan BJ, McMurdie PJ, Holmes SP. 2017. Exact sequence variants should replace operational taxonomic units in marker-gene data analysis. The ISME journal 11(12): 2639-2643.  
+10. Simis SG, Huot Y, Babin M, Seppala J, and Metsamaa L. 2012. Optimization of variable fluorescence measurements of phytoplankton communities with cyanobacteria. Photosynthesis research 112(1): 13-30.  
+11. Light in the ocean (n.d.) [Online]. Link: https://manoa.hawaii.edu/exploringourfluidearth/physical/ocean-depths/light-ocean.  
+12. Boyd PW,  RynearsonTA, Armstrong EA, Fu F, Hayashi K, Hu Z, Hutchins DA, Kudela RM, Litchman E, Mulholland MR, Passow U, Strzepek RF,  Whittaker KA,  Yu E,  and Thomas MK. (2013). Marine phytoplankton temperature versus growth responses from polar to tropical waters - outcome of a scientific community-wide study. PLoS ONE 8(5): e63091.  
+13. Berg M, Sutula M. 2015. Factors affecting the growth of cyanobacteria with special emphasis on the Sacramento-San Joaquin Delta. Southern California Coastal Water Research Project Technical Report 869.  
+
 ### Project_01_Self-assessment
 
 To facilitate group assessment, please indicate your contributions to the following aspects of your final group reports. You should provide short statements under the headers relevant to your work. For example, you could specify that you "wrote the first draft", "wrote the code to accomplish X figure or result", "troubleshot code", "interpreted results", etc.
@@ -1048,18 +1631,8 @@ To facilitate group assessment, please indicate your contributions to the follow
 Include **separate** completed versions of this document for Project 1 **and** Project 2 in your portfolio repo; they do not need to be incorporated into the final knit portfolio html.
 
 #### Abstract  
-##### Writing  
 ##### Editing  
 I edited the format of abstract. 
-
-#### Introduction  
-##### Literature research  
-##### Writing  
-##### Editing  
-
-#### Methods  
-##### Writing  
-##### Editing  
 
 #### Results  
 ##### Anaysis   
@@ -1093,24 +1666,384 @@ I edited the part of the impacts of greochemical parameters on Cyanobacteria dis
 
 ### Project_02_Report
 
+####Authors
+Team 1: Albert Chang (), Alison Fong (33399149), Karen Lau (16524143), Yaqian
+  Luo (59751503), Jessica Ngo (31837131), Peter (Kiet) Truong (36645133)
+
+####Abstract  
+
+Genes encoding key steps in the nitrogen cycle are well defined and provide a basis for functional anchor screening to determine their distribution across prokaryotic taxa. In this study, Saanich Inlet was used as a model ecosystem to investigate the metabolic coupling and symbiotic interactions that influence the nitrogen cycle in oxygen minimum zones. Water samples were collected at seven major depths spanning the oxycline, and genomic DNA and RNA were extracted and sequenced. The resulting reads were processed, assembled, and analyzed using the Tree-based Sensitive and Accurate Protein Profiler (TreeSAPP) pipeline to reconstruct the nitrogen cycle along defined redox gradients in Saanich Inlet. The *narG* gene was then investigated in detail. Its DNA levels were found to increase with depth while RNA levels decreased with depth. Proteobacteria contributed most *narG* DNA, while Actinobacteria contributed most RNA. Further, *narG* RNA abundance increased along with nitrite concentrations in the Inlet, but had the opposite relationship with nitrate concentrations; this was the expected result given that *narG* mediates the conversion of nitrate to nitrite. Overall, *narG* is responsible for a conversion taking place the beginning of the nitrogen cycle, and this provides reasoning for its presence at the given depths, while providing a key piece to exemplify evolutionary and environmental reasoning for the distributed metabolism seen in the nitrogen cycle.
+
+####Introduction  
+
+Oxygen minimum zones (OMZs) are regions in the ocean where dissolved oxygen concentrations fall below 20 $\mu$M (1). Because of temperature increases and other effects caused by global warming, OMZs are rising at a notable rate. Saanich Inlet is a seasonally anoxic fjord off the coast of British Columbia and a model ecosystem for studying the diversity and biochemical responses of microbial communities to the hypoxic environments commonly observed in OMZs (1, 2). In particular, Saanich Inlet has been used to model the metabolic coupling and symbiotic interactions that occur in OMZs (3).  The inlet undergoes recurring cycles of water column stratification and deep water renewal, making it a model ecosystem for studying microbial responses to changes in oceanic oxygenation levels (4). Increased levels of primary productivity in ocean surfaces during the spring season, along with the limited mixing which occurs between the basin and surface waters both result in the development of an anoxic body of water with increasing depth in the Inlet (2). These anoxic regions become highly populated with chemolithoautotrophs, eventually leading to a decrease in aerobically respiring organisms found deeper within these zones. Past studies have shown that these types of metabolic shifts usually lead to a loss of nitrogen along with the production of notable greenhouse gases such as methane (CH~4~) and nitrous oxide (N~2~O) (1). Some species have also been shown to engage in sulfide (H~2~S) oxidation and nitrate (NO~3~^-^) reduction pathways within these zones (5). 
+
+The nitrogen cycle--the biogeochemical cycle by which nitrogenous compounds are interconverted between chemical forms for environmental circulation--consists mainly of nitrogen fixation, nitrification and denitrification, and has been catalyzed by microorganisms long before the appearance of humans (6). Even today, much of it is still dictated by the diverse microbial niches present in the surrounding environment. An example of this control can be seen in denitrification--the conversion of NO~3~^-^ to nitrogen gas (N~2~)--carried out by denitrifying bacteria. Denitrication is a highly important process as it prevents the accumulation of nitrogen compounds to toxic levels that could lead to eutrophication, and maintains the homeostasis of nitrogen distribution between soil and atmosphere. Having an atmospheric residence time of approximately 1 billion years, nitrogen gas (N~2~) is highly inert and is not accessible for the synthesis of proteins and nucleic acids, though this problem is easily solved by the conversion of N~2~ to NH~4~^+^ through nitrogen fixation (6).  
+
+The aim of our project was to characterize the involvement of our gene of interest, *narG*, which is known for its role in the reduction of NO~3~^-^ to NO~2~^-^ in the denitrification cycle. Recent literature has highlighted that microbial taxa do not necessarily integrate whole elemental cycles into their individual metabolic pathways, but often divide these reactions among the community so that consortia of taxa must rely on each other to fulfill their metabolic requirements (2).  
+  
+
+####Methods  
+
+Water samples were collected from Saanich Inlet at depths 10, 100, 120, 135, 150, 165, and 200m spanning the oxycline during Saanich Inlet Cruise 72. The samples were subsequently filtered through a 0.22 $\mu$m Sterivex filter to collect biomass and both genomic DNA and RNA were extracted from these samples. The extracted RNA was converted into cDNA. Both total genomic DNA and cDNA were used to construct the shotgun Illumina libraries. Sequencing data were generated on the Illumina HiSeq platform with 2x150bp technology. Further sampling and sequencing details can be found in *A compendium of multi-omic sequence information from the Saanich Inlet water column* by Hawkley et al. (2017).  
+
+The IMG/M pipeline was then used to process the resulting reads. Metapathways 2.5 was used to assemble and process the metagenomes. A beta version of Tree-based Sensitive and Accurate Protein Profiler (TreeSAPP) pipeline was used to reconstruct the nitrogen cycle along defined redox gradients in Saanich Inlet using Google Cloud services. iTOL version 4.0 was used to generate phylogenetic trees based on the processed data. The contig maps were loaded into R version 3.4.3. Tidyverse, cowplot, phyloseq, and kableExtra packages were loaded and used to complete the data analysis.  
+
+
+####Results  
+
+#####Environment setup and Data Cleaning  
+```{r echo=FALSE}
+library(tidyverse)
+library(cowplot)
+library(phyloseq)
+library(kableExtra)
+```
+
+Loading, parsing (initial data contains data for all genes - we are only interested in *narG*), renaming data.  We only need taxonomy, abundance, and query data.
+```{r message=FALSE, echo=FALSE}
+narG.DNA.10m = read_tsv("narG/marker_contig/DNA10m_marker_contig_map.tsv") %>%
+    filter(Marker=="narG") %>%
+    select(Tax.DNA.10 = Confident_Taxonomy, Abund.DNA.10 = Abundance, Query)
+
+narG.RNA.10m = read_tsv("narG/marker_contig/RNA10m_marker_contig_map.tsv") %>%
+    filter(Marker=="narG") %>% 
+    select(Tax.RNA.10 = Confident_Taxonomy, Abund.RNA.10 = Abundance, Query)
+
+narG.DNA.100m = read_tsv("narG/marker_contig/DNA100m_marker_contig_map.tsv") %>%
+    filter(Marker=="narG") %>% 
+    select(Tax.DNA.100 = Confident_Taxonomy, Abund.DNA.100 = Abundance, Query)
+
+narG.RNA.100m = read_tsv("narG/marker_contig/RNA100m_marker_contig_map.tsv") %>%
+    filter(Marker=="narG") %>%  
+    select(Tax.RNA.100 = Confident_Taxonomy, Abund.RNA.100 = Abundance, Query)
+
+narG.DNA.120m = read_tsv("narG/marker_contig/DNA120m_marker_contig_map.tsv") %>%
+    filter(Marker=="narG") %>%  
+    select(Tax.DNA.120 = Confident_Taxonomy, Abund.DNA.120 = Abundance, Query)
+
+narG.RNA.120m = read_tsv("narG/marker_contig/RNA120m_marker_contig_map.tsv") %>%
+    filter(Marker=="narG") %>%  
+    select(Tax.RNA.120 = Confident_Taxonomy, Abund.RNA.120 = Abundance, Query)
+
+narG.DNA.135m = read_tsv("narG/marker_contig/DNA135m_marker_contig_map.tsv") %>%
+    filter(Marker=="narG") %>%  
+    select(Tax.DNA.135 = Confident_Taxonomy, Abund.DNA.135 = Abundance, Query)
+
+narG.RNA.135m = read_tsv("narG/marker_contig/RNA135m_marker_contig_map.tsv") %>%
+    filter(Marker=="narG") %>%  
+    select(Tax.RNA.135 = Confident_Taxonomy, Abund.RNA.135 = Abundance, Query)
+
+narG.DNA.150m = read_tsv("narG/marker_contig/DNA150m_marker_contig_map.tsv") %>%
+    filter(Marker=="narG") %>%  
+    select(Tax.DNA.150 = Confident_Taxonomy, Abund.DNA.150 = Abundance, Query)
+
+narG.RNA.150m = read_tsv("narG/marker_contig/RNA150m_marker_contig_map.tsv") %>% 
+    filter(Marker=="narG") %>% 
+    select(Tax.RNA.150 = Confident_Taxonomy, Abund.RNA.150 = Abundance, Query)
+
+narG.DNA.165m = read_tsv("narG/marker_contig/DNA165m_marker_contig_map.tsv") %>% 
+    filter(Marker=="narG") %>% 
+    select(Tax.DNA.165 = Confident_Taxonomy, Abund.DNA.165 = Abundance, Query)
+
+narG.RNA.165m = read_tsv("narG/marker_contig/RNA165m_marker_contig_map.tsv") %>% 
+    filter(Marker=="narG") %>% 
+    select(Tax.RNA.165 = Confident_Taxonomy, Abund.RNA.165 = Abundance, Query)
+
+narG.DNA.200m = read_tsv("narG/marker_contig/DNA200m_marker_contig_map.tsv") %>% 
+    filter(Marker=="narG") %>% 
+    select(Tax.DNA.200 = Confident_Taxonomy, Abund.DNA.200 = Abundance, Query)
+
+narG.RNA.200m = read_tsv("narG/marker_contig/RNA200m_marker_contig_map.tsv") %>% 
+    filter(Marker=="narG") %>% 
+    select(Tax.RNA.200 = Confident_Taxonomy, Abund.RNA.200 = Abundance, Query)
+```
+
+Data manipulation into a single data frame
+```{r, echo=FALSE}
+narG.all = narG.DNA.10m %>% 
+# Combine the data frames will full_join to keep all the data
+  full_join(narG.RNA.10m, by = "Query") %>%
+  full_join(narG.DNA.100m, by = "Query") %>% 
+  full_join(narG.RNA.100m, by = "Query") %>%
+  full_join(narG.DNA.120m, by = "Query") %>% 
+  full_join(narG.RNA.120m, by = "Query") %>%
+  full_join(narG.DNA.135m, by = "Query") %>% 
+  full_join(narG.RNA.135m, by = "Query") %>%
+  full_join(narG.DNA.150m, by = "Query") %>% 
+  full_join(narG.RNA.150m, by = "Query") %>%
+  full_join(narG.DNA.165m, by = "Query") %>% 
+  full_join(narG.RNA.165m, by = "Query") %>% 
+  full_join(narG.DNA.200m, by = "Query") %>% 
+  full_join(narG.RNA.200m, by = "Query") %>% 
+# Create a taxonomy variable aggregating all taxonomy columns so as to fill in any NAs that might occur. !is.na means "is not NA", so the following says that the Taxonomy data should be taken from Tax.RNA.10 if that is not NA, or else take it from Tax.DNA.10 if that is not NA, or else Tax.RNA.200, etc. until if all are NA, give Taxonomy of "unclassified"
+  mutate(Taxonomy = ifelse(!is.na(Tax.RNA.10), Tax.RNA.10,
+                    ifelse(!is.na(Tax.DNA.10), Tax.DNA.10,
+                    ifelse(!is.na(Tax.RNA.100), Tax.RNA.100,
+                    ifelse(!is.na(Tax.DNA.100), Tax.DNA.100,
+                    ifelse(!is.na(Tax.RNA.120), Tax.RNA.120,
+                    ifelse(!is.na(Tax.DNA.120), Tax.DNA.120,
+                    ifelse(!is.na(Tax.RNA.135), Tax.RNA.135,
+                    ifelse(!is.na(Tax.DNA.135), Tax.DNA.135,
+                    ifelse(!is.na(Tax.RNA.150), Tax.RNA.150,
+                    ifelse(!is.na(Tax.DNA.150), Tax.DNA.150,
+                    ifelse(!is.na(Tax.RNA.165), Tax.RNA.165,
+                    ifelse(!is.na(Tax.DNA.165), Tax.DNA.165,
+                    ifelse(!is.na(Tax.RNA.200), Tax.RNA.200,
+                    ifelse(!is.na(Tax.DNA.200), Tax.DNA.200,
+                           "unclassified"))))))))))))))) %>% 
+# Get rid of the old Tax variables
+  select(-starts_with("Tax.")) %>% 
+# Gather all the abundance data into 1 column 
+  gather("Key", "Abundance", starts_with("Abund")) %>% 
+# Turn the Key into Depth and RNA/DNA variables. We can easily do this because we specifically named these variables with period separation when we loaded in the original data
+  separate(Key, c("Key","Type","Depth_m"), by = ".") %>% 
+# Remove Key variable now that it only contains "Abund". This also serves to reorder the columns so that the very long Query is at the end.
+  select(Depth_m, Type, Abundance, Taxonomy, Query) %>% 
+# Make sure R knows depth is numerical since it came from a character variable
+  mutate(Depth_m = as.numeric(Depth_m)) %>% 
+# Separate Taxonomy into columns so we can plot at different levels
+  separate(Taxonomy, into = c("Domain", "Phylum", "Class", "Order", "Family", "Genus", "Species"), sep="; ")
+```
+
+Warning above ignored, because not all queries could be classified down to species level, so these cells are filled as NA, which is fine.
+
+##### Final data table
+```{r, echo=FALSE}
+kable(narG.all,"html", caption="Table 1. Final data of narG gene")%>%
+  kable_styling() %>%
+  scroll_box(width = "1000px", height = "600px")
+```
+
+##### 1. How does the DNA abundance of *narG* gene differ with depth?  
+
+Figure 1 indicates that the DNA abundance of the *narG* gene has an overall increasing trend with depth. The DNA abundance of the *narG* gene increases gradually from 21.40 to 990.72 at depth from 10 m to 150 m. However, it declines to 249.21 at depth of 165 m, but increases again to 717.90 at depth of 200 m.  
+
+```{r, echo=FALSE}
+narG.all %>% 
+# Filter the DNA data
+  filter(Type == "DNA") %>% 
+# Change NAs to "unclassified" at the level you want to plot. Here we will do Genus
+  mutate(Genus = ifelse(is.na(Phylum), "unclassified", Phylum)) %>% 
+  group_by(Depth_m) %>%
+  mutate(abund_sum=sum(Abundance, na.rm=TRUE))%>%
+  group_by(Depth_m)%>%
+  summarize(abund_sum=mean(abund_sum))%>%
+
+  
+ggplot(aes(x = "narG", y = Depth_m)) +
+# Use the size aesthetic to show abundance
+  geom_point(aes(size = abund_sum)) +
+# Reverse the why axis so depth increases going down
+  scale_y_reverse(lim=c(200,0)) +
+  labs(y="Depth (m)")+
+  theme_classic() +
+  scale_size_continuous(name="Abundance",breaks = c(200,400,600,800)) +
+  geom_text(aes(label=abund_sum, hjust=1.5))+
+  labs(caption = "Figure 1. Abundance of the narG gene (DNA) at different depths",
+       x = "") +
+  theme(plot.caption = element_text(hjust=0.5, size=rel(1.0)))
+```
+ 
+
+##### 2. What taxa are responsible for *narG*? Are they the same with depth? With DNA versus RNA?  
+
+RNA abundance of the *narG* gene with depth does not match the trend of DNA abundance. Figure 2 shows that RNA abundance of the *narG* gene increases significantly from 10 m to 100 m, and reaches its second highest level of 3585.45 at 100 m. Interestingly, the RNA abundance fluctuates between a range of 2500-3700 at depths 100-135 m. After that, it decreases gradually until 200 m. On the other hand, RNA abundance of *narG* gene is much larger than the DNA abundance at depth of 100-165 m, while less *narG* RNA is found in the samples from depth of 10 m and 200 m.  
+```{r, echo=FALSE}
+# DNA and RNA abundance with depth
+DNA.abund.depth=narG.all %>% 
+  filter(Type == "DNA") %>% 
+  mutate(Genus = ifelse(is.na(Phylum), "unclassified", Phylum)) %>% 
+  group_by(Depth_m) %>%
+  mutate(abund_sum=sum(Abundance, na.rm=TRUE))%>%
+  group_by(Depth_m)%>%
+  summarize(DNA=mean(abund_sum))
+
+RNA.abund.depth=narG.all %>% 
+  filter(Type == "RNA") %>% 
+  mutate(Genus = ifelse(is.na(Phylum), "unclassified", Phylum)) %>% 
+  group_by(Depth_m) %>%
+  mutate(abund_sum=sum(Abundance, na.rm=TRUE))%>%
+  group_by(Depth_m)%>%
+  summarize(RNA=mean(abund_sum))
+
+left_join(DNA.abund.depth,RNA.abund.depth,by="Depth_m")%>%
+  gather(Type,abund_sum,DNA:RNA)%>%
+
+# Show both RNA and DNA using an x variable  
+ggplot(aes(x = Type, y = Depth_m)) +
+  geom_point(aes(size = abund_sum)) +
+  labs(y="Depth (m)")+
+  scale_y_reverse(lim=c(200,0)) +
+  theme_classic()+
+  scale_size_continuous(name="Abundance",breaks = c(500,1000,1500,2000,3000)) +
+  geom_text(mapping=aes(label=abund_sum),hjust=1.2)+
+  labs(caption = "Figure 2. Abundance of the narG gene (DNA vs. RNA) at different depths") +
+  theme(plot.caption = element_text(hjust=0.5, size=rel(1.0)))
+```
+
+##### 3. What taxa are responsible for *narG* gene? Are they the same with depth? With DNA versus RNA?  
+
+As shown in Figure 3, Actinobacteria, candidatus Omnitrophica, Chlorobi, Euryarchaeota, metagenomes, Proteobacteria, and unclassified Bacteria are responsible for *narG* DNA. Among of them, Actinobacteria, candidatus Omnitrophica, Chlorobi, Euryarchaeota, and metagenomes have evenly distributed DNA abundance across depth above 100 m. However, the distribution of Proteobacterial DNA abundance with depth follows a similar trend with that of *narG* DNA abundance, in which abundance increases from depth of 10 m to 150 m, declines at depth of 150-165 m, and finally increases again at 200 m. On the contrary, DNA abundance of unclassified Bacteria is the same at depth below 165 m but increases slightly at 200 m.  
+
+Actinobacteria, Proteobacteria, and unclassified Bacteria make dominant contributions to *narG* RNA among the 11 phyla. Actinobacteria is the predominant phylum for *narG* RNA contribution at depth of 100 m and 120 m, but its RNA abundance decreases gradually at deeper water and eventually becomes undetectable at depth of 200 m. Both Proteobacteria and unclassified Bacteria have observed RNA at the seven different depth, although their RNA abundances are not distributed in the same trend with depth. Proteobacterial RNA abundances at depth of 150 m and 200 m are higher than that from other depths, while unclassified Bacteria have the lowest RNA abundance at 150 m and 200 m. Additionally, unclassified Bacteria have RNA abundance increasing with depth at shallow water and reaching the highest point at depth of 135 m.
+
+
+```{r fig.width=8, echo=FALSE}
+narG.all %>% 
+# Change NAs to "unclassified" at the level you want to plot
+  mutate(Phylum = ifelse(is.na(Phylum), "unclassified Bacteria", Phylum)) %>% 
+  
+ggplot(aes(x = Phylum, y = Depth_m)) +
+# Use an ifelse statement to make 0 values into NAs so that they don't show up on the plot
+# Use position_dodge to keep points from overlapping
+  geom_point(aes(size = ifelse(Abundance == 0, NA, Abundance), color = Type), position = position_dodge(0.5)) +
+  scale_y_reverse(lim=c(200,0)) +
+  labs(y="Depth (m)")+
+  theme_classic() +
+# Rename legend
+  scale_size_continuous(name = "Abundance") +  
+  theme(axis.text.x = element_text(angle = 45, hjust =1, size=rel(1.2)))+
+  labs(caption = "Figure 3. Abundance of phyla with narG (DNA vs. RNA) at different depths") +
+  theme(plot.caption = element_text(hjust=0.5, size=rel(1.1)))
+ 
+```
+
+
+##### 4. How does the abundance of *narG* gene relate to nitrogen species in Saanich?  
+
+The *narG* gene has significant impacts on nitrite (NO~2~^-^) and nitrate (NO~3~^-^) concentration across depth in Saanich. It is responsible for the reduction of nitrate to nitrite. As a result, when the RNA abundance of *narG* gene remains at a high level at depths 100-135m (Figure 2), nitrate concentration stops increasing and declines dramatically from its highest point at depth of 100 m (Figure 4D). On the other hand, due to poor nitrification in deeper water, although RNA of *narG* gene is less abundant at depth above 150 m, nitrate concentration continues decreasing with depth until to 0 at depth of 165 m. Similarly, *narG* is also one of the key factors for the fluctuation of nitrite concentration at depth 100-165 m. The low ammonium concentration in depth of 10-135 m indicates a high level of nitrification in the shallow water (Figure 4A), which is responsible for the significant increase of nitrate and the decrease of nitrite at depth 10-100 m. However, nitrite concentration does not keep decreasing with depth above 100m, instead, it remains around 0.09 $\mu$M as a result of high nitrate reduction level caused by the abundant RNA of *narG* gene. Therefore, *narG* gene abundance is closely related to nitrite and nitrate concentration in Saanich.  
+
+```{r fig.width=7, fig.height=7, echo=FALSE}
+load("mothur_phyloseq.RData")
+
+metadata = data.frame(mothur@sam_data)
+
+# DNA/RNA abundance with depth
+plot1 = narG.all %>% 
+# Change NAs to "unclassified" at the level you want to plot
+  mutate(Phylum = ifelse(is.na(Phylum), "unclassified", Phylum)) %>% 
+  
+ggplot(aes(x = Phylum, y = Depth_m)) +
+  geom_point(aes(size = ifelse(Abundance == 0, NA, Abundance), color = Type), position = position_dodge(0.5)) +
+  scale_y_reverse(lim=c(200,0)) +
+  labs(y = "Depth (m)") +
+  theme_classic() +
+  scale_size_continuous(name = "Abundance")+ 
+  theme(axis.text.x = element_text(angle = 45, hjust =1))
+
+#Then, we make our plots for NO2, "plot2", and NO3, "plot3"
+
+plot2 = metadata %>% 
+# Order the data by depth  
+  arrange(Depth_m) %>% 
+  
+ggplot(aes(x = NO2_uM, y = Depth_m)) +
+    geom_point() +
+    geom_path(aes(group = 1)) +
+    scale_y_reverse(lim=c(200,0)) +
+  theme_classic() +
+  labs(y = "Depth (m)",
+       x = "NO2 (uM)")
+plot3 = metadata %>% 
+# Order the data by depth  
+  arrange(Depth_m) %>% 
+  
+ggplot(aes(x = NO3_uM, y = Depth_m)) +
+    geom_point() +
+    geom_path(aes(group = 1)) +
+    scale_y_reverse(lim=c(200,0)) +
+  theme_classic() +
+  labs(y = "Depth (m)",
+       x = "NO3 (uM)")
+
+plot4 = metadata %>% 
+# Order the data by depth  
+  arrange(Depth_m) %>% 
+  
+ggplot(aes(x = NH4_uM, y = Depth_m)) +
+    geom_point() +
+    geom_path(aes(group = 1)) +
+    scale_y_reverse(lim=c(200,0)) +
+  theme_classic() +
+  labs(y = "Depth (m)",
+       x = "NH4 (uM)")
+
+plot5 = metadata %>% 
+# Order the data by depth  
+  arrange(Depth_m) %>% 
+  
+ggplot(aes(x = N2O_nM, y = Depth_m)) +
+    geom_point() +
+    geom_path(aes(group = 1)) +
+    scale_y_reverse(lim=c(200,0)) +
+  theme_classic() +
+  labs(y = "Depth (m)",
+       x = "N2O (nM)")
+
+plot_grid(plot4, plot5, plot2, plot3, labels=c("A", "B", "C", "D"), axis="l", nrow=2, ncol=2, rel_widths=c(1/2, 1/2, 1/2,1/2))+
+  labs(caption = "Figure 4. Nitrogen species in Saanich across depth. 
+A) Ammonium (NH4) concentration across depth   B) Nitrous oxide (N2O) concentration across depth 
+C) Nitrite (NO2) concentration across depth     D) Nitrate (NO3) concentration across depth") +
+  theme(plot.caption = element_text(hjust=0.5, size=rel(0.75)))
+```
+
+####Discussion  
+
+In anthropogenic times, NO~3~^-^ levels have significantly increased in environmental water systems resulting from agricultural activities (7). With increases in NO~3~^-^ entering these systems, the accumulation of nitrogen compounds above threshold levels can lead to eutrophication. Microbe-driven processes such as denitrification, are able to counteract this phenomenon by converting NO~3~^-^ to N~2~. In this context, our gene of interest, *narG*, specifically mediates the first step of this pathway. As the alpha subunit and catalytic domain of the membrane-bound dissimilatory nitrate reductase, *narG* is responsible for the conversion of NO~3~^-^ to NO~2~^-^. NO~2~^-^ will become the substrate of *nirK* and *nirS*, and through subsequent steps and enzymes, eventually lead to the production of N~2~ (8). Interestingly, it has been found that the process of transporting nitrate into the cytoplasmic location of the active site of NarG is inhibited by oxygen, making denitrification an anaerobic process (9). As a result, it is expected that there is greater amounts of *narG* transcription in OMZs compared to surface level waters. From figure 2, peak transcription of *narG* is found at 100 m where oxygen levels are approaching OMZ conditions (Figure 5). Additionally, the large abundance of *narG* transcription at 100 m and deeper can be explained with the corresponding abundance of NO~3~^-^ substrate. Many denitrifying facultative anaerobic microorganisms respire NO~3~^-^ in the absence of oxygen. Denitrification is considered to be the highest energy-yielding respiration system in anoxic environments (10). Increases in NO~3~^-^ at anoxic depth leads to the reduction of nitrate to nitrite in the cytoplasm by *narG*. It has been found that this process is coupled to the translocation of protons into the periplasm which directly contributes to a proton-motive force for energy conservation (8). Therefore, it is not surprising that *narG* transcription levels are near absent at oxic depths where oxygen can still be used as the preferential terminal electron acceptor (TEA), and abundant at anoxic depths where NO~3~^-^ can be used as an alternative TEA.  
+
+```{r fig.width=5, fig.height=5, echo=FALSE}
+# Oxygen with depth
+metadata %>% 
+# Order the data by depth  
+  arrange(Depth_m) %>% 
+  
+ggplot(aes(x = O2_uM, y = Depth_m)) +
+    geom_point() +
+    geom_path(aes(group = 1)) +
+    scale_y_reverse(lim=c(200,0)) +
+  theme_classic() +
+  labs(y = "Depth (m)",
+       x = "O2 (uM)")+
+  labs(caption="Figure 5. Oxygen in Saanich across depth")+
+  theme(plot.caption = element_text(hjust=0.5,size=rel(1.0)))
+```
+
+Metabolisms in the nitrogen cycle is widely distributed, such that each reaction step is catalyzed by a specific enzyme from a different bacterial species carrying the corresponding genes. This distribution may be the consequence of the distinct energy and nutrient sources which are available in different ecosystems, as well as other mechanisms, namely horizontal gene transfer, and adaptive gene loss.  
+
+In aerobic environments like shallow water and topsoil, nitrification is the predominant process of the nitrogen cycle, due to the availability of ammonia and nitrite as energy sources for nitrifying bacteria and the inhibitive effect of oxygen on denitrifiers (11,12). On the contrary, denitrification occurs in anoxic environments including OMZs and marine sediments, where nitrate serves as energy and nutrient source and the limitation of oxygen on denitrification is minimum (8). Besides, some bacteria evolve additional mechanisms to protect nitrogen-related enzymes from unfavorable environments. For example, *Trichodesmium* spp. and *Nodularia* spp. adopt the strategy that nitrogen fixation is separated from photosynthesis, in order to minimize oxygen suppression on nitrogenases, an enzyme for nitrogen fixation (8). Therefore, environmental conditions is one of the possible reason for the distributed metabolisms.  
+
+Another potential explanation for metabolic distribution of the nitrogen cycle is horizontal gene transfer (HGT). Bacteria may acquire nitrogen-related genes from other species through HGT and take up the niche of corresponding reactions in the nitrogen cycle. For instance, ammonia monooxygenase genes, encoding the key enzyme required for ammonia oxidation, are observed widely distributed among different bacterial species (6). As a result, if a certain bacterial species responsible for ammonia oxidation became extinct in a specific ecosystem, other species, carrying ammonia monooxygenase genes and able to perform the process of ammonia oxidation, would take up the niche of the extinct one.  On the other hand, the retention of horizontally transferred gene is largely driven by selective pressure on nutrients and energy, and thus different processes in the nitrogen cycle are widely distributed among microorganisms and ecosystems (6).   
+
+Gene loss may also make contributions to the wide distribution of metabolisms in the nitrogen cycle. A hypothesis, called as Black Queen Hypothesis (BQH), is proposed recently to explain the dependency of free-living microorganisms having metabolic gene loss on other species (13). In this hypothesis, two groups of bacterial species are defined: "helper" and "beneficiaries". The hypothesis predicts that in a microbial community, "beneficiaries", which is selected to lose a costly and dispensable functions, will obtain the function from a fraction of other individuals in the community, until the function is sufficient to support the whole community (13). Based on the hypothesis, it can be explained that why nitrogen fixation is performed by a small fraction of microorganisms in the ocean. The possible reasons may be that genes responsible for nitrogen fixation were selectively lost during evolution and fixed N was turned into a public good (13).  
+
+This study paves the way for future investigations into metabolic coupling and symbiotic interactions in the nitrogen cycle. It appears that *narG* levels are regulated by oxygen levels and availability of the NO~3~^-^ substrate; however, the effect of other environmental factors has yet to be related with gene abundance. According to Palmer et al., in sediment communities, Actinobacterial  *narG* dominates in extreme environments characterized by low pH or high temperature, while Proteobacterial *narG* is present in pH-neutral soils (15). Given that Actinobacteria and Proteobacteria dominated DNA and transcript expression of *narG* in an aquatic context, it would be useful to determine whether these abundances are due to pH, temperature, or other measurable geochemical parameters.  
+
+Additionally, as *narG* is inhibited by its own product, nitrite, it may be interesting to see how *narG* abundances vary with *nirK* and *nirS* abundances, which consume nitrite. Interestingly, previous studies have noted that *nirS* was dominated by $\beta$-Proteobacteria, while *nirK* was dominated by $\alpha$-Proteobacteria (14). Our study results also suggest *narG* is dominated in part by Proteobacteria, although more in depth analysis into different classes of Proteobacteria have not been attempted. A deeper analysis into the abundance of *narG* in different classes of Proteobacteria may be necessary to establish a correlation between how the abundances of *nirK*, *nirS*, and *narG* vary within the Proteobacteria phylum.  
+
+####References  
+
+1. Walsh DA, Zaikova E, Howes CG, Song YC, Wright JJ, Tringe SG, Hallam SJ. 2009. Metagenome of a versatile chemolithoautotroph from expanding oceanic dead zones. Science 326(5952): 578-582.  
+2. Torres-Beltr?n M, Hawley AK, Capelle D, Zaikova E, Walsh DA., Mueller A, Finke J. 2017. A compendium of geochemical information from the Saanich Inlet water column. Nature scientific data 4(170159).  
+3. Hawley AK, Torres-Beltr?n M, Zaikova E, Walsh DA, Mueller A, Scofield M, Kheirandish S, Payne C, Pakhomova L, Bhatia M, Shevchek O, Gies EA, Fairley D, Malfatii SA, Norbeck AD, Brewer HM, Pasa-Tolic, L, del Rio TG, Suttle CA, Trige S, Hallam SJ. Data Descriptor: A compendium of multi-omic sequence information from the Saanich Inlet water column. Nature scientific data 4(170160).  
+4. Hallam SJ, Torres-Beltr?n M, Hawley AK. Comment: Monitoring microbial responses to ocean deoxygenation in a model oxygen minimum zone. Nature scientific data 4(170158).  
+5. National Research Council. 2007. The new science of metagenomics: revealing the secrets of our microbial planet. National Academies Press, Washington, DC.  
+6. Falkowski PG, Fenchel T, Delong EF. 2008. The microbial engines that drive Earth's biogeochemical cycles. Science 320(5879): 1034-1039.  
+7. Smith CJ, Nedwell DB, Dong LF, Osborn AM. 2007. Diversity and Abundance of Nitrate Reductase Genes (narG and napA), Nitrite Reductase Genes (nirS and nrfA), and Their Transcripts in Estuarine Sediments. Applied and environmental microbiology, 73(11): 3612-3622.  
+8. Kuypers MM., Marchant, HK,  Kartal B. (2018). The microbial nitrogen-cycling network. Nature Reviews Microbiology.  
+9. Moreno-Vivi?n C, Cabello P, Mart?nez-Luque M, Blasco R, Castillo F. (1999). Prokaryotic nitrate reduction: molecular properties and functional distinction among bacterial nitrate reductases. Journal of bacteriology, 181(21): 6573-6584.   
+10. Strohm TO, Griffin B, Zumft WG, Schink B. (2007). Growth yields in bacterial denitrification and nitrate ammonification. Applied and environmental microbiology, 73(5): 1420-1424.  
+11. Ward BB. 2008. Nitrification,  p 2511-2518. In J?rgensen SE and Fath BD(ed), Ecological Processes, vol. 3 of Encyclopedia of Ecology, 5 vols. Oxford: Elsevier.  
+12. Nakajima M, Hayamize T, Nishimura H. 1983. Effect of oxygen concentration on the rates of denitrification and denitrification in the sediments of an eutrophic lake. Water Resources, vol. 18, no. 3, p 335-337.  
+13. Morris JJ, Lenski RE, Zinser ER. 2012. The black queen hypothesis: Evolution of dependencies through adaptive gene loss. mBio 3(2). DOI: 10.1128/mBio.00036-12.
+14. Yu Z, Yang J, Liu L. 2014. Denitrifier Community in the Oxygen Minimum Zone of a Subtropical Deep Reservoir. PLoS One 9(3): e92055.  
+15. Palmer K, Horn MA. 2015. Denitrification Activity of a Remarkably Diverse Fen Denitrifier Community in Finnish Lapland Is N-Oxide Limited. PLoS One 10(4): e0123123.  
+
 ### Project_02_Self-assessment
 
 To facilitate group assessment, please indicate your contributions to the following aspects of your final group reports. You should provide short statements under the headers relevant to your work. For example, you could specify that you "wrote the first draft", "wrote the code to accomplish X figure or result", "troubleshot code", "interpreted results", etc.
 
 Include **separate** completed versions of this document for Project 1 **and** Project 2 in your portfolio repo; they do not need to be incorporated into the final knit portfolio html.
-
-#### Abstract  
-##### Writing  
-##### Editing  
-
-#### Introduction  
-##### Literature research  
-##### Writing  
-##### Editing  
-
-#### Methods  
-##### Writing  
-##### Editing  
 
 #### Results  
 ##### Anaysis   
